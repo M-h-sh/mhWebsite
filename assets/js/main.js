@@ -221,7 +221,7 @@
    */
   let preloader = select('#preloader');
   if (preloader) {
-    delay: 1000,
+    delay: 2000,
     window.addEventListener('load', () => {
       preloader.remove()
     });
