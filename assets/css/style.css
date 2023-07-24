@@ -1601,10 +1601,7 @@ footer .credits a {
       background-color: #222;
       color: #eee;
     }
-	.dark-mode .form-check{
-		background-color: transparent;
-      color: #eee;
-	}
+
 
     .dark-mode .contact-mf .form-control,
     .dark-mode .contact-mf .btn-primary {
