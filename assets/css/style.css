@@ -1119,7 +1119,10 @@ a:hover {
     padding: 0 13rem;
   }
 }
-
+.form-check {
+	background-color:transparent;
+	color:#eee;
+}
 .swiper-pagination {
   margin-top: 20px;
   position: relative;
@@ -1599,7 +1602,7 @@ footer .credits a {
       color: #eee;
     }
 	.dark-mode .form-check{
-		background-color: #222;
+		background-color: transparent;
       color: #eee;
 	}
 
