@@ -47,6 +47,7 @@
   </header><!-- End Header -->
 
   <!-- ======= Hero Section ======= -->
+  
   <div id="hero" class="hero route bg-image" style="background-image: url(assets/img/hero-bg.jpg)">
     <div class="overlay-itro"></div>
     <div class="hero-content display-table">
@@ -61,16 +62,17 @@
       </div>
     </div>
   </div><!-- End Hero Section -->
-
-  <main id="main">
+ 
+  <main id="main" >
         <div class="modal fade " id="popUpModel" tabindex="-1"  aria-labelledby="popUpModelLabel" aria-hidden="true" >
         <div class="modal-dialog modal-md ">
-            <div class="modal-content border border-0">
-                <div class="modal-header text">
-                    <h1 class="fs-5 mt-2 "> About Me</h1>
+            <div id="about" class="modal-content border border-0">
+                <div class="modal-header ">
+                    <h1 class="fs-5 mt-2 s-title "> About Me</h1>
                     
-                    <button type="button" class="btn-close text-xxs" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <i type="button" class="bi bi-x s-title fs-1 "  data-bs-dismiss="modal" aria-label="Close"></i>
                 </div>
+				
                  <div class="col-sm-12">
             
               <div class="row p-2">
@@ -96,22 +98,26 @@
                 <div class="col-md-12 mt-2">
                   <div class="about-me pt-4 pt-md-0">
                     
-                    <p class="lead">
+                    <p class="s-description">
                     I'm a person who's always looking to learn new things, and want to be able to provide solution to any problem.
                     </p>
-                    <p class="lead">
+                    <p class="s-description">
                       I'm willing to work with people from any industry and I love challenges.
                     </p>
-                    <p class="lead">
+                    <p class="s-description">
                       With a IT background I believe that this skill would allow me achieve my target.
                     </p>
+					 
                   </div>
+				  
                 </div>
+				
               </div>
             </div>
           </div>
                 
                 </div>
+				
             </div>
         </div>
     
@@ -121,118 +127,106 @@
 
     <!-- ======= Services Section ======= -->
     <section id="services" class="services-mf pt-5 route">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12">
-            <div class="title-box text-center">
-              <h3 class="title-a">
-                Services
-              </h3>
-              <p class="subtitle-a">
-               Available Services
-              </p>
-              <div class="line-mf"></div>
-            </div>
-          </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12">
+        <div class="title-box text-center">
+          <h3 class="title-a">Services</h3>
+          <p class="subtitle-a">Available Services</p>
+          <div class="line-mf"></div>
         </div>
-        <div class="row">
-          <div class="col-md-4">
-            <div class="service-box">
-              <div class="service-ico">
-                <span class="ico-circle"><i class="bi bi-briefcase"></i></span>
-              </div>
-              <div class="service-content">
-                <h2 class="s-title">Web Design</h2>
-                <p class="s-description text-center">
-                My Mission is to create Brands,Landing Pages and Websites that connect the MEANING behind Businesses.
-                <br>
-                          <br>
-                              <br>
-                            <br>
-                </p>
-              </div>
-            </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="service-box d-flex flex-column justify-content-center align-items-center">
+          <div class="service-ico">
+            <span class="ico-circle"><i class="bi bi-briefcase"></i></span>
           </div>
-          <div class="col-md-4">
-            <div class="service-box">
-              <div class="service-ico">
-                <span class="ico-circle"><i class="bi bi-card-checklist"></i></span>
-              </div>
-              <div class="service-content">
-                <h2 class="s-title">Web Development</h2>
-                <p class="s-description text-center">
-                  I focus on developing high-quality, effective and secure user experiences websites for all devices with a strong focus on mobile app design               
-                  <br>
-                          <br>
-                              <br>
-                             </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="service-box">
-              <div class="service-ico">
-                <span class="ico-circle"><i class="bi bi-play"></i></span>
-              </div>
-              <div class="service-content">
-                <h2 class="s-title">Video Editing</h2>
-                <p class="s-description text-center">
-                 I am a freelance video editor that specializes in After Effects. My main focus is on enhancing your project, whether it's a short or full length video. I have an extensive knowledge of the software and can edit any type of footage.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="service-box">
-              <div class="service-ico">
-                <span class="ico-circle"><i class="bi bi-bar-chart"></i></span>
-              </div>
-              <div class="service-content">
-                <h2 class="s-title">Game Development</h2>
-                <p class="s-description text-center">
-                 I have been developing games using unity3d for over a year now. I am a versatile developer who is proficient in all aspects of game development, from designing user interfaces to optimizing and optimizing your code.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="service-box">
-              <div class="service-ico">
-                <span class="ico-circle"><i class="bi bi-phone"></i></span>
-              </div>
-              <div class="service-content ">
-                <h2 class="s-title">Mobile App Development</h2>
-                <p class="s-description text-center text-xxs">
-                  I develop mobile apps in flutter, am a very well experienced developer and ready to work with your specific requirement.
-                  <br>
-                      <br>
-                          <br>
-                              <br>
-
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="service-box">
-              <div class="service-ico">
-                <span class="ico-circle"><i class="bi bi-calendar4-week"></i></span>
-              </div>
-              <div class="service-content">
-                <h2 class="s-title">Software Development</h2>
-                <p class="s-description text-center">
-                  I develop software using django framework, I have a long experience in developing software. I am proficient in python and javascript
-                  <br>
-                          <br>
-                              <br>
-                            
-                </p>
-              </div>
-            </div>
+          <div class="service-content">
+            <h2 class="s-title">Web Design</h2>
+            <p class="s-description text-center">
+              My Mission is to create Brands, Landing Pages, and Websites that connect the MEANING behind Businesses.
+            </p>
+			<p class="p-3"></p>
           </div>
         </div>
       </div>
-    </section><!-- End Services Section -->
+      <div class="col-md-4">
+        <div class="service-box d-flex flex-column justify-content-center align-items-center">
+          <div class="service-ico">
+            <span class="ico-circle"><i class="bi bi-browser-chrome"></i></span>
+          </div>
+          <div class="service-content">
+            <h2 class="s-title">Web Development</h2>
+            <p class="s-description text-center">
+              I focus on developing high-quality, effective, and secure user experiences websites for all devices with a strong focus on mobile app design.
+            </p>
+			<p class="p-3"></p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="service-box d-flex flex-column justify-content-center align-items-center">
+          <div class="service-ico">
+            <span class="ico-circle"><i class="bi bi-play"></i></span>
+          </div>
+          <div class="service-content">
+            <h2 class="s-title">Video Editing</h2>
+            <p class="s-description text-center">
+              I am a freelance video editor that specializes in After Effects. My main focus is on enhancing your project, whether it's a short or full-length video. I have extensive knowledge of the software and can edit any type of footage.
+            </p>
+          </div>
+        </div>
+      </div>
+	  <div class="col-md-4">
+        <div class="service-box d-flex flex-column justify-content-center align-items-center">
+          <div class="service-ico">
+            <span class="ico-circle"><i class="bi bi-controller"></i></span>
+          </div>
+          <div class="service-content">
+            <h2 class="s-title">GAME DEVELOPMENT</h2>
+            <p class="s-description text-center">
+             I have been developing games using unity3d for over a year now. I am a versatile developer who is proficient in all aspects of game development, from designing user interfaces to optimizing and optimizing your code.
+            </p>
+          </div>
+        </div>
+      </div>
+	   <div class="col-md-4">
+        <div class="service-box d-flex flex-column justify-content-center align-items-center ">
+          <div class="service-ico">
+            <span class="ico-circle"><i class="bi bi-phone"></i></span>
+          </div>
+          <div class="service-content ">
+            <h2 class="s-title">MOBILE APP DEVELOPMENT</h2>
+            <p class="s-description text-center ">
+             I develop mobile apps in flutter, am a very well experienced developer and ready to work with your specific requirement.
+
+            </p>
+			<p class="p-3"></p>
+          </div>
+        </div>
+      </div>
+	  <div class="col-md-4">
+        <div class="service-box d-flex flex-column justify-content-center align-items-center">
+          <div class="service-ico">
+             <span class="ico-circle"><i class="bi bi-app"></i></span>
+          </div>
+          <div class="service-content">
+            <h2 class="s-title">SOFTWARE DEVELOPMENT</h2>
+            <p class="s-description text-center">
+            I develop software using django framework, I have a long experience in developing software. I am proficient in python and javascript
+
+            </p>
+			<p class="p-3"></p>
+          </div>
+        </div>
+      </div>
+      <!-- Add the other service boxes with similar classes -->
+      <!-- ... -->
+    </div>
+  </div>
+</section>
 
     <!-- ======= Counter Section ======= -->
     <div class="section-counter paralax-mf bg-image" style="background-image: url(assets/img/counters-bg.jpg)">
@@ -321,7 +315,7 @@
                   </div>
                   <div class="col-sm-4 py-3">
                     <div class="w-like">
-                      <a href="https://drive.google.com/file/d/1sQMK1OLf6lb5TytoJAnikt3SiCPsMh2N/view"> <span class="bi bi-plus-circle"></span></a>
+                      <a class="w-like" href="https://drive.google.com/file/d/1sQMK1OLf6lb5TytoJAnikt3SiCPsMh2N/view"> <span class=" w-like bi bi-plus-circle"></span></a>
                     </div>
                   </div>
                 </div>
@@ -458,7 +452,7 @@
 
     <!-- ======= Contact Section ======= -->
     <section id="contact" class="paralax-mf footer-paralax bg-image sect-mt4 route" style="background-image: url(assets/img/overlay-bg.jpg)">
-      <div class="overlay-mf"></div>
+      <div class="overlay-mf "></div>
       <div class="container">
         <div class="row">
           <div class="col-sm-12">
@@ -467,7 +461,7 @@
                 <div class="row">
                   <div class="col-md-6">
                     <div class="title-box-2">
-                      <h5 class="title-left">
+                      <h5 class="title-left s-title">
                         Message Form
                       </h5>
                     </div>
@@ -504,7 +498,7 @@
                   </div>
                   <div class="col-md-6">
                     <div class="title-box-2 pt-4 pt-md-0">
-                      <h5 class="title-left">
+                      <h5 class="title-left s-title">
                         Get in Touch
                       </h5>
                     </div>
@@ -551,7 +545,13 @@
         </div>
       </div>
     </div>
-  </footer><!-- End  Footer -->
+	
+  </footer>
+  <div class="form-check form-switch">
+    <input class="form-check-input" type="checkbox" id="darkModeSwitch">
+    <label class="form-check-label" for="darkModeSwitch">Dark Mode</label>
+  </div>
+  <!-- End  Footer -->
 
   <div  id="preloader"></div>
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
@@ -566,6 +566,8 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+  <script src="assets/js/darkmode.js"></script>
+
 
 </body>
 
