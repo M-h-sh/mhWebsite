@@ -1481,3 +1481,135 @@ footer .credits {
 footer .credits a {
   color: #fff;
 }
+    .modal-content.dark-mode {
+      background-color: #222;
+      color: #fff;
+    }
+
+    .modal-header.dark-mode {
+      background-color: #333;
+      border-bottom: 1px solid #444;
+    }
+
+    /* Style the close button in dark mode */
+    .modal-header.dark-mode .btn-close {
+      color: #fff;
+    }
+	.dark-mode .bi .bi-x .fs-1{
+		color:#eee;
+	}
+  
+.dark-mode #about{
+	 background-color: #333;
+      color: #eee;
+    }
+  .dark-mode .title-s{
+	  color: #eee;
+  }
+ 
+
+    .dark-mode .navbar .nav-link {
+      color: #eee;
+    }
+
+    .dark-mode .hero-content {
+      color: #eee;
+    }
+
+    .dark-mode .services-mf {
+      background-color: #111;
+	 
+    }
+	.dark-mode #popUpModel{
+		background-color: #111;
+	}
+	.dark-mode .s-description{
+		 color: #eee;
+		 
+	}
+	.dark-mode .s-title{
+		 color: #eee;
+		 
+	}
+    .dark-mode .ico-circle{
+		 color: #eee;
+	}
+
+    .dark-mode .services-mf h3.title-a,
+    .dark-mode .services-mf p.subtitle-a {
+      color: #eee;
+    }
+
+    .dark-mode .services-mf .service-box {
+      background-color: #333;
+      color: #eee;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+	.dark-mode .portfolio-mf{
+		background-color: #333;
+      color: #eee;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+	}
+	.dark-mode .paralax-mf {
+		background-color: #333;
+      color: #eee;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+	}
+	.dark-mode #main{
+		background-color: #111;
+      color: #eee;
+	}
+	.dark-mode .work-box{
+		background-color: #333;
+      color: #eee;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1)
+	}
+	.dark-mode .w-title{
+		color:#eee;
+	}
+	.dark-mode .w-date{
+		color:#eee;
+	}
+	 .dark-mode .w-more{
+		 color:#eee;
+	 }
+	 .dark-mode .w-like{
+		color:#eee; 
+	 }
+	.dark-mode .w-ctegory{
+		color:#eee;
+	}
+	.dark-mode .title-a{
+      color: #eee;
+	}
+	.dark-mode .subtitle-a{
+      color: #eee;
+	}
+   .dark-mode .form-control{
+	   border: 2px solid black;
+   }
+    .dark-mode .portfolio-mf {
+      background-color: #111;
+    }.dark-mode .contact-mf {
+      background-color: #111;
+    }
+
+    .dark-mode .box-shadow-full{
+      background-color: #222;
+      color: #eee;
+    }
+	.dark-mode .form-check{
+		background-color: #222;
+      color: #eee;
+	}
+
+    .dark-mode .contact-mf .form-control,
+    .dark-mode .contact-mf .btn-primary {
+      background-color: #333;
+      color: #eee;
+    }
+
+    .dark-mode .footer {
+      background-color: #222;
+      color: #eee;
+    }
