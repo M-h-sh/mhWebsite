@@ -219,12 +219,14 @@
   /**
    * Preloader
    */
-  let preloader = select('#preloader');
-  if (preloader) {
-    window.addEventListener('load', () => {
-      preloader.remove()
-    });
-  }
+ function hidePreloader() {
+		$("#preloader").fadeOut(500, function() {
+			$(this).remove();
+		});
+	}
+
+	// Set preloader timer
+	var preloaderTimer = setTimeout(hidePreloader, 1000);
 
   /**
    * Initiate Pure Counter 
