@@ -1615,3 +1615,8 @@ footer .credits a {
   background-color: #333;
   color: #eee;
 }
+.dark-mode .navbar-mobile a:hover,
+.navbar-mobile .active,
+.navbar-mobile li:hover>a {
+  color: #0078ff;
+}
