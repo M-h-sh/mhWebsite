@@ -219,14 +219,23 @@
     /**
      * Preloader
      */
- function hidePreloader() {
-    document.getElementById('preloader').classList.add('loaded');
+ // Function to hide the preloader
+function hidePreloader() {
+    document.getElementById('preloader').style.display = 'none';
+}
+
+// Function to automatically hide the preloader after 3 seconds (adjust the time as needed)
+function autoHidePreloader() {
+    hidePreloader();
 }
 
 // Wait for the content to be fully loaded
 window.addEventListener('load', function() {
-    // Add a timer for the preloader to automatically hide after 3 seconds (adjust the time as needed)
-    setTimeout(hidePreloader, 1000); // 3000 milliseconds = 3 seconds
+    // Hide the preloader when content is loaded
+    hidePreloader();
+
+    // Set a timer to automatically hide the preloader after 3 seconds (adjust the time as needed)
+    setTimeout(autoHidePreloader, 3000); // 3000 milliseconds = 3 seconds
 });
 
 
