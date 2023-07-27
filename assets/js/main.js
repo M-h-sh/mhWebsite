@@ -224,7 +224,7 @@ function simulateLoading() {
   setTimeout(() => {
     // Remove the preloader once the files are loaded
     document.querySelector('.preloader-container').style.display = 'none';
-  }, 3000); // Change the delay value according to your needs
+  }, 1000); // Change the delay value according to your needs
 }
 
 // Call the simulateLoading function when the page is fully loaded
