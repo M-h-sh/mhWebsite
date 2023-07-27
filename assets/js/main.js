@@ -235,7 +235,7 @@ window.addEventListener('load', function() {
     hidePreloader();
 
     // Set a timer to automatically hide the preloader after 3 seconds (adjust the time as needed)
-    setTimeout(autoHidePreloader, 3000); // 3000 milliseconds = 3 seconds
+    setTimeout(autoHidePreloader, 1000); // 3000 milliseconds = 3 seconds
 });
 
 
