@@ -220,23 +220,14 @@
      * Preloader
      */
  // Function to hide the preloader
-function hidePreloader() {
-    document.getElementById('preloader').style.display = 'none';
-}
+  function hidePreloader() {
+    $("#preloader").fadeOut(500, function() {
+      $(this).remove();
+    });
+  }
 
-// Function to automatically hide the preloader after 3 seconds (adjust the time as needed)
-function autoHidePreloader() {
-    hidePreloader();
-}
-
-// Wait for the content to be fully loaded
-window.addEventListener('load', function() {
-    // Hide the preloader when content is loaded
-    hidePreloader();
-
-    // Set a timer to automatically hide the preloader after 3 seconds (adjust the time as needed)
-    setTimeout(autoHidePreloader, 1000); // 3000 milliseconds = 3 seconds
-});
+  // Set preloader timer
+  var preloaderTimer = setTimeout(hidePreloader, 1000);
 
 
     /**
