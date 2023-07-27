@@ -219,20 +219,22 @@
     /**
      * Preloader
      */
- // Function to hide the preloader
-  function hidePreloader() {
-    $("#preloader").fadeOut(500, function() {
-      $(this).remove();
-    });
-  }
+ // Simulate loading large files with a delay (you can replace this with actual file loading logic)
+function simulateLoading() {
+  setTimeout(() => {
+    // Remove the preloader once the files are loaded
+    document.querySelector('.preloader-container').style.display = 'none';
+  }, 3000); // Change the delay value according to your needs
+}
 
-  // Set preloader timer
-  var preloaderTimer = setTimeout(hidePreloader, 1000);
+// Call the simulateLoading function when the page is fully loaded
+window.addEventListener('load', simulateLoading);
+
 
 
     /**
      * Initiate Pure Counter 
      */
-    new PureCounter();
+   
 
 })()
