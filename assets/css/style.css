@@ -1733,8 +1733,9 @@ footer .credits a {
 	.dark-mode .subtitle-a{
       color: #eee;
 	}
-   .dark-mode .form-control{
+   .dark-mode .contact-mf .form-control{
 	   border:none;
+	   background-color:#111;
 	
    }
     .dark-mode .portfolio-mf {
@@ -1747,11 +1748,9 @@ footer .credits a {
       background-color: #222;
       color: #eee;
     }
-.dark-mode input{
-	background-color:#111;
-}
 
-    .dark-mode .contact-mf .form-control,
+
+
     .dark-mode .contact-mf .btn-primary {
       background-color: #333;
       color: #eee;
