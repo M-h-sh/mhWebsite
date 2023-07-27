@@ -14,10 +14,14 @@
   
 
   <!-- Vendor CSS Files -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  
+  
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
@@ -30,26 +34,26 @@
   <header id="header" class="fixed-top">
     <div class="container d-flex align-items-center justify-content-between">
 
-      <h1 class="logo "><a href="index.html" class="text-primary fw-bold">MH</a></h1>
- <span class="form-check form-switch mx-5">
-    <input class="form-check-input" type="checkbox" id="darkModeSwitch">
-    <label class="form-check-label" for="darkModeSwitch">Switch Mode</label>
-  </span>
-      <nav id="navbar" class="navbar">
-        <ul>
-          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
-          
-          <li><a class="nav-link scrollto" href="#services">Services</a></li>
-          <li><a class="nav-link scrollto " href="#work">Projects</a></li>
-        
-          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
-		  
-        </ul>
-        <i class="bi bi-list mobile-nav-toggle text-primary"></i>
-      </nav><!-- .navbar -->
+        <h1 class="logo"><a href="index.html" class="text-primary fw-bold">MH</a></h1>
+        <span class="form-check form-switch mx-5">
+            <input class="form-check-input" type="checkbox" id="darkModeSwitch">
+            <label class="form-check-label" for="darkModeSwitch">Switch Mode</label>
+        </span>
+
+        <nav id="navbar" class="navbar">
+            <ul>
+                <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+                <li><a class="nav-link scrollto" href="#education" data-toggle="modal" data-target="#educationModal">Education</a></li>
+                <li><a class="nav-link scrollto" href="#experience" data-toggle="modal" data-target="#experienceModal">Experience</a></li>
+                <li><a class="nav-link scrollto" href="#services">Services</a></li>
+                <li><a class="nav-link scrollto" href="#work">Projects</a></li>
+                <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+            </ul>
+            <i class="bi bi-list mobile-nav-toggle text-primary"></i>
+        </nav><!-- .navbar -->
 
     </div>
-  </header><!-- End Header -->
+</header><!-- End Header -->
 
   <!-- ======= Hero Section ======= -->
   
@@ -70,12 +74,12 @@
  
   <main id="main" >
         <div class="modal fade " id="popUpModel" tabindex="-1"  aria-labelledby="popUpModelLabel" aria-hidden="true" >
-        <div class="modal-dialog modal-md ">
+        <div class="modal-dialog modal-lg ">
             <div id="about" class="modal-content border border-0">
                 <div class="modal-header ">
                     <h1 class="fs-5 mt-2 s-title "> About Me</h1>
                     
-                    <i type="button" class="bi bi-x s-title fs-1 "  data-bs-dismiss="modal" aria-label="Close"></i>
+                    <i type="button" class="bi bi-x s-title fs-4 "  data-bs-dismiss="modal" aria-label="Close"></i>
                 </div>
 				
                  <div class="col-sm-12">
@@ -134,7 +138,130 @@
     
 </div>
 
-  
+<!-- Education Modal -->
+<section id="Education" class="education-mf pt-5 route">
+<div class="modal fade" id="educationModal" tabindex="-1" role="dialog" aria-labelledby="educationModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="educationModalLabel">Education</h5>
+          <i type="button" class="bi bi-x s-title fs-4 " data-dismiss="modal" aria-label="Close"></i>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+          <div class="col-md-12">
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active" id="diploma-tab" data-toggle="tab" href="#diploma" role="tab" aria-controls="diploma" aria-selected="true">2023</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="engineering-tab" data-toggle="tab" href="#engineering" role="tab" aria-controls="engineering" aria-selected="false">2016</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="certificate-tab" data-toggle="tab" href="#certificate" role="tab" aria-controls="certificate" aria-selected="false">2013</a>
+              </li>
+            </ul>
+            <div class="tab-content mt-4" id="myTabContent">
+              <div class="tab-pane fade show active" id="diploma" role="tabpanel" aria-labelledby="diploma-tab">
+                <div class="education-block">
+                  <h5 class="education-title">National Diploma: Information Technology (MULTIMEDIA)</h5>
+                  <p class="education-date">Tshwane University of Technology, South Africa</p>
+                  <p class="education-description">I successfully completed a National Diploma in Information Technology (Multimedia), with a comprehensive focus on Web Development, Game Development, Software Development, Graphic Design, and Algorithms. Throughout this program, I acquired a robust understanding of Information Technology principles and became proficient in various programming languages.</p>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="engineering" role="tabpanel" aria-labelledby="engineering-tab">
+                <div class="education-block">
+                  <h5 class="education-title">Electrical Engineering N4</h5>
+                  <p class="education-date">Gert Sibande TVET College</p>
+                  <p class="education-description">My experience in Electrical Engineering N4 has been enriching and rewarding. I am now equipped with a diverse skill set and a deep understanding of the foundational concepts essential for a successful career in the field. I look forward to applying my knowledge and expertise in future endeavors within the electrical engineering domain.</p>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="certificate" role="tabpanel" aria-labelledby="certificate-tab">
+                <div class="education-block">
+                  <h5 class="education-title">National Senior Certificate</h5>
+                  <p class="education-date">Siyabonga Secondary School</p>
+                  <p class="education-description">During my matriculation, I focused on four diverse and enriching majors. Mathematics honed my problem-solving and analytical skills, while Physical Sciences introduced me to the fascinating laws of physics and principles governing matter and energy. In Agricultural Sciences, I learned about sustainable farming and its significance in addressing food security challenges. Lastly, Life Sciences broadened my understanding of living organisms and their interconnectedness, deepening my appreciation for the wonders of the natural world. These majors have prepared me to approach interdisciplinary challenges and make a positive impact in various fields.</p>
+                </div>
+              </div>
+              <!-- ... -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+<!-- Experience Modal -->
+<section id="Experience" class="experience-mf pt-5 route">
+  <div class="modal fade" id="experienceModal" tabindex="-1" role="dialog" aria-labelledby="experienceModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="experienceModalLabel">Experience</h5>
+           <i type="button" class="bi bi-x s-title fs-4 " data-dismiss="modal" aria-label="Close"></i>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="timeline" id="experience-timeline">
+                <div class="timeline-item " data-date="March 2023 – Present">March 2023 – Present
+                  <div class="card">
+                    <div class="card-body">
+                      <h5 class="card-title">Software Programmer</h5>
+                      <p class="experience-date">MEDITECH, South Africa</p>
+                      <p class="experience-description">Duties:</p>
+                      <ul class="experience-list">
+                  <li>Software Development: Coding, testing, and implementing software applications within the MEDITECH platform.</li>
+                  <li>Customization: Tailoring the MEDITECH software to meet the specific needs of the healthcare organization.</li>
+                  <li>System Integration: Integrating MEDITECH with other healthcare systems or third-party applications.</li>
+                  <li>Troubleshooting and Support: Resolving software-related issues and providing technical support to end-users.</li>
+                  <li>Upgrades and Enhancements: Implementing new versions and adding new features to the existing system.</li>
+                  <li>Data Management: Ensuring data integrity, security, and confidentiality within the MEDITECH system.</li>
+                  <li>Training: Conducting training sessions for end-users to familiarize them with the MEDITECH system.</li>
+                  <li>Documentation: Creating and maintaining documentation related to software development and system configurations.</li>
+                  <li>Compliance: Ensuring compliance with relevant regulatory requirements and standards in South Africa's healthcare industry.</li>
+                  <li>Collaboration: Working with other IT professionals and healthcare staff to gather requirements and implement changes effectively.</li>
+                </ul>
+             
+                   </div>
+                  </div>
+                </div>
+				
+                <div class="timeline-item mt-3 " data-date="May 2022 – April 2023">May 2022 – April 2023
+                  <div class="card">
+                    <div class="card-body">
+                      <h5 class="card-title">Software Developer</h5>
+                      <p class="experience-date">Empire Partner Foundation</p>
+                      <p class="experience-description">Duties:</p>
+                      <ul class="experience-list">
+                  <li>Designing, developing, and maintaining software applications aligned with the organization's mission.</li>
+                  <li>Collaborating with stakeholders to understand requirements and gather feedback.</li>
+                  <li>Ensuring the quality and security of software through thorough testing and debugging.</li>
+                  <li>Conducting technical analysis and staying updated with the latest technologies</li>
+                  <li>Managing data systems and safeguarding sensitive information.</li>
+                  <li>Providing training and support to users for efficient software usage.</li>
+                  <li>Contributing to continuous improvement initiatives for software performance and enhancements.</li>
+                  <li>Code Review (ensure code is clean and maintainable)</li>
+                  <li>Worked on progress reporting tool, Pemoda, and Talent Index.</li>
+                  <li>Programming Languages: Python, JavaScript, Html, CSS, and PHP.</li>
+                  <li>Framework: Bootstrap 5, and Django.</li>
+                </ul>
+              </div>
+            </div>
+			</div>
+			</div>
+
+            <!-- Add more experience blocks if needed -->
+            <!-- ... -->
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
 
     <!-- ======= Services Section ======= -->
     <section id="services" class="services-mf pt-5 route">
@@ -149,7 +276,7 @@
       </div>
     </div>
     <div class="row">
-      <div class="col-lg-4 col-md-12">
+      <div class="col-lg-4 col-md-12 mt-1 mb-4">
         <div class="service-box d-flex flex-column justify-content-center align-items-center">
           <div class="service-ico">
             <span class="ico-circle"><i class="bi bi-briefcase"></i></span>
@@ -159,11 +286,12 @@
             <p class="s-description text-center">
               My Mission is to create Brands, Landing Pages, and Websites that connect the MEANING behind Businesses.
             </p>
-			<p class="p-3"></p>
+			
+		
           </div>
         </div>
       </div>
-      <div class="col-lg-4 col-md-12">
+    <div class="col-lg-4 col-md-12 mt-1 mb-4">
         <div class="service-box d-flex flex-column justify-content-center align-items-center">
           <div class="service-ico">
             <span class="ico-circle"><i class="bi bi-browser-chrome"></i></span>
@@ -173,11 +301,11 @@
             <p class="s-description text-center">
               I focus on developing high-quality, effective, and secure user experiences websites for all devices with a strong focus on mobile app design.
             </p>
-			<p class="p-3"></p>
+			
           </div>
         </div>
       </div>
-      <div class="col-lg-4 col-md-12">
+     <div class="col-lg-4 col-md-12 mt-1 mb-4">
         <div class="service-box d-flex flex-column justify-content-center align-items-center">
           <div class="service-ico">
             <span class="ico-circle"><i class="bi bi-play"></i></span>
@@ -187,10 +315,11 @@
             <p class="s-description text-center">
               I am a freelance video editor that specializes in After Effects. My main focus is on enhancing your project, whether it's a short or full-length video. I have extensive knowledge of the software and can edit any type of footage.
             </p>
+			
           </div>
         </div>
       </div>
-	  <div class="col-lg-4 col-md-12">
+	  <div class="col-lg-4 col-md-12 mt-1 mb-4">
         <div class="service-box d-flex flex-column justify-content-center align-items-center">
           <div class="service-ico">
             <span class="ico-circle"><i class="bi bi-controller"></i></span>
@@ -203,7 +332,7 @@
           </div>
         </div>
       </div>
-	   <div class="col-lg-4 col-md-12">
+	   <div class="col-lg-4 col-md-12 mt-1 mb-4">
         <div class="service-box d-flex flex-column justify-content-center align-items-center ">
           <div class="service-ico">
             <span class="ico-circle"><i class="bi bi-phone"></i></span>
@@ -214,11 +343,11 @@
              I develop mobile apps in flutter, am a very well experienced developer and ready to work with your specific requirement.
 
             </p>
-			<p class="p-3"></p>
+			
           </div>
         </div>
       </div>
-	  <div class="col-lg-4 col-md-12">
+	  <div class="col-lg-4 col-md-12 mt-1 mb-4">
         <div class="service-box d-flex flex-column justify-content-center align-items-center">
           <div class="service-ico">
              <span class="ico-circle"><i class="bi bi-app"></i></span>
@@ -229,7 +358,7 @@
             I develop software using django framework, I have a long experience in developing software. I am proficient in python or PHP and javascript
 
             </p>
-			<p class="p-3"></p>
+			
           </div>
         </div>
       </div>
@@ -558,19 +687,22 @@
     </div>
 	
   </footer>
-  
-  <!-- End  Footer -->
-
+ 
   <div  id="preloader"></div>
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
-  <!-- Vendor JS Files -->
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="assets/vendor/typed.js/typed.min.js"></script>
   <script src="assets/vendor/php-email-form/validate.js"></script>
+  
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
