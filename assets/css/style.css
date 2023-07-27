@@ -1734,7 +1734,7 @@ footer .credits a {
       color: #eee;
 	}
    .dark-mode .form-control{
-	   border: 1px solid gray;
+	   border:none;
    }
     .dark-mode .portfolio-mf {
       background-color: #111;
