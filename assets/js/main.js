@@ -235,6 +235,6 @@ window.addEventListener('load', simulateLoading);
     /**
      * Initiate Pure Counter 
      */
-   
+   new PureCounter();
 
 })()
