@@ -219,10 +219,14 @@
     /**
      * Preloader
      */
-    // Wait for the content to be fully loaded
-window.addEventListener('load', function() {
-    // Hide the preloader when content is loaded
+ function hidePreloader() {
     document.getElementById('preloader').classList.add('loaded');
+}
+
+// Wait for the content to be fully loaded
+window.addEventListener('load', function() {
+    // Add a timer for the preloader to automatically hide after 3 seconds (adjust the time as needed)
+    setTimeout(hidePreloader, 3000); // 3000 milliseconds = 3 seconds
 });
 
 
