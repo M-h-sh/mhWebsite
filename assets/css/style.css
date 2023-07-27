@@ -873,6 +873,27 @@ a:hover {
 /*--------------------------------------------------------------
 # Services
 --------------------------------------------------------------*/
+* Custom styling for the services section */
+    .services-mf .row {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+    .service-box {
+      width: 100%;
+      max-width: 600px; /* Adjust the maximum width to your preference */
+      height: 100%;
+      background-color: #f7f7f7;
+      border: 1px solid #dcdcdc;
+      padding: 20px;
+      margin-bottom: 30px;
+      border-radius: 10px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+    }
+   
 .service-box {
   background-color: #fff;
   padding: 2.5rem 1.3rem;
@@ -915,7 +936,55 @@ a:hover {
 .service-box .s-description {
   color: #4e4e4e;
 }
+  #experience-timeline {
+    list-style: none;
+    padding-left: 0;
+    position: relative;
+  }
 
+  .timeline-item {
+    position: relative;
+    padding-left: 50px;
+    margin-bottom: 30px;
+  }
+
+  .timeline-item::before {
+    content: "";
+    position: absolute;
+    top: 8px;
+    left: 0;
+    width: 16px;
+    height: 16px;
+    background-color: #007bff; /* Replace with your desired color */
+    border-radius: 50%;
+  }
+
+  .timeline-item[data-date="March 2023 – Present"]::before,
+  .timeline-item[data-date="May 2022 – April 2023"]::before {
+    content: "";
+    position: absolute;
+    top: 8px;
+    left: 0;
+    width: 16px;
+    height: 16px;
+    background-color: #007bff; /* Replace with your desired color */
+    border-radius: 50%;
+  }
+
+  .timeline-item[data-date="March 2023 – Present"]::after,
+  .timeline-item[data-date="May 2022 – April 2023"]::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 7px;
+    width: 2px;
+    height: 100%;
+    background-color: #007bff; /* Replace with your desired color */
+  }
+
+  .timeline-item:last-child::after {
+    content: none;
+  }
 /*--------------------------------------------------------------
 # Counter
 --------------------------------------------------------------*/
@@ -1307,6 +1376,76 @@ a:hover {
   display: inline-block;
   float: right;
 }
+/* Add the following styles to the existing CSS file (style.css) */
+
+/* Education Section */
+#education {
+  padding: 60px 0;
+}
+
+.education-title {
+  font-size: 24px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.education-date {
+  font-size: 16px;
+  color: #999;
+  margin-bottom: 20px;
+}
+
+.education-description {
+  font-size: 16px;
+  color: #777;
+  line-height: 1.8;
+}
+a#certificate-tab.nav-link{
+	color:gray;
+}
+a#diploma-tab.nav-link{
+	color:gray;
+}
+a#engineering-tab.nav-link{
+	color:gray;
+}
+a#certificate-tab.nav-link.active{
+	color:#111;
+	font-weight:bold;
+}
+a#diploma-tab.nav-link.active{
+color:#111;
+	font-weight:bold;
+}
+a#engineering-tab.nav-link.active{
+	color:#111;
+	font-weight:bold;
+}
+
+
+
+/* Experience Section in Light Mode */
+#experience {
+  background-color: white;
+}
+
+.experience-title {
+  color: #333;
+}
+
+.experience-date {
+  color: #777;
+}
+
+.experience-description {
+  color: #555;
+}
+
+
+    .experience-description {
+      margin-top: 10px;
+    }
 
 /*--------------------------------------------------------------
 # Blog Single
@@ -1501,6 +1640,29 @@ footer .credits a {
 	.dark-mode .bi .bi-x .fs-1{
 		color:#eee;
 	}
+
+
+  .dark-mode .modal-header {
+    background-color: #222;
+    border-bottom: 1px solid #444;
+  }
+
+  .dark-mode .modal-title {
+    color: #fff;
+  }
+
+  .dark-mode .modal-body {
+    background-color: #1a1a1a;
+    border-top: 1px solid #444;
+  }
+
+  .dark-mode .modal-body p {
+    color: #ccc;
+  }
+
+  .dark-mode .close {
+    color: #fff;
+  }
   
 .dark-mode #about{
 	 background-color: #333;
@@ -1541,10 +1703,9 @@ footer .credits a {
       color: #eee;
     }
 
-    .dark-mode .services-mf .service-box {
+     body.dark-mode .service-box {
       background-color: #333;
-      color: #eee;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      border-color: #555;
     }
 	.dark-mode .portfolio-mf{
 		background-color: #333;
@@ -1620,3 +1781,96 @@ footer .credits a {
 .dark-mode .navbar-mobile li:hover>a {
   color: #0078ff;
 }
+/* Add the following styles to the existing darkmode.css file */
+
+/* Education Section in Dark Mode */
+.dark-mode #education {
+  background-color: #111;
+}
+
+.dark-mode .education-title {
+  color: #fff;
+}
+
+.dark-mode .education-date {
+  color: #bbb;
+}
+
+.dark-mode .education-description {
+  color: #ccc;
+}
+
+/* Experience Section in Dark Mode */
+
+.dark-mode .modal-content {
+  background-color: #333; /* Dark background color for the modal */
+  color: #fff; /* Text color in dark mode */
+}
+
+.dark-mode .modal-header {
+  border-bottom: 1px solid #777; /* Border color for the header in dark mode */
+}
+
+.dark-mode .modal-title {
+  color: #fff; /* Modal title text color in dark mode */
+}
+
+.dark-mode .close {
+  color: white; /* Close button color in dark mode */
+}
+
+.dark-mode .card {
+  background-color: #444; /* Background color for the card in dark mode */
+  border: none; /* Remove the card border in dark mode */
+  margin-bottom: 10px; /* Add some margin between cards */
+}
+
+.dark-mode .card-title {
+  color: #fff; /* Card title text color in dark mode */
+}
+
+.dark-mode .experience-date {
+  color: #bbb; /* Date text color in dark mode */
+}
+
+.dark-mode .experience-description {
+  color: #fff; /* Description text color in dark mode */
+}
+
+.dark-mode .experience-list {
+  list-style-type: disc; /* Change the list style in dark mode */
+  color: #fff; /* List text color in dark mode */
+}
+
+.dark-mode .experience-list li {
+  margin-left: 20px; /* Adjust the list item indentation in dark mode */
+}
+
+/* Dark mode specific styles for close button when hovered */
+.dark-mode .close:hover {
+  color: #f00; /* Change close button color on hover in dark mode */
+}
+
+/* Dark mode specific styles for modal content scrollbar */
+.dark-mode .modal-body {
+  scrollbar-color: #666 #333; /* Custom scrollbar color in dark mode */
+}
+
+/* Dark mode specific styles for accordion links */
+.dark-mode .card-header a {
+  color: #fff; /* Accordion link color in dark mode */
+}
+
+/* Dark mode specific styles for active accordion link */
+.dark-mode .card-header a[aria-expanded="true"] {
+  color: #f00; /* Active accordion link color in dark mode */
+}
+
+/* Dark mode specific styles for card header border */
+.dark-mode .card-header {
+  border-bottom: 1px solid #666; /* Card header border color in dark mode */
+}
+
+    .dark-mode .card-body{
+		background-color:#111;
+	}
