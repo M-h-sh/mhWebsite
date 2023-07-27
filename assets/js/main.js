@@ -219,12 +219,12 @@
     /**
      * Preloader
      */
-    let preloader = select('#preloader');
-    if (preloader) {
-        window.addEventListener('load', () => {
-            preloader.remove()
-        });
-    }
+    // Wait for the content to be fully loaded
+window.addEventListener('load', function() {
+    // Hide the preloader when content is loaded
+    document.getElementById('preloader').classList.add('loaded');
+});
+
 
     /**
      * Initiate Pure Counter 
