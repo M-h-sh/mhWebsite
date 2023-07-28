@@ -63,58 +63,63 @@
       </div>
       <!-- End Hero Section -->
       <main id="main" >
-         <div class="modal fade " id="popUpModel" tabindex="-1"  aria-labelledby="popUpModelLabel" aria-hidden="true" >
-            <div class="modal-dialog modal-lg ">
-               <div id="about" class="modal-content border border-0">
-                  <div class="modal-header ">
-                     <h1 class="fs-5 mt-2 s-title "> About Me</h1>
-                     <i type="button" class="bi bi-x s-title fs-4 "  data-bs-dismiss="modal" aria-label="Close"></i>
-                  </div>
-                  <div class="col-sm-12">
-                     <div class="row p-2">
-                        <div class="col-md-12">
-                           <div class="row ">
-                              <div class="col-sm-6 col-md-5 ">
-                                 <div class="about-img ">
-                                    <img src="assets/img/testimonial-2.jfif" class="img-fluid rounded b-shadow-a" alt="">
-                                 </div>
-                              </div>
-                              <div class="col-sm-6 col-md-7 ">
-                                 <div class="about-info mt-3">
-                                    <p><span class="title-s">Name: </span> <span>Mthokozisi Hector Hlatshwayo</span></p>
-                                    <p><span class="title-s">Profile: </span> <span>Full stack developer</span></p>
-                                    <p><span class="title-s">Email: </span> <span>mthova.hp@gmail.com</span></p>
-                                    <p><span class="title-s">Phone: </span> <span>076 461 1841</span></p>
-                                    <p><span class="title-s">City: </span> <span>Johannesburg</span></p>
-                                    <p><span class="title-s">NQF Level: </span> <span>6</span></p>
-                                    <p><span class="title-s">Linkedin: </span> <span><a class="s-description" href="https://www.linkedin.com/in/mh-hlatshwayo/">https://www.linkedin.com/in/mh-hlatshwayo/</a></span></p>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                        <div class="col-md-12 mt-2">
-                           <div class="about-me pt-4 pt-md-0">
-                              <p class="s-description">
-                                 As a recent graduate with a National Diploma in Information Technology: Multimedia from Tshwane University of Technology and experience as a Software Developer at Empire Partner Foundation, I possess a diverse skill set encompassing multimedia design, web development, and data analysis. I am a proactive learner with a growth mindset, constantly seeking new challenges to expand my expertise.
-                              </p>
-                              <p class="s-description">
-                                 I have achieved remarkable success, passing four Microsoft 365 exams, and earning more than 18 certifications through short courses. These achievements demonstrate my dedication, hard work, and commitment to continuous learning. With expertise in Microsoft 365 and a wide array of certifications, I am a versatile and valued professional capable of thriving in various roles and industries.
-                              </p>
-                              <p class="s-description">
-                                 Currently gaining experience at MEDITECH, I am honing skills in technical specifications, business etiquette, report generation, programming in Magic programming language, and peer review. My goal is to leverage these skills to make a positive impact in healthcare software development and contribute meaningfully to improving patient care and administrative efficiency.
-                              </p>
-                              <p class="s-description">
-                                 Overall, my passion for learning, combined with my extensive skill set and certifications, positions me as a highly sought-after professional in the field of Information Technology. I am excited to embrace new challenges and drive innovation in the ever-evolving world of technology.
-                              </p>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
+         <div class="modal fade" id="popUpModel" tabindex="-1" aria-labelledby="popUpModelLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div id="about" class="modal-content border-0">
+      <div class="modal-header">
+        <h1 class="fs-5 mt-2 s-title">About Me</h1>
+        <i type="button" class="bi bi-x s-title fs-4" data-bs-dismiss="modal" aria-label="Close"></i>
+          
+      </div>
+
+      <div class="container">
+        <div class="row p-2">
+          <div class="col-md-5 col-sm-12 about-img">
+            <img src="assets/img/testimonial-2.jfif" class="img-fluid rounded b-shadow-a" alt="">
+          </div>
+          <div class="col-md-7 col-sm-12">
+            <div class="about-info mt-3">
+              <p><span class="title-s">Name: </span> <span>Mthokozisi Hector Hlatshwayo</span></p>
+              <p><span class="title-s">Profile: </span> <span>Full stack developer</span></p>
+              <p><span class="title-s">Email: </span> <span>mthova.hp@gmail.com</span></p>
+              <p><span class="title-s">Phone: </span> <span>076 461 1841</span></p>
+              <p><span class="title-s">City: </span> <span>Johannesburg</span></p>
+              <p><span class="title-s">NQF Level: </span> <span>6</span></p>
+              <p><span class="title-s">Availability: </span> <span>Immediately</span></p>
             </div>
-         </div>
-         </div>
-         </div>
+          </div>
+		  <div class="col-md-7 col-sm-12">
+		    <!-- Add the "Read More" link to toggle the collapsible section -->
+              <a href="#" class="read-more-link" onclick="toggleCollapse()">Read More<i class="ms-5 fas fa-chevron-down"></i></a>
+			  </div>
+        </div>
+        
+          <div class="col-md-12">
+            <div class="about-me pt-4 pt-md-0">
+            
+              <!-- Collapsible section starts here -->
+              <div class="card p-2 collapse" id="collapseContent">
+                <p class="s-description">
+                  As a recent graduate with a National Diploma in Information Technology: Multimedia from Tshwane University of Technology and experience as a Software Developer at Empire Partner Foundation, I possess a diverse skill set encompassing multimedia design, web development, and data analysis. I am a proactive learner with a growth mindset, constantly seeking new challenges to expand my expertise.
+                </p>
+                <p class="s-description">
+                  I have achieved remarkable success, passing four Microsoft 365 exams, and earning more than 18 certifications through short courses. These achievements demonstrate my dedication, hard work, and commitment to continuous learning. With expertise in Microsoft 365 and a wide array of certifications, I am a versatile and valued professional capable of thriving in various roles and industries.
+                </p>
+                <p class="s-description">
+                  Currently gaining experience at MEDITECH, I am honing skills in technical specifications, business etiquette, report generation, programming in Magic programming language, and peer review. My goal is to leverage these skills to make a positive impact in healthcare software development and contribute meaningfully to improving patient care and administrative efficiency.
+                </p>
+                <p class="s-description">
+                  Overall, my passion for learning, combined with my extensive skill set and certifications, positions me as a highly sought-after professional in the field of Information Technology. I am excited to embrace new challenges and drive innovation in the ever-evolving world of technology.
+                </p>
+              </div>
+              <!-- Collapsible section ends here -->
+            </div>
+          </div>
+       
+      </div>
+    </div>
+  </div>
+</div>
          <!-- Education Modal -->
          <section id="Education" class="education-mf pt-5 route">
             <div class="modal fade" id="educationModal" tabindex="-1" role="dialog" aria-labelledby="educationModalLabel" aria-hidden="true">
@@ -138,30 +143,30 @@
                                     <a class="nav-link" id="certificate-tab" data-toggle="tab" href="#certificate" role="tab" aria-controls="certificate" aria-selected="false">2013</a>
                                  </li>
                               </ul>
-                              <div class="tab-content mt-4" id="myTabContent">
-                                 <div class="tab-pane fade show active" id="diploma" role="tabpanel" aria-labelledby="diploma-tab">
-                                    <div class="education-block">
-                                       <h5 class="education-title">National Diploma: Information Technology (MULTIMEDIA)</h5>
-                                       <p class="education-date">Tshwane University of Technology, South Africa</p>
-                                       <p class="education-description">I successfully completed a National Diploma in Information Technology (Multimedia), with a comprehensive focus on Web Development, Game Development, Software Development, Graphic Design, and Algorithms. Throughout this program, I acquired a robust understanding of Information Technology principles and became proficient in various programming languages.</p>
-                                    </div>
-                                 </div>
-                                 <div class="tab-pane fade" id="engineering" role="tabpanel" aria-labelledby="engineering-tab">
-                                    <div class="education-block">
-                                       <h5 class="education-title">Electrical Engineering N4</h5>
-                                       <p class="education-date">Gert Sibande TVET College</p>
-                                       <p class="education-description">My experience in Electrical Engineering N4 has been enriching and rewarding. I am now equipped with a diverse skill set and a deep understanding of the foundational concepts essential for a successful career in the field. I look forward to applying my knowledge and expertise in future endeavors within the electrical engineering domain.</p>
-                                    </div>
-                                 </div>
-                                 <div class="tab-pane fade" id="certificate" role="tabpanel" aria-labelledby="certificate-tab">
-                                    <div class="education-block">
-                                       <h5 class="education-title">National Senior Certificate</h5>
-                                       <p class="education-date">Siyabonga Secondary School</p>
-                                       <p class="education-description">During my matriculation, I focused on four diverse and enriching majors. Mathematics honed my problem-solving and analytical skills, while Physical Sciences introduced me to the fascinating laws of physics and principles governing matter and energy. In Agricultural Sciences, I learned about sustainable farming and its significance in addressing food security challenges. Lastly, Life Sciences broadened my understanding of living organisms and their interconnectedness, deepening my appreciation for the wonders of the natural world. These majors have prepared me to approach interdisciplinary challenges and make a positive impact in various fields.</p>
-                                    </div>
-                                 </div>
-                                 <!-- ... -->
-                              </div>
+                              <div class="tab-content p-3" id="myTabContent">
+              <div class="tab-pane fade show active" id="diploma" role="tabpanel" aria-labelledby="diploma-tab">
+                <div class="education-block">
+                  <h5 class="education-title">National Diploma: Information Technology (MULTIMEDIA)</h5>
+                  <p class="education-date">Tshwane University of Technology, South Africa</p>
+                  <p class="education-description">I successfully completed a National Diploma in Information Technology (Multimedia), with a comprehensive focus on Web Development, Game Development, Software Development, Graphic Design, and Algorithms. Throughout this program, I acquired a robust understanding of Information Technology principles and became proficient in various programming languages.</p>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="engineering" role="tabpanel" aria-labelledby="engineering-tab">
+                <div class="education-block">
+                  <h5 class="education-title">Electrical Engineering N4</h5>
+                  <p class="education-date">Gert Sibande TVET College</p>
+                  <p class="education-description">My experience in Electrical Engineering N4 has been enriching and rewarding. I am now equipped with a diverse skill set and a deep understanding of the foundational concepts essential for a successful career in the field. I look forward to applying my knowledge and expertise in future endeavors within the electrical engineering domain.</p>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="certificate" role="tabpanel" aria-labelledby="certificate-tab">
+                <div class="education-block">
+                  <h5 class="education-title">National Senior Certificate</h5>
+                  <p class="education-date">Siyabonga Secondary School</p>
+                  <p class="education-description">During my matriculation, I focused on four diverse and enriching majors. Mathematics honed my problem-solving and analytical skills, while Physical Sciences introduced me to the fascinating laws of physics and principles governing matter and energy. In Agricultural Sciences, I learned about sustainable farming and its significance in addressing food security challenges. Lastly, Life Sciences broadened my understanding of living organisms and their interconnectedness, deepening my appreciation for the wonders of the natural world. These majors have prepared me to approach interdisciplinary challenges and make a positive impact in various fields.</p>
+                </div>
+              </div>
+              <!-- ... -->
+            </div>
                            </div>
                         </div>
                      </div>
@@ -660,5 +665,6 @@
       <!-- Template Main JS File -->
       <script src="assets/js/main.js"></script>
       <script src="assets/js/darkmode.js"></script>
+       <script src="assets/js/readmore.js"></script>
    </body>
 </html>
