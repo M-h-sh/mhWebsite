@@ -216,19 +216,35 @@
         }
     });
 
-    /**
-     * Preloader
+    * Preloader
      */
-    // Simulate loading large files with a delay (you can replace this with actual file loading logic)
-    function simulateLoading() {
-        setTimeout(() => {
-            // Remove the preloader once the files are loaded
-            document.querySelector('.preloader-container').style.display = 'none';
-        }, 1000); // Change the delay value according to your needs
-    }
+	 document.addEventListener("DOMContentLoaded", function () {
+    // Create the preloader container element
+    const preloaderContainer = document.createElement("div");
+    preloaderContainer.classList.add("preloader-container");
 
-    // Call the simulateLoading function when the page is fully loaded
-    window.addEventListener('load', simulateLoading);
+    // Create the preloader element
+    const preloader = document.createElement("div");
+    preloader.classList.add("preloader");
+
+    // Create the preloader text element
+    const preloaderText = document.createElement("div");
+    preloaderText.classList.add("preloader-text");
+    preloaderText.textContent = "Loading...";
+
+    // Append the preloader and text elements to the container
+    preloaderContainer.appendChild(preloader);
+    preloaderContainer.appendChild(preloaderText);
+
+    // Append the container to the body
+    document.body.appendChild(preloaderContainer);
+
+    // Simulate some loading process (You can remove this part)
+    setTimeout(function () {
+      // Remove the preloader container after some time (e.g., 3 seconds)
+      preloaderContainer.remove();
+    }, 1000);
+  });
 
 
 
