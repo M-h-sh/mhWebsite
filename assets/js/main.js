@@ -216,7 +216,7 @@
         }
     });
 
-    * Preloader
+    /* Preloader
      */
 	 document.addEventListener("DOMContentLoaded", function () {
     // Create the preloader container element
