@@ -243,7 +243,7 @@
     setTimeout(function () {
       // Remove the preloader container after some time (e.g., 3 seconds)
       preloaderContainer.remove();
-    }, 1000);
+    }, 3000);
   });
 
 
