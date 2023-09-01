@@ -567,6 +567,10 @@
      position: relative;
      color: #fff;
 }
+.img-fluid{
+ max-height:100%;
+  max-width:100%;
+}
  .hero .hero-content {
      text-align: center;
      position: absolute;
@@ -845,7 +849,7 @@
      margin-top: 20px;
      position: relative;
 }
- .portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet {
+ folio-details folio-details-slider .swiper-pagination .swiper-pagination-bullet {
      width: 12px;
      height: 12px;
      background-color: #fff;
