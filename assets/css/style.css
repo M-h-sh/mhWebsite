@@ -799,8 +799,8 @@
      transform: scale(1.3);
 }
  .work-img {
-     height:678px;
-     width:1318px;
+     height:200px;
+     width:400px;
      display: block;
      overflow: hidden;
 }
