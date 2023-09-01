@@ -794,6 +794,8 @@
 /*-------------------------------------------------------------- # Portfolio --------------------------------------------------------------*/
  .work-box {
      margin-bottom: 3rem;
+     height:100%;
+     width:100%;
      -webkit-backface-visibility: hidden;
      backface-visibility: hidden;
      background-color: #fff;
