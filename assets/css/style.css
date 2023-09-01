@@ -564,7 +564,7 @@
      position: relative;
      color: #fff;
 }
-.img-fluid{
+#image{
  max-height:300px;
   max-width:600px;
 }
