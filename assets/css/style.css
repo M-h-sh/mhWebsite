@@ -799,7 +799,7 @@
      transform: scale(1.3);
 }
  .work-img {
-     background:#111;
+     justify-content: center;
      display: block;
      overflow: hidden;
 }
