@@ -566,7 +566,7 @@
 }
 #image{
  max-height:150px;
- max-width:350px;
+ max-width:100%;
 }
  .hero .hero-content {
      text-align: center;
