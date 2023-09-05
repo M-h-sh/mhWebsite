@@ -118,7 +118,7 @@
      text-decoration: none;
      font-size: 3rem;
      font-weight: bold;
-     text-transform: uppercase;
+     text-trans: uppercase;
 }
  .subtitle-a {
      text-decoration: none;
@@ -1394,7 +1394,7 @@
 }
 .dark-mode .form-check-input:checked{
     
-     background-color:#f0f1fa;
+     background-color:#4e4e4e;
    
 }
  .dark-mode .portfolio-mf {
