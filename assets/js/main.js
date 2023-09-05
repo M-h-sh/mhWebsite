@@ -18,12 +18,7 @@
             return document.querySelector(el)
         }
     }
-    document.addEventListener('DOMContentLoaded', function () {
-  const inputElement = document.getElementById('myInput');
-  if (inputElement) {
-    inputElement.setAttribute('autocomplete', 'off');
-  }
-});
+
 
 
     /**
