@@ -1392,6 +1392,11 @@
      background-color:#111;
      color:#fff;
 }
+.dark-mode .form-check-input:checked{
+    
+     background-color:#4a23e8;
+   
+}
  .dark-mode .portfolio-mf {
      color: #111;
 }
