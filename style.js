@@ -1,7 +1,7 @@
 function loadCSS(url, callback) {
   var link = document.createElement("link");
   link.href = url;
-  rel="stylesheet";
+  link.rel="stylesheet";
 
   link.onload = function () {
     // The CSS file has finished loading, so we can call the callback function
