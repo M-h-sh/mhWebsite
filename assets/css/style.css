@@ -13,10 +13,10 @@
      transition: all 0.5s ease-in-out;
 }
 .mytext{
- color:#95aafc;
+ color:#311799;
 }
  a:hover {
-     color: #95aafc;
+     color: #311799;
      text-decoration: none;
      transition: all 0.5s ease-in-out;
 }
@@ -25,7 +25,7 @@
 }
  .color-a {
      text-decoration: none;
-     color: #95aafc;
+     color: #311799;
 }
 
  .color-d {
@@ -70,7 +70,7 @@
     }
 }
  .overlay-mf {
-     background-color: #95aafc;
+     background-color: #311799;
 }
  .overlay-mf {
      position: absolute;
@@ -127,7 +127,7 @@
  .line-mf {
      width: 40px;
      height: 5px;
-     background-color: #95aafc;
+     background-color: #311799;
      margin: 0 auto;
 }
 /*--/ Title Left /--*/
@@ -142,7 +142,7 @@
      content: "";
      position: absolute;
      height: 3px;
-     background-color: #95aafc;
+     background-color: #311799;
      width: 100px;
      bottom: -12px;
 }
@@ -177,11 +177,11 @@
      border-radius: 50%;
      line-height: 1.6;
      margin: 0 15px 0 0;
-     box-shadow: 0 0 0 3px #95aafc;
+     box-shadow: 0 0 0 3px #311799;
      transition: all 500ms ease;
 }
  .socials .ico-circle:hover {
-     background-color: #95aafc;
+     background-color: #311799;
      color: #fff;
      box-shadow: 0 0 0 3px #cde1f8;
      transition: all 500ms ease;
@@ -196,7 +196,7 @@
      line-height: 2;
 }
  .list-ico span {
-     color: #95aafc;
+     color: #311799;
      margin-right: 10px;
 }
 /*------/ Ico Circle /------*/
@@ -208,7 +208,7 @@
      line-height: 1.55;
      margin: 0 auto;
      text-align: center;
-     box-shadow: 0 0 0 10px #95aafc;
+     box-shadow: 0 0 0 10px #311799;
      display: block;
 }
 /*------/ Owl Carousel /------*/
@@ -246,7 +246,7 @@
      position: fixed;
      width: 42px;
      height: 42px;
-     background-color: #95aafc;
+     background-color: #311799;
      opacity: 0.7;
      font-size: 1.6rem;
      line-height: 1.5;
@@ -267,7 +267,7 @@
      right: 15px;
      bottom: 15px;
      z-index: 996;
-     background: #95aafc;
+     background: #311799;
      width: 40px;
      height: 40px;
      border-radius: 50px;
@@ -323,7 +323,7 @@
 }
  .button-a {
      text-decoration: none;
-     background-color: #95aafc;
+     background-color: #311799;
      color: #fff;
      border-color: #cde1f8;
 }
@@ -354,7 +354,7 @@
      letter-spacing: 1px;
 }
  #header .logo a {
-     color: #95aafc;
+     color: #311799;
 }
  #header .logo img {
      max-height: 40px;
@@ -447,7 +447,7 @@
      font-size: 12px;
 }
  .navbar .dropdown ul a:hover, .navbar .dropdown ul .active:hover, .navbar .dropdown ul li:hover>a {
-     color: #95aafc;
+     color: #311799;
 }
  .navbar .dropdown:hover>ul {
      opacity: 1;
@@ -475,7 +475,7 @@
 }
 /** * Mobile Navigation */
  .mobile-nav-toggle {
-     color: #95aafc;
+     color: #311799;
      font-size: 28px;
      cursor: pointer;
      display: none;
@@ -530,7 +530,7 @@
      color: #4e4e4e;
 }
  .navbar-mobile a:hover, .navbar-mobile .active, .navbar-mobile li:hover>a {
-     color: #95aafc;
+     color: #311799;
 }
  .navbar-mobile .getstarted, .navbar-mobile .getstarted:focus {
      margin: 15px;
@@ -556,7 +556,7 @@
      font-size: 12px;
 }
  .navbar-mobile .dropdown ul a:hover, .navbar-mobile .dropdown ul .active:hover, .navbar-mobile .dropdown ul li:hover>a {
-     color: #95aafc;
+     color: #311799;
 }
  .navbar-mobile .dropdown>.dropdown-active {
      display: block;
@@ -624,7 +624,7 @@
 }
  .hero-single .breadcrumb {
      background-color: transparent;
-     color: #95aafc;
+     color: #311799;
 }
  .hero-single .breadcrumb .breadcrumb-item:before {
      color: #cde1f8;
@@ -663,7 +663,7 @@
 }
  .skill-mf .progress .progress-bar {
      height: 0.7rem;
-     background-color: #95aafc;
+     background-color: #311799;
 }
 /*-------------------------------------------------------------- # Services --------------------------------------------------------------*/
  * Custom styling for the services section */
@@ -697,7 +697,7 @@
  .service-box:hover .ico-circle {
      transition: all 500ms ease;
      color: #fff;
-     background-color: #95aafc;
+     background-color: #311799;
      box-shadow: 0 0 0 10px #cde1f8;
 }
  .service-box .service-ico {
@@ -817,15 +817,15 @@
      font-size: 0.8rem;
 }
  .work-content .w-more .w-ctegory {
-     color: #95aafc;
+     color: #311799;
 }
  .work-content .w-like {
      font-size: 2.5rem;
-     color: #95aafc;
+     color: #311799;
      float: right;
 }
  .work-content .w-like a {
-     color: #95aafc;
+     color: #311799;
 }
  .work-content .w-like .num-like {
      font-size: 0.7rem;
@@ -855,10 +855,10 @@
      height: 12px;
      background-color: #fff;
      opacity: 1;
-     border: 1px solid #95aafc;
+     border: 1px solid #311799;
 }
  .portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet-active {
-     background-color: #95aafc;
+     background-color: #311799;
 }
  .portfolio-details .portfolio-info {
      padding: 30px;
@@ -911,7 +911,7 @@
 }
  .testimonial-box .comit {
      font-size: 2rem;
-     color: #95aafc;
+     color: #311799;
      background-color: #fff;
      width: 52px;
      height: 52px;
@@ -1005,7 +1005,7 @@
      font-size: 14px;
 }
  .php-email-form input:focus, .php-email-form textarea:focus {
-     border-color: #95aafc;
+     border-color: #311799;
 }
  .php-email-form input {
      padding: 10px 15px;
@@ -1015,7 +1015,7 @@
      margin-bottom: 0;
 }
  .php-email-form button[type=submit] {
-     background: #95aafc;
+     background: #311799;
      border: 0;
      padding: 10px 24px;
      color: #fff;
@@ -1063,7 +1063,7 @@
      color: #fff;
      padding: 0 15px 5px;
      overflow: hidden;
-     background-color: #95aafc;
+     background-color: #311799;
      border-radius: 4px;
 }
  .card-blog .card-category .category {
@@ -1170,7 +1170,7 @@
      margin: 1rem 0;
 }
  .blog-wrapper .post-meta ul {
-     border-left: 4px solid #95aafc;
+     border-left: 4px solid #311799;
      margin-top: 1rem;
 }
  .blog-wrapper .post-meta ul li {
@@ -1178,13 +1178,13 @@
      margin-left: 15px;
 }
  .blog-wrapper .post-meta ul a {
-     color: #95aafc;
+     color: #311799;
 }
  .blog-wrapper .post-meta ul span {
      color: #1e1e1e;
 }
  .blog-wrapper .blockquote {
-     border-left: 4px solid #95aafc;
+     border-left: 4px solid #311799;
      padding: 18px;
      font-style: italic;
 }
@@ -1214,7 +1214,7 @@
      padding-left: 25px;
 }
  .box-comments .list-comments a {
-     color: #95aafc;
+     color: #311799;
 }
  .box-comments .list-comments span {
      color: #1e1e1e;
@@ -1227,7 +1227,7 @@
  .widget-sidebar .sidebar-title {
      font-size: 1.6rem;
      font-weight: 600;
-     border-left: 5px solid #95aafc;
+     border-left: 5px solid #311799;
      padding-left: 15px;
      text-transform: uppercase;
      margin-bottom: 1.5rem;
@@ -1242,7 +1242,7 @@
      width: 10px;
      height: 1px;
      left: 0;
-     background-color: #95aafc;
+     background-color: #311799;
      top: 20px;
 }
  .sidebar-search input {
@@ -1251,15 +1251,15 @@
      transition: all 0.5s ease-in-out;
 }
  .sidebar-search .btn-search {
-     background-color: #95aafc;
-     border-color: #95aafc;
+     background-color: #311799;
+     border-color: #311799;
      border-radius: 0;
      padding-left: 20px;
      padding-right: 20px;
 }
  .widget-tags ul li {
      display: inline-block;
-     background-color: #95aafc;
+     background-color: #311799;
      padding: 0.2rem 0.6rem;
      margin-bottom: 0.5rem;
      border-radius: 15px;
@@ -1415,7 +1415,7 @@
      color: #eee;
 }
  .dark-mode .navbar-mobile a:hover, .dark-mode .navbar-mobile .active, .dark-mode .navbar-mobile li:hover>a {
-     color: #95aafc;
+     color: #311799;
 }
 /* Add the following styles to the existing darkmode.css file */
 /* Education Section in Dark Mode */
