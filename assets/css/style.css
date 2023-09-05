@@ -1393,7 +1393,7 @@
      color:#fff;
 }
 .dark-mode .form-check-input:checked{
-    
+    border:none;
      background-color:#4e4e4e;
    
 }
