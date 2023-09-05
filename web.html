@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+      <title>MH Website</title>
+      <meta content="Portfolio Website for MH Hlatshwayo" name="description">
+      <meta content="" name="keywords">
+       <script src="style.js"></script>
+   </head>
+   <body class="bg-light">
+      <!-- ======= Header ======= -->
+      <header id="header" class="fixed-top">
+         <div class="container d-flex align-items-center justify-content-between">
+            <h1 class="logo "><a href="index.html" class=" fw-bold" aria-label="logo">MH</a></h1>
+            <span class="form-check form-switch mx-5">
+            <input class="form-check-input" type="checkbox" id="darkModeSwitch">
+            <label class="form-check-label" for="darkModeSwitch">Change Theme</label>
+            </span>
+            <nav id="navbar" class="navbar">
+               <ul>
+                  <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+                  <li><a class="nav-link scrollto" href="#education" data-toggle="modal" data-target="#educationModal">Education</a></li>
+                  <li><a class="nav-link scrollto" href="#experience" data-toggle="modal" data-target="#experienceModal">Experience</a></li>
+                  <li><a class="nav-link scrollto" href="#services">Services</a></li>
+                  <li><a class="nav-link scrollto" href="#work">Projects</a></li>
+                  <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+               </ul>
+               <i class="bi bi-list  mobile-nav-toggle "></i>
+            </nav>
+            <!-- .navbar -->
+         </div>
+      </header>
+      <div id="preloader">
+  <div class="spinner-border mytext" role="status">
+    <span class="visually-hidden">MH Web Loading...</span>
+  </div>
+</div>
+      <!-- End Header -->
+      <!-- ======= Hero Section ======= -->
+      <div id="hero" class="hero route bg-image" style="background-image: url(assets/img/hero-bg.webp)">
+         <div class="overlay-itro"></div>
+         <div class="hero-content display-table">
+            <div class="table-cell">
+               <div class="container">
+                  <h1 class="hero-title mb-4 fw-light">Mthokozisi Hector Hlatshwayo</h1>
+                  <p class="hero-subtitle mytext fw-bold"><span class="typed" data-typed-items="Full Stack Developer,IT Multimedia Graduate, Microsoft 365 Certified"></span></p>
+                  <p class="pt-3"><a class="btn btn-outline-light btn js-scroll px-4" href="" data-bs-toggle="modal" data-bs-target="#popUpModel"
+                     data-bs-whatever="@getbootstrap" role="button">Learn More</a></p>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- End Hero Section -->
+      <main id="main" >
+         <div class="modal fade" id="popUpModel" tabindex="-1" aria-labelledby="popUpModelLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+               <div id="about" class="modal-content border-0">
+                  <div class="modal-header">
+                     <h1 class="fs-5 mt-2 s-title">About Me</h1>
+                     <i type="button" class="bi bi-x s-title fs-4" data-bs-dismiss="modal" aria-label="Close"></i>
+                  </div>
+                  <div class="container">
+                     <div class="row p-2">
+                        <div class="col-md-5 col-sm-12 about-img">
+                           <img src="assets/img/nh1.webp" class="img-fluid rounded b-shadow-a" alt="">
+                        </div>
+                        <div class="col-md-7 col-sm-12">
+                           <div class="about-info mt-3">
+                              <p><span class="title-s">Name: </span> <span>Mthokozisi Hector Hlatshwayo</span></p>
+                              <p><span class="title-s">Profile: </span> <span>Full stack developer</span></p>
+                              <p><span class="title-s">Email: </span> <span>mthova.hp@gmail.com</span></p>
+                              <p><span class="title-s">Phone: </span> <span>076 461 1841</span></p>
+                              <p><span class="title-s">City: </span> <span>Johannesburg</span></p>
+                              <p><span class="title-s">NQF Level: </span> <span>6</span></p>
+                              <p><span class="title-s">Availability: </span> <span>Immediately</span></p>
+                           </div>
+                        </div>
+                        <div class="col-md-7 col-sm-12">
+                           <!-- Add the "Read More" link to toggle the collapsible section -->
+                           <a href="#" class="read-more-link" onclick="toggleCollapse()" aria-label="Read more">Read More<i class="ms-5 fas fa-chevron-down"></i></a>
+                        </div>
+                     </div>
+                     <div class="col-md-12">
+                        <div class="about-me pt-4 pt-md-0">
+                           <!-- Collapsible section starts here -->
+                           <div class="card p-2 collapse" id="collapseContent">
+                              <p class="s-description">
+                                 I just graduated from Tshwane University of Technology with a National Diploma in Information Technology: Multimedia and have revel in running as a software developer at Empire Partner Foundation. I actually have a vast talent set that consists of Multimedia, Graphic Design, After Effects, PHP, Cloud computing, JavaScript, jQuery, Agile Methodologies, Web, Game and Software Development. I have a increase mind-set and am a proactive learner who is always looking for new challenges to develop my horizons.
+                              </p>
+                              <p class="s-description">
+                                I've had first-rate fulfillment, passing four Microsoft 365 exams and completing brief publications to obtain extra than 18 certifications. These accomplishments display my devotion to hard attempt, perseverance, and lifelong learning. I am a versatile and diagnosed individual with revel in in Microsoft 365 and a extensive variety of certifications who can thrive in plenty of jobs and industries.
+                              <p class="s-description">
+                                Currently, I'm honing my craft at MEDITECH, refining technical prowess, cultivating professionalism, perfecting documentation, and strengthening my peer review skills. My sights are set on revolutionizing healthcare software development, where I aim to enhance administrative efficiency and drive impactful improvements in patient care.
+                              <p class="s-description">
+                                 My comprehensive ability set, coupled with my passion for mastering, makes me a incredibly sought-after expert inside the Information Technology industry. I cannot wait to take on fresh demanding situations and sell innovation in the hastily converting global of technology.
+                              </p>
+                           </div>
+                           <!-- Collapsible section ends here -->
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- Education Modal -->
+         <section id="Education" class="education-mf pt-5 route">
+            <div class="modal fade" id="educationModal" tabindex="-1" role="dialog" aria-labelledby="educationModalLabel" aria-hidden="true">
+               <div class="modal-dialog modal-lg" role="document">
+                  <div class="modal-content">
+                     <div class="modal-header">
+                        <h5 class="modal-title" id="educationModalLabel">Education</h5>
+                        <i type="button" class="bi bi-x s-title fs-4 " data-dismiss="modal" aria-label="Close"></i>
+                     </div>
+                     <div class="modal-body">
+                        <div class="row">
+                           <div class="col-md-12">
+                              <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                 <li class="nav-item">
+                                    <a class="nav-link active" id="diploma-tab" data-toggle="tab" href="#diploma" role="tab" aria-controls="diploma" aria-selected="true">2023</a>
+                                 </li>
+                                 <li class="nav-item">
+                                    <a class="nav-link" id="engineering-tab" data-toggle="tab" href="#engineering" role="tab" aria-controls="engineering" aria-selected="false">2016</a>
+                                 </li>
+                                 <li class="nav-item">
+                                    <a class="nav-link" id="certificate-tab" data-toggle="tab" href="#certificate" role="tab" aria-controls="certificate" aria-selected="false">2013</a>
+                                 </li>
+                              </ul>
+                              <div class="tab-content p-3" id="myTabContent">
+                                 <div class="tab-pane fade show active" id="diploma" role="tabpanel" aria-labelledby="diploma-tab">
+                                    <div class="education-block">
+                                       <h5 class="education-title">National Diploma: Information Technology (MULTIMEDIA)</h5>
+                                       <p class="education-date">Tshwane University of Technology, South Africa</p>
+                                       <p class="education-description">I successfully completed a National Diploma in Information Technology (Multimedia), with a comprehensive focus on Web Development, Game Development, Software Development, Graphic Design, and Algorithms. Throughout this program, I acquired a robust understanding of Information Technology principles and became proficient in various programming languages.</p>
+                                    </div>
+                                 </div>
+                                 <div class="tab-pane fade" id="engineering" role="tabpanel" aria-labelledby="engineering-tab">
+                                    <div class="education-block">
+                                       <h5 class="education-title">Electrical Engineering N4</h5>
+                                       <p class="education-date">Gert Sibande TVET College</p>
+                                       <p class="education-description">My experience in Electrical Engineering N4 has been enriching and rewarding. I am now equipped with a diverse skill set and a deep understanding of the foundational concepts essential for a successful career in the field. I look forward to applying my knowledge and expertise in future endeavors within the electrical engineering domain.</p>
+                                    </div>
+                                 </div>
+                                 <div class="tab-pane fade" id="certificate" role="tabpanel" aria-labelledby="certificate-tab">
+                                    <div class="education-block">
+                                       <h5 class="education-title">National Senior Certificate</h5>
+                                       <p class="education-date">Siyabonga Secondary School</p>
+                                       <p class="education-description">During my matriculation, I focused on four diverse and enriching majors. Mathematics honed my problem-solving and analytical skills, while Physical Sciences introduced me to the fascinating laws of physics and principles governing matter and energy. In Agricultural Sciences, I learned about sustainable farming and its significance in addressing food security challenges. Lastly, Life Sciences broadened my understanding of living organisms and their interconnectedness, deepening my appreciation for the wonders of the natural world. These majors have prepared me to approach interdisciplinary challenges and make a positive impact in various fields.</p>
+                                    </div>
+                                 </div>
+                                 <!-- ... -->
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <!-- Experience Modal -->
+         <section id="Experience" class="experience-mf pt-5 route">
+            <div class="modal fade" id="experienceModal" tabindex="-1" role="dialog" aria-labelledby="experienceModalLabel" aria-hidden="true">
+               <div class="modal-dialog modal-lg" role="document">
+                  <div class="modal-content">
+                     <div class="modal-header">
+                        <h5 class="modal-title" id="experienceModalLabel">Experience</h5>
+                        <i type="button" class="bi bi-x s-title fs-4 " data-dismiss="modal" aria-label="Close"></i>
+                     </div>
+                     <div class="modal-body">
+                        <div class="row">
+                           <div class="col-md-12">
+                              <div class="timeline" id="experience-timeline">
+                                 <div class="timeline-item " data-date="March 2023 – Present">
+                                    March 2023 – Present
+                                    <div class="card">
+                                       <div class="card-body">
+                                          <h5 class="card-title">Software Programmer</h5>
+                                          <p class="experience-date">MEDITECH, South Africa</p>
+                                          <p class="experience-description">Duties:</p>
+                                          <ul class="experience-list">
+                                             <li>Software Development: Coding, testing, and implementing software applications within the MEDITECH platform.</li>
+                                             <li>Customization: Tailoring the MEDITECH software to meet the specific needs of the healthcare organization.</li>
+                                             <li>System Integration: Integrating MEDITECH with other healthcare systems or third-party applications.</li>
+                                             <li>Troubleshooting and Support: Resolving software-related issues and providing technical support to end-users.</li>
+                                             <li>Upgrades and Enhancements: Implementing new versions and adding new features to the existing system.</li>
+                                             <li>Data Management: Ensuring data integrity, security, and confidentiality within the MEDITECH system.</li>
+                                             <li>Training: Conducting training sessions for end-users to familiarize them with the MEDITECH system.</li>
+                                             <li>Documentation: Creating and maintaining documentation related to software development and system configurations.</li>
+                                             <li>Compliance: Ensuring compliance with relevant regulatory requirements and standards in South Africa's healthcare industry.</li>
+                                             <li>Collaboration: Working with other IT professionals and healthcare staff to gather requirements and implement changes effectively.</li>
+                                          </ul>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="timeline-item mt-3 " data-date="May 2022 – April 2023">
+                                    May 2022 – April 2023
+                                    <div class="card">
+                                       <div class="card-body">
+                                          <h5 class="card-title">Software Developer</h5>
+                                          <p class="experience-date">Empire Partner Foundation</p>
+                                          <p class="experience-description">Duties:</p>
+                                          <ul class="experience-list">
+                                             <li>Designing, developing, and maintaining software applications aligned with the organization's mission.</li>
+                                             <li>Collaborating with stakeholders to understand requirements and gather feedback.</li>
+                                             <li>Ensuring the quality and security of software through thorough testing and debugging.</li>
+                                             <li>Conducting technical analysis and staying updated with the latest technologies</li>
+                                             <li>Managing data systems and safeguarding sensitive information.</li>
+                                             <li>Providing training and support to users for efficient software usage.</li>
+                                             <li>Contributing to continuous improvement initiatives for software performance and enhancements.</li>
+                                             <li>Code Review (ensure code is clean and maintainable)</li>
+                                             <li>Worked on progress reporting tool, Pemoda, and Talent Index.</li>
+                                             <li>Programming Languages: Python, JavaScript, Html, CSS, and PHP.</li>
+                                             <li>Framework: Bootstrap 5, and Django.</li>
+                                          </ul>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <!-- Add more experience blocks if needed -->
+                              <!-- ... -->
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <!-- ======= Services Section ======= -->
+         <section id="services" class="services-mf pt-5 route">
+            <div class="container">
+               <div class="row">
+                  <div class="col-sm-12">
+                     <div class="title-box text-center">
+                        <h3 class="title-a">Services</h3>
+                        <p class="subtitle-a">Available Services</p>
+                        <div class="line-mf"></div>
+                     </div>
+                  </div>
+               </div>
+               <div class="row">
+                  <div class="col-lg-4 col-md-12 mt-1 mb-4">
+                     <div class="service-box d-flex flex-column justify-content-center align-items-center">
+                        <div class="service-ico">
+                           <span class="ico-circle"><i class="bi bi-briefcase"></i></span>
+                        </div>
+                        <div class="service-content">
+                           <h2 class="s-title">Web Design</h2>
+                           <p class="s-description text-center">
+                              My Mission is to create Brands, Landing Pages, and Websites that connect the MEANING behind Businesses.
+                           </p>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-lg-4 col-md-12 mt-1 mb-4">
+                     <div class="service-box d-flex flex-column justify-content-center align-items-center">
+                        <div class="service-ico">
+                           <span class="ico-circle"><i class="bi bi-browser-chrome"></i></span>
+                        </div>
+                        <div class="service-content">
+                           <h2 class="s-title">Web Development</h2>
+                           <p class="s-description text-center">
+                              I focus on developing high-quality, effective, and secure user experiences websites for all devices with a strong focus on mobile app design.
+                           </p>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-lg-4 col-md-12 mt-1 mb-4">
+                     <div class="service-box d-flex flex-column justify-content-center align-items-center">
+                        <div class="service-ico">
+                           <span class="ico-circle"><i class="bi bi-play"></i></span>
+                        </div>
+                        <div class="service-content">
+                           <h2 class="s-title">Video Editing</h2>
+                           <p class="s-description text-center">
+                              I am a freelance video editor that specializes in After Effects. My main focus is on enhancing your project, whether it's a short or full-length video. I have extensive knowledge of the software and can edit any type of footage.
+                           </p>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-lg-4 col-md-12 mt-1 mb-4">
+                     <div class="service-box d-flex flex-column justify-content-center align-items-center">
+                        <div class="service-ico">
+                           <span class="ico-circle"><i class="bi bi-controller"></i></span>
+                        </div>
+                        <div class="service-content">
+                           <h2 class="s-title">GAME DEVELOPMENT</h2>
+                           <p class="s-description text-center">
+                              I have been developing games using unity3d for over a year now. I am a versatile developer who is proficient in all aspects of game development, from designing user interfaces to optimizing and optimizing your code.
+                           </p>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-lg-4 col-md-12 mt-1 mb-4">
+                     <div class="service-box d-flex flex-column justify-content-center align-items-center ">
+                        <div class="service-ico">
+                           <span class="ico-circle"><i class="bi bi-phone"></i></span>
+                        </div>
+                        <div class="service-content ">
+                           <h2 class="s-title">MOBILE APP DEVELOPMENT</h2>
+                           <p class="s-description text-center ">
+                              I develop mobile apps in flutter, am a very well experienced developer and ready to work with your specific requirement.
+                           </p>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-lg-4 col-md-12 mt-1 mb-4">
+                     <div class="service-box d-flex flex-column justify-content-center align-items-center">
+                        <div class="service-ico">
+                           <span class="ico-circle"><i class="bi bi-app"></i></span>
+                        </div>
+                        <div class="service-content">
+                           <h2 class="s-title">SOFTWARE DEVELOPMENT</h2>
+                           <p class="s-description text-center">
+                              I develop software using django framework, I have a long experience in developing software. I am proficient in python or PHP and javascript
+                           </p>
+                        </div>
+                     </div>
+                  </div>
+                  <!-- Add the other service boxes with similar classes -->
+                  <!-- ... -->
+               </div>
+            </div>
+         </section>
+         <!-- ======= Counter Section ======= -->
+         <div class="section-counter paralax-mf bg-image" style="background-image: url(assets/img/counters-bg.jpg)">
+            <div class="overlay-mf"></div>
+            <div class="container position-relative">
+               <div class="row">
+                  <div class=" col-lg-3 col-md-12">
+                     <div class="counter-box counter-box pt-4 pt-md-0">
+                        <div class="counter-ico">
+                           <span class="ico-circle"><i class="bi bi-check"></i></span>
+                        </div>
+                        <div class="counter-num">
+                           <p data-purecounter-start="0" data-purecounter-end="31" data-purecounter-duration="1" class="counter purecounter"></p>
+                           <span class="counter-text">Github Projects</span>
+                        </div>
+                     </div>
+                  </div>
+                  <div class=" col-lg-3 col-md-12">
+                     <div class="counter-box pt-4 pt-md-0">
+                        <div class="counter-ico">
+                           <span class="ico-circle"><i class="bi bi-journal-richtext"></i></span>
+                        </div>
+                        <div class="counter-num">
+                           <p data-purecounter-start="0" data-purecounter-end="1" data-purecounter-duration="1" class="counter purecounter"></p>
+                           <span class="counter-text">YEARS OF EXPERIENCE</span>
+                        </div>
+                     </div>
+                  </div>
+                  <div class=" col-lg-3 col-md-12">
+                     <div class="counter-box pt-4 pt-md-0">
+                        <div class="counter-ico">
+                           <span class="ico-circle"><i class="bi bi-award"></i></span>
+                        </div>
+                        <div class="counter-num">
+                           <p data-purecounter-start="0" data-purecounter-end="21" data-purecounter-duration="1" class="counter purecounter"></p>
+                           <span class="counter-text">CERTIFICATES OBTAINED</span>
+                        </div>
+                     </div>
+                  </div>
+                  <div class=" col-lg-3 col-md-12">
+                     <div class="counter-box pt-4 pt-md-0">
+                        <div class="counter-ico">
+                           <span class="ico-circle"><i class="bi bi-linkedin"></i></span>
+                        </div>
+                        <div class="counter-num">
+                           <p data-purecounter-start="0" data-purecounter-end="27" data-purecounter-duration="1" class="counter purecounter"></p>
+                           <span class="counter-text">LINKEDIN BADGES</span>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- End Counter Section -->
+         <!-- ======= Portfolio Section ======= -->
+         <section id="work" class="portfolio-mf sect-pt4 route">
+            <div class="container">
+               <div class="row">
+                  <div class="col-sm-12">
+                     <div class="title-box text-center">
+                        <h3 class="title-a">
+                           Projects
+                        </h3>
+                        <p class="subtitle-a">
+                           One of my projects
+                        </p>
+                        <div class="line-mf"></div>
+                     </div>
+                  </div>
+                 <div class="col-lg-4 col-md-12">
+                <div class="work-box">
+                    <a href="assets/img/work-1.webp" data-gallery="portfolioGallery" aria-label="portfolioGallery" class="portfolio-lightbox">
+                        <div class="work-img p-2">
+                            <img src="assets/img/work-1.webp" alt="MH Quiz Project" id="image" class="img-fluid">
+                        </div>
+                    </a>
+                    <div class="work-content">
+                        <div class="row">
+                            <div class="col-sm-8">
+                                <h2 class="w-title">MH Quiz</h2>
+                                <div class="w-more">
+                                    <span class="w-ctegory">Mobile App</span> / <span class="w-date">20 Sep. 2022</span>
+                                </div>
+                            </div>
+                            <div class="col-sm-4 py-3">
+                                <div class="w-like">
+                                    <a class="w-like" href="https://drive.google.com/file/d/1sQMK1OLf6lb5TytoJAnikt3SiCPsMh2N/view" aria-label="mobile app">
+                                        <span class="w-like bi bi-plus-circle"></span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                  <div class="col-lg-4 col-md-12">
+                <div class="work-box">
+                    <a href="assets/img/work-2.webp" data-gallery="portfolioGallery" aria-label="portfolioGallery" c class="portfolio-lightbox">
+                        <div class="work-img p-2">
+                             <img src="assets/img/work-2.webp" alt="Game Project" id="image" class="img-fluid">
+                        </div>
+                    </a>
+                    <div class="work-content">
+                        <div class="row">
+                            <div class="col-sm-8">
+                                <h2 class="w-title">CubeCollider</h2>
+                                <div class="w-more">
+                                    <span class="w-ctegory">Game</span> / <span class="w-date">01 May. 2021</span>
+                                </div>
+                            </div>
+                            <div class="col-sm-4 py-3">
+                                <div class="w-like">
+                                   <a href="https://drive.google.com/file/d/1_bDlkV8DBiClAE9KVWEwvGWUTqQKYNDx/view" aria-label="open" c> <span class="bi bi-plus-circle"></span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-12">
+                <div class="work-box">
+                     <a href="assets/img/google.webp" data-gallery="portfolioGallery" aria-label="portfolioGallery" c class="portfolio-lightbox">
+                        <div class="work-img p-2">
+                            <img src="assets/img/google.webp" alt="Web" id="image" class="img-fluid">
+                        </div>
+                    </a>
+                    <div class="work-content">
+                        <div class="row">
+                            <div class="col-sm-8">
+                                <h2 class="w-title">Google Suit Website</h2>
+                                <div class="w-more">
+                                     <span class="w-ctegory">Website</span> / <span class="w-date">1 March. 2023</span>
+                                </div>
+                            </div>
+                            <div class="col-sm-4 py-3">
+                                <div class="w-like">
+                                    <a href="https://sites.google.com/view/mh-website-portfolio" aria-label="Open" c> <span class="bi bi-plus-circle"></span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                 <div class="col-lg-4 col-md-12">
+                <div class="work-box">
+                     <a href="assets/img/music.webp" data-gallery="portfolioGallery" aria-label="portfolioGallery" c class="portfolio-lightbox">
+                        <div class="work-img p-2">
+                            <img src="assets/img/music.webp" alt="Music Player" id="image" class="img-fluid">
+                        </div>
+                    </a>
+                    <div class="work-content">
+                        <div class="row">
+                            <div class="col-sm-8">
+                                 <h2 class="w-title">Music Player</h2>
+                                <div class="w-more">
+                                     <span class="w-ctegory">Web Application</span> / <span class="w-date">15 July. 2023</span>
+                                </div>
+                            </div>
+                            <div class="col-sm-4 py-3">
+                                <div class="w-like">
+                                    <a href="https://mh-music.netlify.app/" aria-label="Open"> <span class="bi bi-plus-circle"></span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+             
+                 
+              <div class="col-lg-4 col-md-12">
+                <div class="work-box">
+                    <a href="assets/img/postw.webp" data-gallery="portfolioGallery" aria-label="portfolioGallery" class="portfolio-lightbox">  
+                        <div class="work-img p-2">
+                            <img src="assets/img/postw.webp" alt="Website" id="image" class="img-fluid">
+                        </div>
+                  </a>
+                    <div class="work-content">
+                        <div class="row">
+                            <div class="col-sm-8">
+                                 <h2 class="w-title">Post-Work-Intergrated-Learning</h2>
+                                <div class="w-more">
+                                    <span class="w-ctegory">Website</span> / <span class="w-date">18 July. 2023</span>
+                                </div>
+                            </div>
+                            <div class="col-sm-4 py-3">
+                                <div class="w-like">
+                                      <a href="https://post-work-integrated-learning.netlify.app/" aria-label="Open"> <span class="bi bi-plus-circle"></span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                    <div class="col-lg-4 col-md-12">
+                <div class="work-box">
+                    <a href="assets/img/work-5.webp" data-gallery="portfolioGallery" aria-label="portfolioGallery"  class="portfolio-lightbox">
+                        <div class="work-img p-2">
+                            <img src="assets/img/work-5.webp" alt="After Effect" id="image" class="img-fluid">
+                        </div>
+                    </a>
+                    <div class="work-content">
+                        <div class="row">
+                            <div class="col-sm-8">
+                               <h2 class="w-title">After Effects</h2>
+                                <div class="w-more">
+                                    <span class="w-ctegory">Video Editing</span> / <span class="w-date">26 Sep. 2021</span>
+                                </div>
+                            </div>
+                            <div class="col-sm-4 py-3">
+                                <div class="w-like">
+                                    <a href="https://drive.google.com/file/d/1F2xQkJs1kYUZmJoujS1feajICCQEKRvI/view" aria-label="Open video edit"> <span class="bi bi-plus-circle"></span></a
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+              
+               </div>
+            </div>
+         </section>
+         <!-- End Portfolio Section -->
+         <!-- ======= Contact Section ======= -->
+         <section id="contact" class="paralax-mf footer-paralax bg-image sect-mt4 route" style="background-image: url(assets/img/overlay-bg.webp)">
+            <div class="overlay-mf "></div>
+            <div class="container">
+               <div class="row">
+                  <div class="col-sm-12">
+                     <div class="contact-mf">
+                        <div id="contact" class="box-shadow-full ">
+                           <div class="row">
+                              <div class="col-md-6">
+                                 <div class="title-box-2">
+                                    <h5 class="title-left s-title">
+                                       Message Form
+                                    </h5>
+                                 </div>
+                                 <div>
+                                    <form   action="https://formspree.io/f/meqwowno" method="POST" role="form" >
+                                       <div class="row">
+                                          <div class="col-md-12 mb-3">
+                                             <div class="form-group">
+                                                <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                                             </div>
+                                          </div>
+                                          <div class="col-md-12 mb-3">
+                                             <div class="form-group">
+                                                <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                                             </div>
+                                          </div>
+                                          <div class="col-md-12 mb-3">
+                                             <div class="form-group">
+                                                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+                                             </div>
+                                          </div>
+                                          <div class="col-md-12">
+                                             <div class="form-group">
+                                                <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+                                             </div>
+                                          </div>
+                                          <div class="col-md-12 text-center mt-4">
+                                             <button type="submit" class=" btn btn-outline-primary rounded">Send Message</button>
+                                          </div>
+                                       </div>
+                                    </form>
+                                 </div>
+                              </div>
+                              <div class="col-md-6">
+                                 <div class="title-box-2 pt-4 pt-md-0">
+                                    <h5 class="title-left s-title">
+                                       Get in Touch
+                                    </h5>
+                                 </div>
+                                 <div class="more-info">
+                                    <p class="lead">
+                                       Please contact me anytime using this form or details below, I would really like to help.
+                                    </p>
+                                    <ul class="list-ico">
+                                       <li><span class="bi bi-geo-alt"></span> 53 Main Street Marshalltown, Johannesburg 2001</li>
+                                       <li><span class="bi bi-phone"></span>076 461 1841</li>
+                                       <li><span class="bi bi-envelope"></span> mthova.hp@gmail.com</li>
+                                    </ul>
+                                 </div>
+                                 <div class="socials">
+                                    <ul>
+                                       <li><a href="https://www.facebook.com/mthokozisi.hector.5" aria-label="facebook" ><span class="ico-circle"><i class="bi bi-facebook"></i></span></a></li>
+                                       <li><a href="https://www.instagram.com/mh_hlatshwayo/" aria-label="instagram"><span class="ico-circle"><i class="bi bi-instagram"></i></span></a></li>
+                                       <li><a href="https://twitter.com/Mthovistor" aria-label="twitter"><span class="ico-circle"><i class="bi bi-twitter"></i></span></a></li>
+                                       <li><a href="https://www.linkedin.com/in/mthokozisi-hector-hlatshwayo-6b4b54193/" aria-label="linkedin"><span class="ico-circle"><i class="bi bi-linkedin"></i></span></a></li>
+                                    </ul>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <!-- End Contact Section -->
+      </main>
+      <!-- End #main -->
+      <!-- ======= Footer ======= -->
+      <footer class="bg-dark">
+         <div class="container ">
+            <div class="row">
+               <div class="col-sm-12">
+                  <div class="copyright-box ">
+                     <p class="copyright">&copy; Copyright <strong>MH</strong>. All Rights Reserved</p>
+                     <div class="credits">
+                        Designed by <a href="#" aria-label="reference">Mthokozisi Hector Hlatshwayo</a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </footer>
+      <a href="#" class="back-to-top d-flex align-items-center justify-content-center" aria-label="go to top"><i class="bi bi-arrow-up-short"></i></a>
+     
+      <script src="call.js"></script>
+   </body>
+</html>
