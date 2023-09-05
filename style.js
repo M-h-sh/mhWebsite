@@ -6,7 +6,6 @@ function loadCSS(url) {
 }
 
 // Load the CSS files
-loadCSS("assets/img/favicon.png");
 loadCSS("https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css");
 loadCSS("assets/vendor/bootstrap-icons/bootstrap-icons.css");
 loadCSS("assets/vendor/glightbox/css/glightbox.min.css");
