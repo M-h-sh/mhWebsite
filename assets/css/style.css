@@ -354,7 +354,7 @@
      letter-spacing: 1px;
 }
  #header .logo a {
-     color: #fff;
+     color: #7b42f5;
 }
  #header .logo img {
      max-height: 40px;
@@ -475,7 +475,7 @@
 }
 /** * Mobile Navigation */
  .mobile-nav-toggle {
-     color: #fff;
+     color: #7b42f5;
      font-size: 28px;
      cursor: pointer;
      display: none;
