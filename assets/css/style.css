@@ -13,7 +13,7 @@
      transition: all 0.5s ease-in-out;
 }
 .mytext{
- color:#4a23e8;
+ color:#8162fc;
 }
  a:hover {
      color: #4a23e8;
@@ -25,7 +25,7 @@
 }
  .color-a {
      text-decoration: none;
-     color: #4a23e8;
+     color: #8162fc;
 }
 
  .color-d {
@@ -475,7 +475,7 @@
 }
 /** * Mobile Navigation */
  .mobile-nav-toggle {
-     color: #4a23e8;
+     color: #8162fc;
      font-size: 28px;
      cursor: pointer;
      display: none;
@@ -1394,7 +1394,7 @@
 }
 .dark-mode .form-check-input:checked{
     
-     background-color:#4a23e8;
+     background-color:#8162fc;
    
 }
  .dark-mode .portfolio-mf {
