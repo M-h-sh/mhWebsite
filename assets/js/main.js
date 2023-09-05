@@ -19,8 +19,6 @@
         }
     }
 
-
-
     /**
      * Easy event listener function
      */
