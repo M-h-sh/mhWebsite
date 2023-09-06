@@ -13,7 +13,7 @@
      transition: all 0.5s ease-in-out;
 }
 .mytext{
- color:#f0f1fa;
+ color:#DC3545;
 }
  a:hover {
      color: #DC3545;
@@ -25,7 +25,7 @@
 }
  .color-a {
      text-decoration: none;
-     color: #f0f1fa;
+     color: #DC3545;
 }
 
  .color-d {
@@ -354,7 +354,7 @@
      letter-spacing: 1px;
 }
  #header .logo a {
-     color: #f0f1fa;
+     color: #DC3545;
 }
  #header .logo img {
      max-height: 40px;
@@ -475,7 +475,7 @@
 }
 /** * Mobile Navigation */
  .mobile-nav-toggle {
-     color: #f0f1fa;
+     color: #DC3545;
      font-size: 28px;
      cursor: pointer;
      display: none;
