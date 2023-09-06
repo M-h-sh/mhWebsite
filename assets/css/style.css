@@ -15,6 +15,11 @@
 .mytext{
  color:#DC3545;
 }
+img#image.img-fluid{
+ height:199px;
+ width:378px;
+ 
+}
  a:hover {
      color: #DC3545;
      text-decoration: none;
