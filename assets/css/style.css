@@ -21,7 +21,7 @@ img#image.img-fluid{
  
 }
  a:hover {
-     color: #d94100;
+     color: #027b96;
      text-decoration: none;
      transition: all 0.5s ease-in-out;
 }
@@ -30,7 +30,7 @@ img#image.img-fluid{
 }
  .color-a {
      text-decoration: none;
-     color: #d94100;
+     color: #027b96;
 }
 
  .color-d {
@@ -75,7 +75,7 @@ img#image.img-fluid{
     }
 }
  .overlay-mf {
-     background-color: #d94100;
+     background-color: #027b96;
 }
  .overlay-mf {
      position: absolute;
@@ -132,7 +132,7 @@ img#image.img-fluid{
  .line-mf {
      width: 40px;
      height: 5px;
-     background-color: #d94100;
+     background-color: #027b96;
      margin: 0 auto;
 }
 /*--/ Title Left /--*/
@@ -147,7 +147,7 @@ img#image.img-fluid{
      content: "";
      position: absolute;
      height: 3px;
-     background-color: #d94100;
+     background-color: #027b96;
      width: 100px;
      bottom: -12px;
 }
@@ -182,11 +182,11 @@ img#image.img-fluid{
      border-radius: 50%;
      line-height: 1.6;
      margin: 0 15px 0 0;
-     box-shadow: 0 0 0 3px #d94100;
+     box-shadow: 0 0 0 3px #027b96;
      transition: all 500ms ease;
 }
  .socials .ico-circle:hover {
-     background-color: #d94100;
+     background-color: #027b96;
      color: #fff;
      box-shadow: 0 0 0 3px #cde1f8;
      transition: all 500ms ease;
@@ -201,7 +201,7 @@ img#image.img-fluid{
      line-height: 2;
 }
  .list-ico span {
-     color: #d94100;
+     color: #027b96;
      margin-right: 10px;
 }
 /*------/ Ico Circle /------*/
@@ -213,7 +213,7 @@ img#image.img-fluid{
      line-height: 1.55;
      margin: 0 auto;
      text-align: center;
-     box-shadow: 0 0 0 10px #d94100;
+     box-shadow: 0 0 0 10px #027b96;
      display: block;
 }
 /*------/ Owl Carousel /------*/
@@ -251,7 +251,7 @@ img#image.img-fluid{
      position: fixed;
      width: 42px;
      height: 42px;
-     background-color: #d94100;
+     background-color: #027b96;
      opacity: 0.7;
      font-size: 1.6rem;
      line-height: 1.5;
@@ -272,7 +272,7 @@ img#image.img-fluid{
      right: 15px;
      bottom: 15px;
      z-index: 996;
-     background: #d94100;
+     background: #027b96;
      width: 40px;
      height: 40px;
      border-radius: 50px;
@@ -284,7 +284,7 @@ img#image.img-fluid{
      line-height: 0;
 }
  .back-to-top:hover {
-     background: #d94100;
+     background: #027b96;
      color: #fff;
 }
  .back-to-top.active {
@@ -328,7 +328,7 @@ img#image.img-fluid{
 }
  .button-a {
      text-decoration: none;
-     background-color: #d94100;
+     background-color: #027b96;
      color: #fff;
      border-color: #cde1f8;
 }
@@ -452,7 +452,7 @@ img#image.img-fluid{
      font-size: 12px;
 }
  .navbar .dropdown ul a:hover, .navbar .dropdown ul .active:hover, .navbar .dropdown ul li:hover>a {
-     color: #d94100;
+     color: #027b96;
 }
  .navbar .dropdown:hover>ul {
      opacity: 1;
@@ -535,7 +535,7 @@ img#image.img-fluid{
      color: #4e4e4e;
 }
  .navbar-mobile a:hover, .navbar-mobile .active, .navbar-mobile li:hover>a {
-     color: #d94100;
+     color: #027b96;
 }
  .navbar-mobile .getstarted, .navbar-mobile .getstarted:focus {
      margin: 15px;
@@ -561,7 +561,7 @@ img#image.img-fluid{
      font-size: 12px;
 }
  .navbar-mobile .dropdown ul a:hover, .navbar-mobile .dropdown ul .active:hover, .navbar-mobile .dropdown ul li:hover>a {
-     color: #d94100;
+     color: #027b96;
 }
  .navbar-mobile .dropdown>.dropdown-active {
      display: block;
@@ -626,7 +626,7 @@ img#image.img-fluid{
 }
  .hero-single .breadcrumb {
      background-color: transparent;
-     color: #d94100;
+     color: #027b96;
 }
  .hero-single .breadcrumb .breadcrumb-item:before {
      color: #cde1f8;
@@ -665,7 +665,7 @@ img#image.img-fluid{
 }
  .skill-mf .progress .progress-bar {
      height: 0.7rem;
-     background-color: #d94100;
+     background-color: #027b96;
 }
 /*-------------------------------------------------------------- # Services --------------------------------------------------------------*/
  * Custom styling for the services section */
@@ -699,7 +699,7 @@ img#image.img-fluid{
  .service-box:hover .ico-circle {
      transition: all 500ms ease;
      color: #fff;
-     background-color: #d94100;
+     background-color: #027b96;
      box-shadow: 0 0 0 10px #cde1f8;
 }
  .service-box .service-ico {
@@ -821,15 +821,15 @@ img#image.img-fluid{
      font-size: 0.8rem;
 }
  .work-content .w-more .w-ctegory {
-     color: #d94100;
+     color: #027b96;
 }
  .work-content .w-like {
      font-size: 2.5rem;
-     color: #d94100;
+     color: #027b96;
      float: right;
 }
  .work-content .w-like a {
-     color: #d94100;
+     color: #027b96;
 }
  .work-content .w-like .num-like {
      font-size: 0.7rem;
@@ -859,10 +859,10 @@ img#image.img-fluid{
      height: 12px;
      background-color: #fff;
      opacity: 1;
-     border: 1px solid #d94100;
+     border: 1px solid #027b96;
 }
  .portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet-active {
-     background-color: #d94100;
+     background-color: #027b96;
 }
  .portfolio-details .portfolio-info {
      padding: 30px;
@@ -915,7 +915,7 @@ img#image.img-fluid{
 }
  .testimonial-box .comit {
      font-size: 2rem;
-     color: #d94100;
+     color: #027b96;
      background-color: #fff;
      width: 52px;
      height: 52px;
@@ -1009,7 +1009,7 @@ img#image.img-fluid{
      font-size: 14px;
 }
  .php-email-form input:focus, .php-email-form textarea:focus {
-     border-color: #d94100;
+     border-color: #027b96;
 }
  .php-email-form input {
      padding: 10px 15px;
@@ -1019,7 +1019,7 @@ img#image.img-fluid{
      margin-bottom: 0;
 }
  .php-email-form button[type=submit] {
-     background: #d94100;
+     background: #027b96;
      border: 0;
      padding: 10px 24px;
      color: #fff;
@@ -1067,7 +1067,7 @@ img#image.img-fluid{
      color: #fff;
      padding: 0 15px 5px;
      overflow: hidden;
-     background-color: #d94100;
+     background-color: #027b96;
      border-radius: 4px;
 }
  .card-blog .card-category .category {
@@ -1174,7 +1174,7 @@ img#image.img-fluid{
      margin: 1rem 0;
 }
  .blog-wrapper .post-meta ul {
-     border-left: 4px solid #d94100;
+     border-left: 4px solid #027b96;
      margin-top: 1rem;
 }
  .blog-wrapper .post-meta ul li {
@@ -1182,13 +1182,13 @@ img#image.img-fluid{
      margin-left: 15px;
 }
  .blog-wrapper .post-meta ul a {
-     color: #d94100;
+     color: #027b96;
 }
  .blog-wrapper .post-meta ul span {
      color: #1e1e1e;
 }
  .blog-wrapper .blockquote {
-     border-left: 4px solid #d94100;
+     border-left: 4px solid #027b96;
      padding: 18px;
      font-style: italic;
 }
@@ -1218,7 +1218,7 @@ img#image.img-fluid{
      padding-left: 25px;
 }
  .box-comments .list-comments a {
-     color: #d94100;
+     color: #027b96;
 }
  .box-comments .list-comments span {
      color: #1e1e1e;
@@ -1231,7 +1231,7 @@ img#image.img-fluid{
  .widget-sidebar .sidebar-title {
      font-size: 1.6rem;
      font-weight: 600;
-     border-left: 5px solid #d94100;
+     border-left: 5px solid #027b96;
      padding-left: 15px;
      text-transform: uppercase;
      margin-bottom: 1.5rem;
@@ -1246,7 +1246,7 @@ img#image.img-fluid{
      width: 10px;
      height: 1px;
      left: 0;
-     background-color: #d94100;
+     background-color: #027b96;
      top: 20px;
 }
  .sidebar-search input {
@@ -1255,15 +1255,15 @@ img#image.img-fluid{
      transition: all 0.5s ease-in-out;
 }
  .sidebar-search .btn-search {
-     background-color: #d94100;
-     border-color: #d94100;
+     background-color: #027b96;
+     border-color: #027b96;
      border-radius: 0;
      padding-left: 20px;
      padding-right: 20px;
 }
  .widget-tags ul li {
      display: inline-block;
-     background-color: #d94100;
+     background-color: #027b96;
      padding: 0.2rem 0.6rem;
      margin-bottom: 0.5rem;
      border-radius: 15px;
@@ -1424,7 +1424,7 @@ img#image.img-fluid{
      color: #eee;
 }
  .dark-mode .navbar-mobile a:hover, .dark-mode .navbar-mobile .active, .dark-mode .navbar-mobile li:hover>a {
-     color: #d94100;
+     color: #027b96;
 }
 /* Add the following styles to the existing darkmode.css file */
 /* Education Section in Dark Mode */
