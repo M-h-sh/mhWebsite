@@ -1565,6 +1565,6 @@ img#image.img-fluid{
 }
 /*------/ Ico Circle /------*/
 .dark-mode .ico-circle {
-     box-shadow: 0 0 0 0px #02cbf7;  
+     box-shadow: 0 0 0 2px #02cbf7;  
 }
  
