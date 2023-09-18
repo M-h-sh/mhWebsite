@@ -1559,15 +1559,9 @@ img#image.img-fluid{
 .dark-mode .work-content .w-like a {
      color: #02cbf7;
 }
-.dark-mode .list-ico span {
-     color: #02cbf7;
-   
-}
+
 /*------/ Ico Circle /------*/
 .dark-mode .ico-circle {
      box-shadow: 0 0 0 4px #02cbf7;  
 }
-.dark-mode .overlay-mf {
-     background-color: #02cbf7;
-}
- 
+
