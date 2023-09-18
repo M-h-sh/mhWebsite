@@ -1567,4 +1567,7 @@ img#image.img-fluid{
 .dark-mode .ico-circle {
      box-shadow: 0 0 0 4px #02cbf7;  
 }
+.dark-mode .overlay-mf {
+     background-color: #02cbf7;
+}
  
