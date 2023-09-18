@@ -1547,4 +1547,16 @@ img#image.img-fluid{
  .dark-mode .tab-content{
      background-color:#111;
 }
+
+ .dark-mode .work-content .w-more .w-ctegory {
+     color: #02cbf7;
+}
+.dark-mode .work-content .w-like {
+   
+     color: #02cbf7;
+    
+}
+.dark-mode .work-content .w-like a {
+     color: #02cbf7;
+}
  
