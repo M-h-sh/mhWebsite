@@ -303,6 +303,10 @@ padding:8px;
         max-width: 50px;
     }
 
+  .home {
+    background-image: url("../images/mobile_hero_bg.png");
+    }
+
     #skillsChart {
         max-height: 280px;
         max-width: 280px;
