@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', function() {
+$(document).ready(function() {
     // Initialize Typed.js
     var options = {
         strings: ["The Software Engineer", "IT Multimedia Graduate", "Microsoft 365 Certified", " and the Innovative Problem Solver"],
@@ -9,29 +9,14 @@ document.addEventListener('DOMContentLoaded', function() {
     var typed = new Typed("#typed", options);
 
     // Initialize Chart.js
-    const ctx = $('#skillsChart');
-    const skillsChart = new Chart(ctx, {
+    const skillsChart = new Chart($('#skillsChart'), {
         type: 'pie',
         data: {
             labels: ['Software Development', 'Website Design', 'Graphic Design', 'Game Development', 'Mobile App Development', 'Video Editing'],
             datasets: [{
                 data: [25, 20, 15, 10, 15, 15],
-                backgroundColor: [
-                    '#1464c0',
-                    '#920b0d',
-                    '#c00407',
-                    '#333333',
-                    '#d8d6d6',
-                    '#8abdf7'
-                ],
-                borderColor: [
-                    '#1464c0',
-                    '#920b0d',
-                    '#c00407',
-                    '#333333',
-                    '#d8d6d6',
-                    '#8abdf7'
-                ],
+                backgroundColor: ['#1464c0', '#920b0d', '#c00407', '#333333', '#d8d6d6', '#8abdf7'],
+                borderColor: ['#1464c0', '#920b0d', '#c00407', '#333333', '#d8d6d6', '#8abdf7'],
                 borderWidth: 1
             }]
         },
@@ -59,80 +44,71 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     // Update year dynamically
-    document.getElementById('year').textContent = new Date().getFullYear();
-});
+    $('#year').text(new Date().getFullYear());
 
-// Go to Top Button functionality
-let goTopBtn = document.getElementById("goTopBtn");
+    // Go to Top Button functionality
+    let goTopBtn = $('#goTopBtn');
 
-// When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function() {
-    scrollFunction();
-};
+    $(window).scroll(function() {
+        if ($(this).scrollTop() > 20) {
+            goTopBtn.show();
+        } else {
+            goTopBtn.hide();
+        }
+    });
 
-function scrollFunction() {
-    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-        goTopBtn.style.display = "block";
-    } else {
-        goTopBtn.style.display = "none";
+    goTopBtn.click(function() {
+        $('html, body').animate({ scrollTop: 0 }, 'smooth');
+    });
+
+    // Pagination for certificate cards
+    var cardsPerPage;
+    var currentPage = 1;
+    var totalCards = $('.certificate-card').length;
+    var totalPages;
+
+    function updatePagination() {
+        var start = (currentPage - 1) * cardsPerPage;
+        var end = start + cardsPerPage;
+        $('.certificate-card').hide().slice(start, end).removeClass('d-none').show();
+        $('#prev-btn').toggleClass('d-none', currentPage === 1);
+        $('#next-btn').toggleClass('d-none', currentPage === totalPages);
     }
-}
 
-// When the user clicks on the button, scroll to the top of the document
-function topFunction() {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-}
-
-var cards_per_page;
-var current_page = 1;
-var total_cards = $('.certificate-card').length;
-var total_pages;
-
-function updatecards_per_page() {
-    if ($(window).width() < 992) {
-        cards_per_page = 1;
-    } else {
-        cards_per_page = 4;
+    function updateCardsPerPage() {
+        cardsPerPage = $(window).width() < 992 ? 1 : 4;
     }
-}
 
-function updatePagination() {
-    var start_index = (current_page - 1) * cards_per_page;
-    var end_index = start_index + cards_per_page;
-    updatecards_per_page();
-    total_pages = Math.ceil(total_cards / cards_per_page);
-    $('.certificate-card').hide();
-    $('.certificate-card').slice(start_index, end_index).removeClass('d-none').show();
-    $('#prev-btn').toggleClass('d-none', current_page === 1);
-    $('#next-btn').toggleClass('d-none', current_page === total_pages);
-}
-
-updatecards_per_page();
-updatePagination();
-
-$('#prev-btn').on('click', function(event) {
-    event.preventDefault();
-    if (current_page > 1) {
-        current_page--;
-        updatePagination();
-    }
-});
-
-$('#next-btn').on('click', function(event) {
-    event.preventDefault();
-    if (current_page < total_pages) {
-        current_page++;
-        updatePagination();
-    }
-});
-
-// Handle resize event
-$(window).on('resize', function() {
-    updatecards_per_page();
+    updateCardsPerPage();
+    totalPages = Math.ceil(totalCards / cardsPerPage);
     updatePagination();
-});
 
-// Clean up on page unload
-$(window).on('beforeunload', function() {
-    $(window).off('resize');
+    $('#prev-btn').on('click', function(event) {
+        event.preventDefault();
+        if (currentPage > 1) {
+            currentPage--;
+            updatePagination();
+        }
+    });
+
+    $('#next-btn').on('click', function(event) {
+        event.preventDefault();
+        if (currentPage < totalPages) {
+            currentPage++;
+            updatePagination();
+        }
+    });
+
+    // Handle resize event
+    $(window).on('resize', function() {
+        updateCardsPerPage();
+        totalPages = Math.ceil(totalCards / cardsPerPage);
+        currentPage = 1;
+        updatePagination();
+    });
+
+    // Clean up on page unload
+    $(window).on('beforeunload', function() {
+        $(window).off('resize');
+    });
 });
