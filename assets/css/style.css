@@ -171,8 +171,8 @@ padding:8px;
 }
 
 .mytext{
-    color: var(--primary-color);
-    font-weight: bold;
+    color: var(--background-color);
+    font-weight:600;
     font-size: 1.6rem;
 }
 
