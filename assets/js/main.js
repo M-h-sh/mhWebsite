@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function() {
     // Initialize Typed.js
     var options = {
-        strings: ["2+ Years Experienced Software Developer", "IT Multimedia Graduate", "Microsoft 365 Certified"],
+        strings: ["The Software Engineer", "IT Multimedia Graduate", "Microsoft 365 Certified", " and the Innovative Problem Solver"],
         typeSpeed: 50,
         backSpeed: 50,
         loop: true
@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', function() {
         data: {
             labels: ['Software Development', 'Website Design', 'Graphic Design', 'Game Development', 'Mobile App Development', 'Video Editing'],
             datasets: [{
-                data: [20, 20, 15, 15, 15, 15],
+                data: [25, 20, 15, 10, 15, 15],
                 backgroundColor: [
                     '#1464c0',
                     '#920b0d',
@@ -82,3 +82,57 @@ function scrollFunction() {
 function topFunction() {
     window.scrollTo({ top: 0, behavior: 'smooth' });
 }
+
+var cards_per_page;
+var current_page = 1;
+var total_cards = $('.certificate-card').length;
+var total_pages;
+
+function updatecards_per_page() {
+    if ($(window).width() < 992) {
+        cards_per_page = 1;
+    } else {
+        cards_per_page = 4;
+    }
+}
+
+function updatePagination() {
+    var start_index = (current_page - 1) * cards_per_page;
+    var end_index = start_index + cards_per_page;
+    updatecards_per_page();
+    total_pages = Math.ceil(total_cards / cards_per_page);
+    $('.certificate-card').hide();
+    $('.certificate-card').slice(start_index, end_index).removeClass('d-none').show();
+    $('#prev-btn').toggleClass('d-none', current_page === 1);
+    $('#next-btn').toggleClass('d-none', current_page === total_pages);
+}
+
+updatecards_per_page();
+updatePagination();
+
+$('#prev-btn').on('click', function(event) {
+    event.preventDefault();
+    if (current_page > 1) {
+        current_page--;
+        updatePagination();
+    }
+});
+
+$('#next-btn').on('click', function(event) {
+    event.preventDefault();
+    if (current_page < total_pages) {
+        current_page++;
+        updatePagination();
+    }
+});
+
+// Handle resize event
+$(window).on('resize', function() {
+    updatecards_per_page();
+    updatePagination();
+});
+
+// Clean up on page unload
+$(window).on('beforeunload', function() {
+    $(window).off('resize');
+});

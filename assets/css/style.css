@@ -1,17 +1,17 @@
 :root {
-    --primary-color: #1464c0;
-    --secondary-color: #FFFFFF; 
-    --accent-color: #920b0d; 
-    --button-color: #eb3134;
-    --background-color: #f4f8f8; 
-    --text-color: #333333;
-    --card-shadow: rgba(0, 0, 0, 0.2);
-    --navbar-bg: var(--primary-color);
-    --footer-bg: #eeeeee;
-    --glass-color:#0727300c;
-    --transparent-bg:#f8fbfc9d;
-    --blue-color:#e8f2fd;
-    --blue-dark-color: #011022;
+    --primary-color: #1464c0; /* A rich blue */
+    --secondary-color: #FFFFFF; /* White */
+    --accent-color: #c92e23; /* A deep red */
+    --button-color: #d32f23; /* A bright red */
+    --background-color: #f4f8f8; /* A light grayish blue */
+    --text-color: #333333; /* A dark gray */
+    --card-shadow: rgba(0, 0, 0, 0.2); /* A light shadow for cards */
+    --navbar-bg: var(--primary-color); /* Navbar background matching the primary color */
+    --footer-bg: #eeeeee; /* A light gray for the footer background */
+    --glass-color: #fdfdfd6e; /* A very light transparent blue */
+    --transparent-bg: #f8fbfc9d; /* A slightly transparent background */
+    --blue-color: #e8f2fd; /* A very light blue */
+    --blue-dark-color: #011022; /* A very dark blue */
 }
 
 body {
@@ -20,8 +20,8 @@ body {
     padding: 0;
 }
 
- /* Go to Top Button */
- #goTopBtn {
+/* Go to Top Button */
+#goTopBtn {
     display: none; /* Hidden by default */
     position: fixed; /* Fixed/sticky position */
     bottom: 20px; /* Place the button at the bottom of the page */
@@ -44,66 +44,66 @@ body {
     background: linear-gradient(135deg, var(--primary-color), var(--blue-dark-color), var(--blue-dark-color));
 }
 
-.text-red{
-color:var(--accent-color);
+.text-red {
+    color: var(--accent-color);
 }
 
-.text-light-red{
-    color:var(--button-color);
-    }  
+.text-light-red {
+    color: var(--button-color)!important;
+}  
 
-.text-blue{
+.text-blue {
     color: var(--primary-color);
 }
 
-.glass{
-background-color: var(--glass-color);
-border-radius: 20px;
+.glass {
+    background-color: var(--glass-color);
+    border-radius: 20px;
 }
 
-.experience-card{
-background-image:url("../images/experience_card.png");
-color:var(--secondary-color);
-border-radius:20px;
-padding:8px;
+.experience-card {
+    background-image: url("../images/experience_card.png");
+    color: var(--secondary-color);
+    border-radius: 20px;
+    padding: 8px;
 }
 
-.experience-card:hover{
+.experience-card:hover {
     transform: scale(1.05);
     color: var(--blue-color);
 }
 
 .education {
-    background-image:url("../images/education_bg.png"); 
+    background-image: url("../images/education_bg.png"); 
     background-size: cover;  
 }
 
-.education-card{
+.education-card {
     background-color: var(--secondary-color);
-    border-radius:20px;
-    padding:20px;
-    height:380px;
+    border-radius: 20px;
+    padding: 20px;
+    height: 380px;
 }
 
-.education-card:hover{
-    background-color:var(--secondary-color);
+.education-card:hover {
+    background-color: var(--secondary-color);
     transform: scale(1.05);
 }
 
-.service-card{
-    background-color:var(--secondary-color);
-    border-radius:20px;
-    padding:2px;
-    height:120px; 
+.service-card {
+    background-color: var(--secondary-color);
+    border-radius: 20px;
+    padding: 2px;
+    height: 120px; 
 }
 
-.service-card:hover{
+.service-card:hover {
     transform: scale(1.05);
 }
 
-.text-xxs{
+.text-xxs {
     font-size: 0.8rem !important;
-  }
+}
 
 .container-fluid {
     padding: 1.5rem;
@@ -117,16 +117,73 @@ padding:8px;
     max-height: 400px;
     max-width: 400px;
     margin: 0 auto;
-    padding:1.4rem;
+    padding: 1.4rem;
 }
 
+.certification-home {
+    padding: 100px 0;
+    background-image: url("../images/cert_hero.png");
+    height: 100vh;
+    color: var(--secondary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+/* About Me Section */
+.about-my-certificates {
+    padding: 60px 0;
+}
+
+.about-my-certificates .lead {
+    font-size: 1.25rem;
+}
+
+.about-my-certificates .about-img {
+    width: 80%;
+    border: 5px solid var(--secondary-color);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Certificates Section */
+.my-certificates {
+    padding: 10px 0;
+    background: linear-gradient(to right, #ffffff, #e9ecef);
+}
+
+.certificate-card {
+    background-color: #fff;
+    border-radius: 10px;
+    transition: transform 0.2s;
+}
+
+.certificate-card:hover {
+    transform: translateY(-10px);
+}
+
+.certificate-card .card-body {
+    padding: 20px;
+    height:290px;
+}
+
+.certificate-card .card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color:var(--primary-color);
+}
+
+.certificate-card .card-text {
+    font-size: 1rem;
+    color: #6c757d;
+}
 
 .logo {
-    width:50px;
+    width: 50px;
 }
 
-.mh-pic{
-    width:100px; 
+.mh-pic {
+    width: 100px; 
 }
 
 .home {
@@ -149,27 +206,43 @@ padding:8px;
     text-align: center;
 }
 
-.about-me{
-    background-image: url("../images/about_bg.png");
+.project-home {
+    background-image: url("../images/project_hero_bg.png");
     background-size: cover;
-    padding:30px;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
-.about-img{
-    width:100%;
-    max-width:340px;
-    align-self:center;
-    }
+.project-card{
+height:320px;
+}
 
-.hero-title{
+.project-card:hover{
+    transform: translateY(-10px);
+}
+
+.about-me {
+    background-color: var(--background-color-color);
+    background-size: cover;
+    padding: 30px;
+}
+
+.about-img {
+    width: 100%;
+    max-width: 340px;
+    align-self: center;
+}
+
+.hero-title {
     color: var(--secondary-color);
-    font-weight: 100;
     margin-top: 0;
 }
 
-.mytext{
-    color: var(--button-color);
-    font-weight:600;
+.mytext {
+    color: var(--background-color);
     font-size: 1.6rem;
 }
 
@@ -187,19 +260,6 @@ padding:8px;
     color: var(--button-color);
 }
 
-.get-started {
-    padding: 6px 20px;
-    color: var(--secondary-color);
-    border-radius: 15px;
-    border-width: 0;
-    background-color: var(--accent-color);
-}
-
-.get-started:hover {
-    color: var(--secondary-color);
-    background-color: var(--button-color);
-}
-
 .contact {
     padding: 2rem 0;
     background-image: url("../images/contact_bg.png");
@@ -207,7 +267,7 @@ padding:8px;
 }
 
 .contact p {
-    color:var(--secondary-color);
+    color: var(--secondary-color);
 }
 
 .contact a {
@@ -217,7 +277,7 @@ padding:8px;
 }
 
 .contact a:hover {
-    color:var(--button-color);
+    color: var(--button-color);
 }
 
 .contact-form {
@@ -239,28 +299,13 @@ padding:8px;
 }
 
 .contact-form input,
-.contact-form textarea:hover{
-    border-color:var(--background-color); 
+.contact-form textarea:hover {
+    border-color: var(--background-color); 
 }
 
-.contact-form button {
-    padding: 0.5rem 1rem;
-    background-color:var(--button-color);
-    border: none;
-    border-radius: 25px;
-    color: var(--secondary-color);
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.contact-form button:hover {
-    background-color:var(--accent-color);
-}
-
-/* Footer Styles */
 .footer {
-    background-color:var(--accent-color);
-    color:var(--secondary-color);
+    background-color: var(--text-color);
+    color: var(--secondary-color);
     text-align: center;
     padding: 1rem 0;
 }
@@ -277,10 +322,10 @@ padding:8px;
         max-width: 80px;
     }
 
-    .education-card{
-        border-radius:20px;
-        padding:20px;
-        height:100%;
+    .education-card {
+        border-radius: 20px;
+        padding: 20px;
+        height: 100%;
     }
 
     .hero-title {
@@ -298,26 +343,25 @@ padding:8px;
         max-width: 50px;
     }
 
-  .home {
-    background-image: url("../images/mobile_hero_bg.png");
+    .home {
+        background-image: url("../images/mobile_hero_bg.png");
     }
 
     #skillsChart {
         max-height: 280px;
         max-width: 280px;
         margin: 0 auto;
-        padding:0rem;
+        padding: 0rem;
     }
 
-    .mh-pic{
-        width:60px; 
+    .mh-pic {
+        width: 60px; 
     }
 
-    .navbar-collapse{
-     background-color: var(--text-color);
-     border-radius:5px;
-     padding:20px;
-     
+    .navbar-collapse {
+        background-color: var(--text-color);
+        border-radius: 5px;
+        padding: 20px;
     }
 
     .hero-title {
@@ -343,5 +387,4 @@ padding:8px;
     .mytext {
         font-size: 1rem;
     }
-
 }

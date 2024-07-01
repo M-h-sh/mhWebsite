@@ -26,15 +26,15 @@
                     <li class="nav-item">
                         <a class="nav-link text-xxs" href="services.html">Services</a>
                     </li>
-                    <li class="nav-item d-none">
-                        <a class="nav-link text-xxs " href="#">Certifications</a>
+                    <li class="nav-item">
+                        <a class="nav-link text-xxs " href="certificates.html">Certifications</a>
                     </li>
-                    <li class="nav-item d-none">
-                        <a class="nav-link text-xxs" href="#">Project</a>
+                    <li class="nav-item ">
+                        <a class="nav-link text-xxs" href="projects.html">Project</a>
                     </li>
             
                 </ul>
-                <span class="navbar-text text-xxs"><a class="nav-link text-xxs" href="#contact"><button class="get-started text-xxs " type="button" aria-controls="get-started"> Get Started</button></a></span>
+                <span class="navbar-text"><a class="nav-link" href="index.html#contact"><button class="btn btn-primary text-xxs" type="button" aria-controls="get-started">Get Started</button></a></span>
             </div>
         </div>
     </nav>
@@ -44,7 +44,11 @@
     <section id="home" class="section home">
         <div class="container-fluid">
             <div class="text-center hero">
-                <p class="hero-title display-4">Mthokozisi Hector Hlatshwayo</p>
+                <p class="hero-title display-4 fw-normal">
+                    <span class="fw-light text-primary">Hello, I'm<br></span>
+                    Mthokozisi Hector Hlatshwayo
+                </p>
+                
                 <p class="hero-subtitle mytext fw-bold">
                     <span id="typed"></span>
                 </p>
@@ -57,15 +61,15 @@
         <div class="container-fluid">
             <div class="row justify-content-center">
             <div class="col-lg-4 col-md-12 glass">
-                <img src="assets/images/nh1.webp" class="about-img " alt="">
+                <img src="assets/images/nh1.webp" class="about-img img-fluid rounded-circle bg-dark " alt="">
                 </div>
                 <div class="col-lg-1">
                     
                     </div>
                 <div class="col-lg-4 col-md-12 mt-4">
-                    <p class="hero-title text-dark display-4">About</p>
+                    <p class="hero-title fw-bold text-dark display-4">About</p>
                     <p><img src="assets/images/mh_about_logo.png" class="img-fluid mh-pic" alt="logo"></p>
-                    <p class="text-xxs"><b><span class="text-light-red  fw-bold">M</span><span class="text-blue fw-bold">H</span></b> Hlatshwayo is an experienced Software Developer with expertise in interface design, customization, and maintenance, proficient in CSS, JavaScript, HTML, and Bootstrap. Certified in Web Development, Mobile App Development, Flutter, Python, Version Control, and soft skills. Known for problem-solving, effective communication, and adaptability. Eager to leverage skills and strengths to drive excellence and innovation in software development.</p>
+                    <p class="text-xxs">MH Hlatshwayo is an experienced Software Developer with expertise in interface design, customization, and maintenance, proficient in CSS, JavaScript, HTML, PHP, Django, Python, Java, C#, C++ and Bootstrap. Certified in Microsoft 365, Web Development, Mobile App Development, Flutter, Python, Version Control, and soft skills. Known for problem-solving, effective communication, and adaptability. Eager to leverage skills and strengths to drive excellence and innovation in software development.</p>
                 </div>
             
         </div>
@@ -74,7 +78,7 @@
 
     <section id="experience" class="section experience">
         <div class="container-fluid">
-            <p class="hero-title text-dark text-center display-4">Experience</p>
+            <p class="hero-title text-dark fw-bold text-center display-4">Experience</p>
             <div class="row mt-4">
                 <div class="col-md-4 mb-4" data-aos="fade-up">
                     <div class="card experience-card">
@@ -136,7 +140,7 @@
 
     <section id="education" class="section education">
         <div class="container-fluid">
-            <p class="hero-title text-center text-light display-4">Education</p>
+            <p class="hero-title text-center fw-bold text-light display-4">Education</p>
             <div class="row mt-4">
                 <div class="col-lg-6 col-md-12 h-100  mb-4">
                     <div class="card education-card">
@@ -199,7 +203,7 @@
 
     <section id="skills" class="section skills">
         <div class="container-fluid">
-            <p class="hero-title text-center text-dark display-4">Top Skills</p>
+            <p class="hero-title fw-bold text-center text-dark display-4">Top Skills</p>
             <div class="row justify-content-center">
                 <div class="col-md-6 mb-4">
                     <div class="card">
@@ -216,7 +220,7 @@
         <div class="container-fluid">
             <div class="row ">
                 <div class="col-lg-6 col-md-12 mb-4">
-                    <p class="hero-title display-4 ">Get In <b class="fw-bold text-light-red">Touch</b></p>
+                    <p class="hero-title display-4 fw-bold ">Get In Touch</p>
                     <p class="text-xxs" >8737 Molatedi Street, Diepmeadow, Gauteng, 1862</p>
                     <p class="text-xxs" ><a href="tel:+27764611841">0764611841 (Mobile)</a></p>
                     <p class="text-xxs" ><a href="mailto:mthova.hp@gmail.com">mthova.hp@gmail.com</a></p>
@@ -229,19 +233,25 @@
                     <input class="text-xxs"  type="text" name="name" placeholder="Your Name" required>
                     <input class="text-xxs"  type="email" name="email" placeholder="Your Email" required>
                     <textarea class="text-xxs"  name="message" rows="5" placeholder="Your Message" required></textarea>
-                    <button class="text-xxs" type="submit">Send Message</button>
+                    <button class="text-xxs btn btn-primary" type="submit">Send Message</button>
                 </form>
             </div>
         </div>
         </div>
+        
     </div>
     </section>
 </main>
 <button onclick="topFunction()" id="goTopBtn" title="Go to Top"><i class="bi bi-arrow-up-short"></i></button>
 <!-- Footer -->
-<footer class="footer">
-    <div class="container-fluid">
-        <p class="text-xxs">&copy; <b class="fw-bold" id="year"></b> Mthokozisi Hector Hlatshwayo. All Rights Reserved.</p>
+<footer class="text-center text-white py-4 bg-dark">
+    <div class="container">
+        <p class="text-xxs">&copy; <b class="fw-bold text-blue" id="year"></b><span class=" fw-bold"> Mthokozisi Hector </span></b> Hlatshwayo. All Rights Reserved.</p>
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/mh-hlatshwayo/" class="text-white me-3"><i class="bi bi-linkedin"></i></a>
+            <a href="https://github.com/Mthokozisi-Hector-Hlatshwayo" class="text-white me-3"><i class="bi bi-github"></i></a>
+            <a href="https://twitter.com/Mthovistor" class="text-white"><i class="bi bi-twitter"></i></a>
+        </div>
     </div>
 </footer>
     
