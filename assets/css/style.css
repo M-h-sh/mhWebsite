@@ -2,15 +2,15 @@
     --primary-color: #1464c0;
     --secondary-color: #FFFFFF; 
     --accent-color: #920b0d; 
-    --button-color: #c00407;
-    --background-color: #d8d6d6; 
+    --button-color: #eb3134;
+    --background-color: #f4f8f8; 
     --text-color: #333333;
     --card-shadow: rgba(0, 0, 0, 0.2);
     --navbar-bg: var(--primary-color);
     --footer-bg: #eeeeee;
     --glass-color:#0727300c;
     --transparent-bg:#f8fbfc9d;
-    --blue-color:#8abdf7;
+    --blue-color:#e8f2fd;
     --blue-dark-color: #011022;
 }
 
@@ -98,10 +98,7 @@ padding:8px;
 }
 
 .service-card:hover{
-    background-color:var(--secondary-color);
     transform: scale(1.05);
-    color:var(--accent-color);
-    font-weight: 800;
 }
 
 .text-xxs{
@@ -228,14 +225,14 @@ padding:8px;
     max-width: 600px;
     margin: 0 auto;
     padding: 2rem;
-    background-color: var(--transparent-bg);
+    background-color: var(--secondary-color);
     border-radius: 8px;
 }
 
 .contact-form input,
 .contact-form textarea {
     width: 100%;
-    background-color: var(--transparent-bg);
+    background-color: var(--background-color);
     padding: 0.75rem;
     margin-bottom: 1rem;
     border: none;
