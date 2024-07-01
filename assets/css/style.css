@@ -98,7 +98,7 @@ padding:8px;
 }
 
 .service-card:hover{
-    background-color:var(--background-color);
+    background-color:var(--secondary-color);
     transform: scale(1.05);
     color:var(--accent-color);
     font-weight: 800;
@@ -282,7 +282,6 @@ padding:8px;
     }
 
     .education-card{
-        background-color: var(--transparent-bg);
         border-radius:20px;
         padding:20px;
         height:100%;
