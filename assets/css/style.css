@@ -168,7 +168,7 @@ padding:8px;
 }
 
 .mytext{
-    color: var(--background-color);
+    color: var(--button-color);
     font-weight:600;
     font-size: 1.6rem;
 }
