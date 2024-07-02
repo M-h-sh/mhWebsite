@@ -52,12 +52,6 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
-    // Initialize AOS
-    AOS.init({
-        duration: 800,
-        once: true
-    });
-
     // Update year dynamically
     document.getElementById('year').textContent = new Date().getFullYear();
 });
