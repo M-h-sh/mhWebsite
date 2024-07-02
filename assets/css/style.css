@@ -41,7 +41,7 @@ body {
 }
 
 .gradient-bg {
-    background-image: url("../images/Services_bg.png");
+    background-image: url("../images/Services_bg.webp");
     background-size: cover;
 }
 
@@ -63,7 +63,7 @@ body {
 }
 
 .experience-card {
-    background-image: url("../images/experience_card.png");
+    background-image: url("../images/experience_card.webp");
     color: var(--secondary-color);
     border-radius: 20px;
     padding: 8px;
@@ -75,7 +75,7 @@ body {
 }
 
 .education {
-    background-image: url("../images/education_bg.png"); 
+    background-image: url("../images/education_bg.webp"); 
     background-size: cover;  
 }
 
@@ -123,7 +123,7 @@ body {
 
 .certification-home {
     padding: 100px 0;
-    background-image: url("../images/cert_hero.png");
+    background-image: url("../images/cert_hero.webp");
     height: 100vh;
     color: var(--secondary-color);
     display: flex;
@@ -188,7 +188,7 @@ body {
 }
 
 .home {
-    background-image: url("../images/hero_bg.png");
+    background-image: url("../images/hero_bg.webp");
     background-size: cover;
     height: 100vh;
     display: flex;
@@ -198,7 +198,7 @@ body {
 }
 
 .service-home {
-    background-image: url("../images/hero_Services_bg.png");
+    background-image: url("../images/hero_Services_bg.webp");
     background-size: cover;
     height: 100vh;
     display: flex;
@@ -208,7 +208,7 @@ body {
 }
 
 .service-card{
-    background-image: url("../images/card_Service.png");
+    background-image: url("../images/card_Service.webp");
     background-size: cover; 
     display: flex;
     align-items: center;
@@ -218,7 +218,7 @@ body {
 }
 
 .project-home {
-    background-image: url("../images/project_hero_bg.png");
+    background-image: url("../images/project_hero_bg.webp");
     background-size: cover;
     height: 100vh;
     display: flex;
@@ -278,7 +278,7 @@ height:320px;
 
 .contact {
     padding: 2rem 0;
-    background-image: url("../images/contact_bg.png");
+    background-image: url("../images/contact_bg.webp");
     background-size: cover;
 }
 
@@ -364,7 +364,7 @@ height:320px;
     }
 
     .home {
-        background-image: url("../images/mobile_hero_bg.png");
+        background-image: url("../images/mobile_hero_bg.webp");
     }
 
     #skillsChart {
@@ -470,7 +470,7 @@ height:320px;
 }
 
 .dark-mode .service-card{
-    background-image: url("../images/card_Service_dark.png");
+    background-image: url("../images/card_Service_dark.webp");
 }
 
 .dark-mode .switch{
@@ -482,5 +482,5 @@ height:320px;
 }
 
 .dark-mode .experience-card {
-    background-image: url("../images/experience_card_dark.png");
+    background-image: url("../images/experience_card_dark.webp");
 }
