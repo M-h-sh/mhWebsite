@@ -231,6 +231,11 @@ body {
 height:320px;
 }
 
+.switch{
+    color:var(--secondary-color) !important;
+    font-weight: 900;
+}
+
 .project-card:hover{
     transform: translateY(-10px);
 }
@@ -466,4 +471,8 @@ height:320px;
 
 .dark-mode .service-card{
     background-image: url("../images/card_Service_dark.png");
+}
+
+.dark-mode .switch{
+    color:rgb(199, 219, 255) !important;
 }
