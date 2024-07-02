@@ -481,3 +481,6 @@ height:320px;
     border-color: rgb(19, 18, 18) !important;
 }
 
+.dark-mode .experience-card {
+    background-image: url("../images/experience_card_dark.png");
+}
