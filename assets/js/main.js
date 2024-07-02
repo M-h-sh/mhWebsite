@@ -136,3 +136,24 @@ $(window).on('resize', function() {
 $(window).on('beforeunload', function() {
     $(window).off('resize');
 });
+
+$(document).ready(function() {
+    const toggleButton = $('#darkModeToggle');
+    const body = $('body');
+
+    // Check the saved preference and apply it
+    if (localStorage.getItem('darkMode') === 'enabled') {
+        body.addClass('dark-mode');
+        toggleButton.text('Light Mode');
+    }
+
+    toggleButton.on('click', function() {
+        if (body.toggleClass('dark-mode').hasClass('dark-mode')) {
+            localStorage.setItem('darkMode', 'enabled');
+            toggleButton.text('Light Mode');
+        } else {
+            localStorage.setItem('darkMode', 'disabled');
+            toggleButton.text('Dark Mode');
+        }
+    });
+});

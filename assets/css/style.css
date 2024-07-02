@@ -41,7 +41,8 @@ body {
 }
 
 .gradient-bg {
-    background: linear-gradient(135deg, var(--primary-color), var(--blue-dark-color), var(--blue-dark-color));
+    background-image: url("../images/Services_bg.png");
+    background-size: cover;
 }
 
 .text-red {
@@ -206,6 +207,16 @@ body {
     text-align: center;
 }
 
+.service-card{
+    background-image: url("../images/card_Service.png");
+    background-size: cover; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding:100px;
+}
+
 .project-home {
     background-image: url("../images/project_hero_bg.png");
     background-size: cover;
@@ -343,6 +354,10 @@ height:320px;
         max-width: 50px;
     }
 
+    .service-card{
+        padding:18px;
+    }
+
     .home {
         background-image: url("../images/mobile_hero_bg.png");
     }
@@ -387,4 +402,68 @@ height:320px;
     .mytext {
         font-size: 1rem;
     }
+}
+
+/* Dark mode styles */
+.dark-mode {
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+.dark-mode .contact-form, .dark-mode .card, .dark-mode .footer {
+    background-color: #1e1e1e;
+    color: #e0e0e0;
+}
+
+.dark-mode .contact-form textarea, .dark-mode .contact-form input{
+    background-color: #161616;
+    color: #e0e0e0;
+}
+
+ .dark-mode .skill-card{
+    background-color:rgba(7, 7, 7, 0.185);
+    color: #e0e0e0;
+    }
+    
+.dark-mode .btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.dark-mode .text-dark{
+    color: #e0e0e0 !important;
+}
+
+.dark-mode .about-me{
+    background-color:rgb(8, 11, 19);
+}
+
+.dark-mode .my-certificates {
+    padding: 10px 0;
+    background: linear-gradient(to right, #0b0b16, #141414);
+    color: var(--secondary-color);
+}
+
+ .dark-mode .certificate-card .card-text {
+    color: #bbc1c7;
+}
+
+.dark-mode .text-muted {
+    color: #9c9d9e !important;
+}
+
+.dark-mode .technologies{
+    background-color:rgb(36, 35, 35) !important;
+}
+
+.dark-mode .bg-white{
+    background-color: #1f1e1e !important;
+}
+
+.dark-mode .bg-light{
+    background-color: #080808 !important;
+}
+
+.dark-mode .service-card{
+    background-image: url("../images/card_Service_dark.png");
 }
