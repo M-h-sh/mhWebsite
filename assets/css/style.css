@@ -393,7 +393,7 @@ height:320px;
     }
 
     .dark-mode .navbar-collapse {
-        background-color:var(--text-color);
+        background-color:black;
     }
 
     .dark-mode .nav-link{
