@@ -379,9 +379,29 @@ height:320px;
     }
 
     .navbar-collapse {
-        background-color: var(--text-color);
+        background-color:var(--secondary-color);
         border-radius: 5px;
         padding: 20px;
+    }
+
+    .nav-link{
+        color:var(--text-color) ;
+    }
+    .switch{
+        color:var(--primary-color) !important;
+        font-weight: 900;
+    }
+
+    .dark-mode .navbar-collapse {
+        background-color:var(--text-color);
+    }
+
+    .dark-mode .nav-link{
+        color:var(--secondary-color) ;
+    }
+    .dark-mode .switch{
+        color:var(--secondary-color);
+        font-weight: 900;
     }
 
     .hero-title {
