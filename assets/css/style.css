@@ -8,7 +8,7 @@
     --card-shadow: rgba(0, 0, 0, 0.2); /* A light shadow for cards */
     --navbar-bg: var(--primary-color); /* Navbar background matching the primary color */
     --footer-bg: #eeeeee; /* A light gray for the footer background */
-    --glass-color: #0f0f0fe0; /* A very light transparent blue */
+    --glass-color: #0f0f0f88; /* A very light transparent blue */
     --transparent-bg: #f8fbfc9d; /* A slightly transparent background */
     --blue-color: #e8f2fd; /* A very light blue */
     --blue-dark-color: #011022; /* A very dark blue */
