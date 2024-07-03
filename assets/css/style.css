@@ -8,7 +8,7 @@
     --card-shadow: rgba(0, 0, 0, 0.2); /* A light shadow for cards */
     --navbar-bg: var(--primary-color); /* Navbar background matching the primary color */
     --footer-bg: #eeeeee; /* A light gray for the footer background */
-    --glass-color: #fdfdfd6e; /* A very light transparent blue */
+    --glass-color: #0f0f0fe0; /* A very light transparent blue */
     --transparent-bg: #f8fbfc9d; /* A slightly transparent background */
     --blue-color: #e8f2fd; /* A very light blue */
     --blue-dark-color: #011022; /* A very dark blue */
@@ -426,8 +426,8 @@ height:320px;
 }
 
  .dark-mode .skill-card{
-    background-color:rgba(7, 7, 7, 0.185);
-    color: #e0e0e0;
+    background-image: url("../images/experience_card_dark.webp");
+    background-size: cover;
     }
     
 .dark-mode .btn-primary {
@@ -483,4 +483,8 @@ height:320px;
 
 .dark-mode .experience-card {
     background-image: url("../images/experience_card_dark.webp");
+}
+
+.dark-mode .education-card {
+    background-color:var(--glass-color);
 }
