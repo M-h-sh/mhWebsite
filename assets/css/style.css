@@ -20,6 +20,11 @@ body {
     padding: 0;
 }
 
+.text-xlg
+{
+  font-size: 140px;
+}
+
 /* Go to Top Button */
 #goTopBtn {
     display: none; /* Hidden by default */
@@ -359,6 +364,11 @@ body {
         max-width: 50px;
     }
 
+    .text-xlg
+        {
+        font-size:4.2rem;
+        }
+
     .service-card {
         padding: 18px;
     }
@@ -418,6 +428,11 @@ body {
         width: 12vw;
         max-width: 50px;
     }
+
+    .text-xlg
+        {
+        font-size:2.6rem;
+        }
 
     .hero-title {
         font-size: 2.2rem;
