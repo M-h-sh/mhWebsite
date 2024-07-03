@@ -30,7 +30,7 @@ body {
     border: none; /* Remove borders */
     outline: none; /* Remove outline */
     background-color: var(--primary-color); /* Primary color */
-    color: white; /* Text color */
+    color: var(--secondary-color); /* Text color */
     cursor: pointer; /* Add a mouse pointer on hover */
     padding: 5px; /* Some padding */
     border-radius: 10px; /* Rounded corners */
@@ -50,7 +50,7 @@ body {
 }
 
 .text-light-red {
-    color: var(--button-color)!important;
+    color: var(--button-color) !important;
 }  
 
 .text-blue {
@@ -150,11 +150,11 @@ body {
 /* Certificates Section */
 .my-certificates {
     padding: 10px 0;
-    background: linear-gradient(to right, #ffffff, #e9ecef);
+    background: linear-gradient(to right, var(--secondary-color), #e9ecef);
 }
 
 .certificate-card {
-    background-color: #fff;
+    background-color: var(--secondary-color);
     border-radius: 10px;
     transition: transform 0.2s;
 }
@@ -165,13 +165,13 @@ body {
 
 .certificate-card .card-body {
     padding: 20px;
-    height:290px;
+    height: 290px;
 }
 
 .certificate-card .card-title {
     font-size: 1.25rem;
     font-weight: bold;
-    color:var(--primary-color);
+    color: var(--primary-color);
 }
 
 .certificate-card .card-text {
@@ -207,14 +207,14 @@ body {
     text-align: center;
 }
 
-.service-card{
+.service-card {
     background-image: url("../images/card_Service.webp");
     background-size: cover; 
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
-    padding:100px;
+    padding: 100px;
 }
 
 .project-home {
@@ -227,21 +227,21 @@ body {
     text-align: center;
 }
 
-.project-card{
-height:320px;
+.project-card {
+    height: 320px;
 }
 
-.switch{
-    color:var(--secondary-color) !important;
+.switch {
+    color: var(--secondary-color) !important;
     font-weight: 900;
 }
 
-.project-card:hover{
+.project-card:hover {
     transform: translateY(-10px);
 }
 
 .about-me {
-    background-color: var(--background-color-color);
+    background-color: var(--background-color);
     background-size: cover;
     padding: 30px;
 }
@@ -359,8 +359,8 @@ height:320px;
         max-width: 50px;
     }
 
-    .service-card{
-        padding:18px;
+    .service-card {
+        padding: 18px;
     }
 
     .home {
@@ -379,28 +379,28 @@ height:320px;
     }
 
     .navbar-collapse {
-        background-color:var(--secondary-color);
+        background-color: var(--secondary-color);
         border-radius: 5px;
         padding: 20px;
     }
 
-    .nav-link{
-        color:var(--text-color) ;
+    .nav-link {
+        color: var(--text-color);
     }
-    .switch{
-        color:var(--primary-color) !important;
+    .switch {
+        color: var(--primary-color) !important;
         font-weight: 900;
     }
 
     .dark-mode .navbar-collapse {
-        background-color:black;
+        background-color: black;
     }
 
-    .dark-mode .nav-link{
-        color:var(--secondary-color) ;
+    .dark-mode .nav-link {
+        color: var(--secondary-color);
     }
-    .dark-mode .switch{
-        color:var(--secondary-color);
+    .dark-mode .switch {
+        color: var(--secondary-color);
         font-weight: 900;
     }
 
@@ -435,32 +435,35 @@ height:320px;
     color: #e0e0e0;
 }
 
-.dark-mode .contact-form, .dark-mode .card, .dark-mode .footer {
+.dark-mode .contact-form,
+.dark-mode .card,
+.dark-mode .footer {
     background-color: #1e1e1e;
     color: #e0e0e0;
 }
 
-.dark-mode .contact-form textarea, .dark-mode .contact-form input{
+.dark-mode .contact-form textarea,
+.dark-mode .contact-form input {
     background-color: #161616;
     color: #e0e0e0;
 }
 
- .dark-mode .skill-card{
+.dark-mode .skill-card {
     background-image: url("../images/experience_card_dark.webp");
     background-size: cover;
-    }
-    
+}
+
 .dark-mode .btn-primary {
     background-color: var(--primary-color);
     border-color: var(--primary-color);
 }
 
-.dark-mode .text-dark{
+.dark-mode .text-dark {
     color: #e0e0e0 !important;
 }
 
-.dark-mode .about-me{
-    background-color:rgb(8, 11, 19);
+.dark-mode .about-me {
+    background-color: rgb(8, 11, 19);
 }
 
 .dark-mode .my-certificates {
@@ -469,7 +472,7 @@ height:320px;
     color: var(--secondary-color);
 }
 
- .dark-mode .certificate-card .card-text {
+.dark-mode .certificate-card .card-text {
     color: #bbc1c7;
 }
 
@@ -477,27 +480,27 @@ height:320px;
     color: #9c9d9e !important;
 }
 
-.dark-mode .technologies{
-    background-color:rgb(36, 35, 35) !important;
+.dark-mode .technologies {
+    background-color: rgb(36, 35, 35) !important;
 }
 
-.dark-mode .bg-white{
+.dark-mode .bg-white {
     background-color: #1f1e1e !important;
 }
 
-.dark-mode .bg-light{
+.dark-mode .bg-light {
     background-color: #080808 !important;
 }
 
-.dark-mode .service-card{
+.dark-mode .service-card {
     background-image: url("../images/card_Service_dark.webp");
 }
 
-.dark-mode .switch{
-    color:rgb(199, 219, 255) !important;
+.dark-mode .switch {
+    color: rgb(199, 219, 255) !important;
 }
 
-.dark-mode .rounded-circle{
+.dark-mode .rounded-circle {
     border-color: rgb(19, 18, 18) !important;
 }
 
@@ -506,5 +509,5 @@ height:320px;
 }
 
 .dark-mode .education-card {
-    background-color:var(--glass-color);
+    background-color: var(--glass-color);
 }
