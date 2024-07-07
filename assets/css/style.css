@@ -25,6 +25,11 @@ body {
   font-size: 140px;
 }
 
+.bi-list{
+    color:var(--blue-dark-color);
+    font-weight: 700;
+}
+
 /* Go to Top Button */
 #goTopBtn {
     display: none; /* Hidden by default */
@@ -77,6 +82,11 @@ body {
 .experience-card:hover {
     transform: scale(1.05);
     color: var(--blue-color);
+}
+
+.skill-card {
+    background-image: url("../images/experience_card_dark.webp");
+    background-size: cover;
 }
 
 .education {
@@ -360,7 +370,7 @@ body {
 
 @media (max-width: 768px) {
     .logo {
-        width: 12vw;
+        width: 6vw;
         max-width: 50px;
     }
 
@@ -463,11 +473,6 @@ body {
     color: #e0e0e0;
 }
 
-.dark-mode .skill-card {
-    background-image: url("../images/experience_card_dark.webp");
-    background-size: cover;
-}
-
 .dark-mode .btn-primary {
     background-color: var(--primary-color);
     border-color: var(--primary-color);
@@ -526,3 +531,8 @@ body {
 .dark-mode .education-card {
     background-color: var(--glass-color);
 }
+
+.dark-mode .bi-list{
+    color:var(--secondary-color);
+}
+

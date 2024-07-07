@@ -25,6 +25,9 @@ document.addEventListener('DOMContentLoaded', function() {
             plugins: {
                 legend: {
                     position: 'top',
+                    labels: {
+                        color: 'white' // Change legend label color here
+                    }
                 },
                 tooltip: {
                     callbacks: {
@@ -32,7 +35,7 @@ document.addEventListener('DOMContentLoaded', function() {
                             return tooltipItem.label + ': ' + tooltipItem.raw + '%';
                         }
                     }
-                }
+                },
             }
         }
     });
