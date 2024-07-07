@@ -85,7 +85,7 @@ body {
 }
 
 .skill-card {
-    background-image: url("../images/experience_card_dark.webp");
+    background-image: url("../images/skill_card.png");
     background-size: cover;
 }
 
@@ -243,7 +243,7 @@ body {
 }
 
 .project-card {
-    height: 320px;
+    height: 370px;
 }
 
 .switch {
@@ -535,4 +535,10 @@ body {
 .dark-mode .bi-list{
     color:var(--secondary-color);
 }
+
+.dark-mode .skill-card {
+    background-image: url("../images/experience_card_dark.webp");
+    background-size: cover;
+}
+
 
