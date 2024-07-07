@@ -71,7 +71,7 @@ body {
     background-image: url("../images/experience_card.webp");
     color: var(--secondary-color);
     border-radius: 20px;
-    padding: 8px;
+    padding: 20px;
 }
 
 .experience-card:hover {
