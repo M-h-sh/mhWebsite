@@ -243,7 +243,9 @@ body {
 }
 
 .project-card {
-    height: 370px;
+    background:whitesmoke;
+    height: 320px;
+    border:none;
 }
 
 .switch {
@@ -372,6 +374,11 @@ body {
     .logo {
         width: 6vw;
         max-width: 50px;
+    }
+    .project-card {
+        background:whitesmoke;
+        height: 100%;
+        border:none;
     }
 
     .text-xlg
@@ -539,6 +546,10 @@ body {
 .dark-mode .skill-card {
     background-image: url("../images/experience_card_dark.webp");
     background-size: cover;
+}
+
+.dark-mode .project-card {
+    background-image: url("../images/project_card_bg.png");
 }
 
 
