@@ -233,7 +233,7 @@ body {
 }
 
 .project-home {
-    background-image: url("../images/project_hero_bg.webp");
+    background-image: url("../images/project_hero_bg.png");
     background-size: cover;
     height: 100vh;
     display: flex;
