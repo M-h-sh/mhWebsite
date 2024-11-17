@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function() {
     // Initialize Typed.js
     new Typed("#typed", {
-        strings: ["The Software Engineer", "IT Multimedia Graduate", "Microsoft 365 Certified", " and the Innovative Problem Solver"],
+        strings: ["The Software Engineer", "IT Multimedia Graduate", "Microsoft 365 Certified", " and UX/UI Designer"],
         typeSpeed: 50,
         backSpeed: 50,
         loop: true

@@ -11,7 +11,7 @@
     --glass-color: #000000ad; /* A very light transparent blue */
     --transparent-bg: #f8fbfc9d; /* A slightly transparent background */
     --blue-color: #e8f2fd; /* A very light blue */
-    --blue-dark-color: #011022; /* A very dark blue */
+    --blue-dark-color: #010911; /* A very dark blue */
 }
 
 body {
@@ -51,7 +51,7 @@ body {
 }
 
 .gradient-bg {
-    background-image: url("../images/Services_bg.webp");
+    background-image: url("../images/skill_card.png");
     background-size: cover;
 }
 
@@ -60,11 +60,25 @@ body {
 }
 
 .text-light-red {
-    color: var(--button-color) !important;
+    background: linear-gradient(90deg, black,red);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }  
 
+.btn-primary {
+    background: linear-gradient(90deg, black,red);
+    border:none;
+}
+
+.btn-primary:hover {
+    background: linear-gradient(90deg, blue, red);
+    border:none;
+}
+
 .text-blue {
-    color: var(--primary-color);
+    background: linear-gradient(90deg, black, blue);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .glass {
@@ -73,15 +87,15 @@ body {
 }
 
 .experience-card {
-    background-image: url("../images/experience_card.webp");
-    color: var(--secondary-color);
+    background-image: url("../images/experience_card.png");
+    color: var(--blue-dark-color);
     border-radius: 20px;
-    padding: 40px;
+    padding: 20px;
 }
 
 .experience-card:hover {
     transform: scale(1.05);
-    color: var(--blue-color);
+    color: var(--blue-dark-color);
 }
 
 .skill-card {
@@ -90,27 +104,56 @@ body {
 }
 
 .education {
-    background-image: url("../images/education_bg.webp"); 
+    background-image: url("../images/education_bg.png"); 
     background-size: cover;  
 }
 
-.education-card {
-    background-color: var(--secondary-color);
-    border-radius: 20px;
-    padding: 20px;
-    height: 380px;
+.education .hero-title {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
-.education-card:hover {
-    background-color: var(--secondary-color);
-    transform: scale(1.05);
+.education-item {
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
 }
+
+.education-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+.education .title {
+    margin-bottom: 1rem;
+}
+
+ .year {
+    font-style: italic;
+}
+
+.modules {
+    margin-top: 1rem;
+}
+
+.modules-list {
+    margin-top: 0.5rem;
+    padding-left: 1.5rem;
+}
+
+.modules-list li {
+    margin-bottom: 0.5rem;
+}
+
+.highlight {
+    font-weight: bold;
+} transform: scale(1.05);
+
 
 .service-card {
     background-color: var(--secondary-color);
     border-radius: 20px;
-    padding: 2px;
-    height: 120px; 
+    height: 60px; 
 }
 
 .service-card:hover {
@@ -203,7 +246,7 @@ body {
 }
 
 .home {
-    background-image: url("../images/hero_bg.webp");
+    background-image: url("../images/hero_bg.png");
     background-size: cover;
     height: 100vh;
     display: flex;
@@ -213,7 +256,7 @@ body {
 }
 
 .service-home {
-    background-image: url("../images/hero_Services_bg.webp");
+    background-image: url("../images/Services_bg.png");
     background-size: cover;
     height: 100vh;
     display: flex;
@@ -223,13 +266,13 @@ body {
 }
 
 .service-card {
-    background-image: url("../images/card_Service.webp");
+    background-image: url("../images/card_Service.png");
     background-size: cover; 
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
-    padding: 100px;
+    padding: 40px;
 }
 
 .project-home {
@@ -243,13 +286,15 @@ body {
 }
 
 .project-card {
-    background:whitesmoke;
-    height: 320px;
+    background: linear-gradient(90deg, black,blue,red);
+    height: 260px;
     border:none;
 }
 
 .switch {
-    color: var(--secondary-color) !important;
+    background: linear-gradient(90deg, black,red);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     font-weight: 900;
 }
 
@@ -258,9 +303,13 @@ body {
 }
 
 .about-me {
-    background-color: var(--background-color);
+    background-image: url("../images/about_bg.png");
     background-size: cover;
-    padding: 30px;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
 .about-img {
@@ -270,12 +319,12 @@ body {
 }
 
 .hero-title {
-    color: var(--secondary-color);
+    color: var(--blue-dark-color);
     margin-top: 0;
 }
 
 .mytext {
-    color: var(--background-color);
+    color: var(--blue-dark-color);
     font-size: 1.6rem;
 }
 
@@ -284,7 +333,7 @@ body {
 }
 
 .nav-link {
-    color: var(--secondary-color);
+    color: var(--blue-dark-color);
     font-size: 0.9rem;
     margin-right: 20px;
 }
@@ -295,7 +344,7 @@ body {
 
 .contact {
     padding: 2rem 0;
-    background-image: url("../images/contact_bg.webp");
+    background-image: url("../images/contact_bg.png");
     background-size: cover;
 }
 
@@ -355,12 +404,6 @@ body {
         max-width: 80px;
     }
 
-    .education-card {
-        border-radius: 20px;
-        padding: 20px;
-        height: 100%;
-    }
-
     .hero-title {
         font-size: 2rem;
     }
@@ -376,7 +419,7 @@ body {
         max-width: 50px;
     }
     .project-card {
-        background:whitesmoke;
+        background: linear-gradient(90deg, black,red);
         height: 100%;
         border:none;
     }
@@ -392,6 +435,10 @@ body {
 
     .home {
         background-image: url("../images/mobile_hero_bg.jpeg");
+    }
+
+    .dark-mode .home {
+        background-image: url("../images/mobile_hero_dark_bg.jpeg") !important;
     }
 
     #skillsChart {
@@ -427,7 +474,9 @@ body {
         color: var(--secondary-color);
     }
     .dark-mode .switch {
-        color: var(--secondary-color);
+        background: linear-gradient(90deg, white, blue);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
         font-weight: 900;
     }
 
@@ -467,11 +516,24 @@ body {
     color: #e0e0e0;
 }
 
+.dark-mode .home {
+    background-image: url("../images/hero_bg_dark.png");
+}
+
+
 .dark-mode .contact-form,
 .dark-mode .card,
 .dark-mode .footer {
     background-color: #1e1e1e;
     color: #e0e0e0;
+}
+
+.dark-mode .gradient-bg {
+    background-image: url("../images/skill_card_dark.png");
+}
+
+.dark-mode .nav-link {
+    color: var(--background-color);
 }
 
 .dark-mode .contact-form textarea,
@@ -489,8 +551,42 @@ body {
     color: #e0e0e0 !important;
 }
 
+.dark-mode .hero-title {
+    color: var(--background-color);
+    margin-top: 0;
+}
+
+.dark-mode .project-home {
+    background-image: url("../images/project_hero_dark_bg.png");
+}
+
+.dark-mode .mytext {
+    color: var(--background-color);
+    font-size: 1.6rem;
+}
+
+.dark-mode .education-item{
+background:var(--blue-dark-color);
+}
+
+.dark-mode .text-light-red {
+    background: linear-gradient(90deg,rgb(254, 184, 184),red);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+} 
+
+.dark-mode .text-blue {
+    background: linear-gradient(90deg,rgb(197, 197, 251),blue);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+} 
+
+.dark-mode .service-home {
+    background-image: url("../images/Services_hero_dark_bg.png");
+}
+
 .dark-mode .about-me {
-    background-color: rgb(8, 11, 19);
+    background-image: url("../images/about_dark_bg.png");
 }
 
 .dark-mode .my-certificates {
@@ -520,11 +616,13 @@ body {
 }
 
 .dark-mode .service-card {
-    background-image: url("../images/card_Service_dark.webp");
+    background-image: url("../images/card_Service_dark.jpg");
 }
 
 .dark-mode .switch {
-    color: rgb(199, 219, 255) !important;
+     background: linear-gradient(90deg, white,blue);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .dark-mode .rounded-circle {
@@ -532,11 +630,7 @@ body {
 }
 
 .dark-mode .experience-card {
-    background-image: url("../images/experience_card_dark.webp");
-}
-
-.dark-mode .education-card {
-    background-color: var(--glass-color);
+    background-image: url("../images/experience_card_dark.png");
 }
 
 .dark-mode .bi-list{
@@ -549,7 +643,7 @@ body {
 }
 
 .dark-mode .project-card {
-    background-image: url("../images/project_card_bg.png");
+    background: linear-gradient(90deg, black, black,red,blue);
 }
 
 
