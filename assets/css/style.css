@@ -90,7 +90,7 @@ body {
     background-image: url("../images/experience_card.png");
     color: var(--blue-dark-color);
     border-radius: 20px;
-    height:410px;
+    height:420px;
 }
 
 .experience-card:hover {
