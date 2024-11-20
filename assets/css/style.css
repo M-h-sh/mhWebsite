@@ -120,7 +120,7 @@ body {
     left: 0;
     right: 0;
     height: 2px;
-    background: linear-gradient(90deg,black,blue,white);
+    background: linear-gradient(90deg,black,white);
   }
   
   .education .education-item::after {
@@ -130,7 +130,7 @@ body {
     left: 0;
     width: 30px;
     height: 2px;
-    background: linear-gradient(90deg, black,red);
+    background: linear-gradient(90deg, black,white);
     border-right: 5px solid var(--background-color);
   }
   
@@ -155,7 +155,7 @@ body {
     content: "";
     height: 30px;
     width: 30px;
-    background: linear-gradient(90deg,red,blue);
+    background: linear-gradient(90deg,black,white);
     border-radius: 50px;
     z-index: 1;
     bottom: -15px;
