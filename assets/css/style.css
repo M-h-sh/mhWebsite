@@ -186,7 +186,7 @@ body {
 .service-card {
     background-color: var(--secondary-color);
     border-radius: 20px;
-    height: 60px; 
+    height:180px; 
 }
 
 .service-card:hover {
