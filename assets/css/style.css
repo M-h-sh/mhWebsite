@@ -438,8 +438,17 @@ body {
         background-image: url("../images/mobile_hero_bg.jpeg");
     }
 
+    .service-home {
+        background-image: url("../images/Services_bg_mobile.png");
+    }
+
+
     .dark-mode .home {
         background-image: url("../images/mobile_hero_dark_bg.jpeg") !important;
+    }
+
+    .dark-mode .service-home {
+        background-image: url("../images/Services_hero_dark_mobile_bg.png") !important;
     }
 
     #skillsChart {
