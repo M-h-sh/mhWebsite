@@ -90,7 +90,7 @@ body {
     background-image: url("../images/experience_card.png");
     color: var(--blue-dark-color);
     border-radius: 20px;
-    height:420px;
+    min-height:560px;
 }
 
 .experience-card:hover {
@@ -223,7 +223,7 @@ body {
 
 .certificate-card .card-body {
     padding: 20px;
-    height: 300px;
+    min-height: 280px;
 }
 
 .certificate-card .card-title {
