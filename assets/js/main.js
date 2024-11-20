@@ -66,7 +66,14 @@ const totalCards = $('.certificate-card').length;
 let totalPages;
 
 function updateCardsPerPage() {
-    cardsPerPage = $(window).width() < 992 ? 1 : 4;
+    const windowWidth = $(window).width();
+    if (windowWidth < 768) {
+        cardsPerPage = 1; // Mobile
+    } else if (windowWidth < 992) {
+        cardsPerPage = 2; // Tablet
+    } else {
+        cardsPerPage = 4; // Desktop
+    }
 }
 
 function updatePagination() {
