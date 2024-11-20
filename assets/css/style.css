@@ -104,51 +104,83 @@ body {
     background-size: cover;
 }
 
-.education {
-    background-image: url("../images/education_bg.png"); 
-    background-size: cover;  
-}
+/*--------------------------------------------------------------
+# Education Section
+--------------------------------------------------------------*/
 
-.education .hero-title {
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
-}
-
-.education-item {
-    background: #fff;
-    border-radius: 15px;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.education-item:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
-}
-
-.education .title {
-    margin-bottom: 1rem;
-}
-
- .year {
-    font-style: italic;
-}
-
-.modules {
-    margin-top: 1rem;
-}
-
-.modules-list {
-    margin-top: 0.5rem;
-    padding-left: 1.5rem;
-}
-
-.modules-list li {
-    margin-bottom: 0.5rem;
-}
-
-.highlight {
-    font-weight: bold;
-} transform: scale(1.05);
+.education .education-item {
+    position: relative;
+    padding-top: 40px;
+  }
+  
+  .education .education-item:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: linear-gradient(90deg,black,blue,white);
+  }
+  
+  .education .education-item::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 30px;
+    height: 2px;
+    background: linear-gradient(90deg, black,red);
+    border-right: 5px solid var(--background-color);
+  }
+  
+  .education .education-item .icon {
+    width: 48px;
+    height: 48px;
+    position: relative;
+    margin-right: 50px;
+    line-height: 0;
+  }
+  
+  .education .education-item .icon i {
+    color: color-mix(in srgb, var(--default-color), transparent 30%);
+    font-size: 56px;
+    transition: ease-in-out 0.3s;
+    z-index: 2;
+    position: relative;
+  }
+  
+  .education .education-item .icon:before {
+    position: absolute;
+    content: "";
+    height: 30px;
+    width: 30px;
+    background: linear-gradient(90deg,red,blue);
+    border-radius: 50px;
+    z-index: 1;
+    bottom: -15px;
+    right: -15px;
+    transition: 0.3s;
+  }
+  
+  .education .education-item .title {
+    font-weight: 700;
+    margin-bottom: 15px;
+    font-size: 18px;
+  }
+  
+  .education .education-item .title a {
+    color: var(--heading-color);
+  }
+  
+  .education .education-item .title a:hover {
+    color: var(--accent-color);
+  }
+  
+  .education .education-item .description {
+    line-height: 24px;
+    font-size: 14px;
+  }
 
 
 .service-card {
