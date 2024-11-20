@@ -205,12 +205,7 @@ body {
     box-shadow: var(--card-shadow);
 }
 
-#skillsChart {
-    max-height: 400px;
-    max-width: 400px;
-    margin: 0 auto;
-    padding: 1.4rem;
-}
+
 
 .certification-home {
     padding: 100px 0;
@@ -269,6 +264,62 @@ body {
     font-size: 1rem;
     color: #6c757d;
 }
+
+/*--------------------------------------------------------------
+# Skills Section
+--------------------------------------------------------------*/
+.skills {
+    padding: 60px 0;
+}
+
+.skills .hero-title {
+    margin-bottom: 40px;
+}
+
+.soft-skill-title {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.soft-skill-text {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+/* Icon 3D Style */
+.icon-3d {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto;
+    background: linear-gradient(90deg, black,red);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+.icon-3d i {
+    font-size: 36px;
+    color: #fff;
+    position: relative;
+    z-index: 2;
+}
+
+.icon-3d::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 5px;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    filter: blur(10px);
+    z-index: 1;
+}
+
 
 .logo {
     width: 50px;
@@ -483,12 +534,6 @@ body {
         background-image: url("../images/Services_hero_dark_mobile_bg.png") !important;
     }
 
-    #skillsChart {
-        max-height: 280px;
-        max-width: 280px;
-        margin: 0 auto;
-        padding: 0rem;
-    }
 
     .mh-pic {
         width: 60px; 
@@ -666,6 +711,8 @@ background:transparent;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+
+
 
 .dark-mode .rounded-circle {
     border-color: rgb(19, 18, 18) !important;
