@@ -608,7 +608,7 @@ body {
 }
 
 .dark-mode .education-item{
-background:var(--blue-dark-color);
+background:transparent;
 }
 
 .dark-mode .text-light-red {
