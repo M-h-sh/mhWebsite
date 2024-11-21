@@ -499,7 +499,6 @@ body {
   .my-approach {
     background-image: url("../images/approach.png");
     background-size: cover;
-    background-attachment: fixed;
   }
   
   .my-approach .services-item .services-icon {
