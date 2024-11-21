@@ -497,8 +497,9 @@ body {
 }
   
   .my-approach {
-    padding-top: 60px;
-    padding-bottom: 60px;
+    background-image: url("../images/approach.png");
+    background-size: cover;
+    background-attachment: fixed;
   }
   
   .my-approach .services-item .services-icon {
@@ -669,6 +670,10 @@ body {
     background-color: #161616;
     color: #e0e0e0;
 }
+
+.dark-mode .my-approach {
+    background-image: url("../images/approach_dark.png")!important;
+  }
 
 .dark-mode .btn-primary {
     background-color: var(--primary-color);
