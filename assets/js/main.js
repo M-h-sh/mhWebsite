@@ -81,17 +81,32 @@ const swiper = new Swiper(".mySwiper", {
     },
   });
 
-$(document).ready(function() {
+  $(document).ready(function () {
     const toggleButton = $('#darkModeToggle');
     const body = $('body');
+    const $lightImage = $("#mockup-image-light");
+    const $darkImage = $("#mockup-image-dark");
+
+    // Function to update the image visibility
+    const updateImageVisibility = () => {
+        if (body.hasClass('dark-mode')) {
+            $lightImage.addClass('d-none');
+            $darkImage.removeClass('d-none');
+        } else {
+            $darkImage.addClass('d-none');
+            $lightImage.removeClass('d-none');
+        }
+    };
 
     // Check the saved preference and apply it
     if (localStorage.getItem('darkMode') === 'enabled') {
         body.addClass('dark-mode');
         toggleButton.text('Light Mode');
     }
+    updateImageVisibility(); // Ensure images are updated on page load
 
-    toggleButton.on('click', function() {
+    // Toggle button click event
+    toggleButton.on('click', function () {
         if (body.toggleClass('dark-mode').hasClass('dark-mode')) {
             localStorage.setItem('darkMode', 'enabled');
             toggleButton.text('Light Mode');
@@ -99,6 +114,7 @@ $(document).ready(function() {
             localStorage.setItem('darkMode', 'disabled');
             toggleButton.text('Dark Mode');
         }
+        updateImageVisibility(); // Update images on mode change
     });
 });
 
