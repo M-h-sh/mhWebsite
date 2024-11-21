@@ -732,30 +732,41 @@
     
 
     <section id="contact" class="section contact text-center">
-        <div class="container-fluid">
-            <div class="row ">
+        <div class="container-fluid py-5">
+            <div class="row justify-content-center">
+                <!-- Contact Details -->
                 <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
-                    <p class="hero-title display-4 fw-bold ">Get In Touch</p>
-                    <p class="" >Diepkloof zone 6, Gauteng, 1862</p>
-                    <p class="" ><a href="tel:+27764611841">0764611841 (Mobile)</a></p>
-                    <p class="" ><a href="mailto:mthova.hp@gmail.com">mthova.hp@gmail.com</a></p>
-                    <p class="" ><a href="https://www.linkedin.com/in/mhlatshwayo" target="_blank">www.linkedin.com/in/mhlatshwayo</a></p>
-                    <p class="" ><a href="https://mh-new-portfolio.netlify.app/" target="_blank">mh-new-portfolio.netlify.app</a></p>
-                 </div>
-                 <div class="col-lg-6 col-md-6 col-sm-12 mb-4 mt-3">
-            <div class="contact-form">
-                <form action="https://formspree.io/f/mpwazwqo"  method="POST">
-                    <input class=""  type="text" name="name" placeholder="Your Name" required>
-                    <input class=""  type="email" name="email" placeholder="Your Email" required>
-                    <textarea class=""  name="message" rows="5" placeholder="Your Message" required></textarea>
-                    <button class=" btn btn-primary" type="submit">Send Message</button>
-                </form>
+                    <div class="card info-card border-0 justify-content-center mt-3 shadow-lg">
+                        <h2 class="hero-title display-5 fw-bold text-dark mb-3 text-light-red">Get In Touch</h2>
+                        <p class="text-muted mb-1"><i class="bi bi-geo-alt-fill text-light-red me-2"></i><a href="https://maps.app.goo.gl/SCWHoaHwkUcWsszx9" target="_blank" class="text-decoration-none text-dark">8321 Gadla Street, Diepkloof Zone 6, Diepkloof, 1862</a></p>
+                        <p class="text-muted mb-1"><i class="bi bi-telephone-fill text-light-red me-2"></i><a href="tel:+27764611841" class="text-decoration-none text-dark">0764611841 (Mobile)</a>/ <a href="tel:+277694291805" class="text-decoration-none text-dark">0694291805</a></p>
+                        <p class="text-muted mb-1"><i class="bi bi-envelope-fill text-light-red me-2"></i><a href="mailto:mthova.hp@gmail.com" class="text-decoration-none text-dark">mthova.hp@gmail.com</a></p>
+                        <p class="text-muted mb-1"><i class="bi bi-linkedin text-light-red me-2"></i><a href="https://www.linkedin.com/in/mhlatshwayo" target="_blank" class="text-decoration-none text-dark">LinkedIn</a></p>
+                    </div>
+                </div>
+    
+                <!-- Contact Form -->
+                <div class="col-lg-6 col-md-6 col-sm-12 mb-4 mt-3">
+                    <div class="card border-0 p-4 shadow-lg">
+                        <h3 class="fw-bold text-dark mb-4">Send Us a Message</h3>
+                        <form action="https://formspree.io/f/mpwazwqo" method="POST">
+                            <div class="mb-3">
+                                <input type="text" name="name" class="form-control shadow-sm" placeholder="Your Name" required style="border-radius: 10px;">
+                            </div>
+                            <div class="mb-3">
+                                <input type="email" name="email" class="form-control shadow-sm" placeholder="Your Email" required style="border-radius: 10px;">
+                            </div>
+                            <div class="mb-3">
+                                <textarea name="message" rows="5" class="form-control shadow-sm" placeholder="Your Message" required style="border-radius: 10px;"></textarea>
+                            </div>
+                            <button class="btn btn-primary w-100 py-2 shadow-sm" style="border-radius: 10px;">Send Message</button>
+                        </form>
+                    </div>
+                </div>
             </div>
         </div>
-        </div>
-        
-    </div>
     </section>
+    
 </main>
 <button onclick="topFunction()" id="goTopBtn" class="btn-primary" title="Go to Top"><i class="bi bi-arrow-up-short"></i></button>
 <!-- Footer -->

@@ -8,7 +8,7 @@
     --card-shadow: rgba(0, 0, 0, 0.2); /* A light shadow for cards */
     --navbar-bg: var(--primary-color); /* Navbar background matching the primary color */
     --footer-bg: #eeeeee; /* A light gray for the footer background */
-    --glass-color: #000000ad; /* A very light transparent blue */
+    --glass-color: #cdcccc58; /* A very light transparent blue */
     --transparent-bg: #f8fbfc9d; /* A slightly transparent background */
     --blue-color: #e8f2fd; /* A very light blue */
     --blue-dark-color: #010911; /* A very dark blue */
@@ -441,48 +441,35 @@ body {
 .nav-link:hover {
     color: var(--button-color);
 }
+/* Modern Contact Section Styling */
+#contact .card:hover {
+    transform: translateY(-10px);
+    transition: all 0.3s ease-in-out;
+}
 
 .contact {
-    padding: 2rem 0;
-    background-image: url("../images/contact_bg.png");
-    background-size: cover;
+    background: linear-gradient(to right, black,red);
 }
 
-.contact p {
-    color: var(--secondary-color);
-}
-
-.contact a {
-    color: var(--footer-bg);
-    text-decoration: none;
+#contact a {
     transition: color 0.3s ease;
 }
 
-.contact a:hover {
-    color: var(--button-color);
+#contact a:hover {
+    color: blue;
+    text-decoration: underline;
 }
 
-.contact-form {
-    max-width: 600px;
-    margin: 0 auto;
-    padding: 2rem;
-    background-color: var(--secondary-color);
-    border-radius: 8px;
+#contact input,
+#contact textarea {
+    background: rgba(255, 255, 255, 0.8); border-radius: 15px; backdrop-filter: blur(10px);
+    border: 1px solid #ddd;
+    padding: 10px 15px;
+    font-size: 16px;
 }
 
-.contact-form input,
-.contact-form textarea {
-    width: 100%;
-    background-color: var(--background-color);
-    padding: 0.75rem;
-    margin-bottom: 1rem;
-    border: none;
-    border-radius: 5px;
-}
-
-.contact-form input,
-.contact-form textarea:hover {
-    border-color: var(--background-color); 
+.info-card{
+    min-height:430px;
 }
 
 .footer {
