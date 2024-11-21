@@ -375,6 +375,16 @@ body {
     padding: 40px;
 }
 
+.project-home {
+    background-image: url("../images/project_hero_bg.png");
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
 .project-card img {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -388,10 +398,6 @@ body {
     transition: color 0.3s ease;
 }
 
-.card-body h5:hover {
-    color: #148791;
-}
-
 .line-mf {
     transition: width 0.3s ease;
 }
@@ -399,7 +405,6 @@ body {
 .line-mf:hover {
     width: 70px;
 }
-
 
 .switch {
     background: linear-gradient(90deg, black,red);
@@ -513,6 +518,7 @@ body {
         max-width: 50px;
     }
     .project-card {
+        background: white;
         height: 100%;
         border:none;
     }
@@ -666,7 +672,7 @@ body {
 }
 
 .dark-mode .project-home {
-    background:#0b0b16;
+    background-image: url("../images/project_hero_dark_bg.png");
 }
 
 .dark-mode .mytext {
@@ -751,10 +757,6 @@ background:transparent;
 .dark-mode .skill-card {
     background-image: url("../images/experience_card_dark.webp");
     background-size: cover;
-}
-
-.dark-mode .project-home {
-    background:rgb(22, 21, 21) !important;
 }
 
 .dark-mode .project-card {
