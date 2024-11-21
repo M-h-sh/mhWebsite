@@ -440,6 +440,10 @@ body {
     font-size: 1.6rem;
 }
 
+.navbar {
+    z-index: 1020; /* Ensures it stays above other elements */
+  }
+
 .navbar-toggler {
     border: none;
 }
