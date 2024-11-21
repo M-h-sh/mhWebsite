@@ -508,6 +508,12 @@ body {
   .my-approach .services-item .services-icon {
     margin-bottom: 20px;
   }
+
+  .project-card {
+    background: white;
+    min-height: 280px;
+    border:none;
+}
   
   .my-approach .services-item .services-icon i {
     font-size: 48px;
