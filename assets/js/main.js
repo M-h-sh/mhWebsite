@@ -59,57 +59,27 @@ goTopBtn.on('click', function() {
     $('html, body').animate({ scrollTop: 0 }, 'smooth');
 });
 
-// Pagination for certificate cards
-let cardsPerPage;
-let currentPage = 1;
-const totalCards = $('.certificate-card').length;
-let totalPages;
-
-function updateCardsPerPage() {
-    const windowWidth = $(window).width();
-    if (windowWidth < 768) {
-        cardsPerPage = 1; // Mobile
-    } else if (windowWidth < 992) {
-        cardsPerPage = 2; // Tablet
-    } else {
-        cardsPerPage = 4; // Desktop
-    }
-}
-
-function updatePagination() {
-    updateCardsPerPage();
-    totalPages = Math.ceil(totalCards / cardsPerPage);
-    const startIndex = (currentPage - 1) * cardsPerPage;
-    const endIndex = startIndex + cardsPerPage;
-
-    $('.certificate-card').hide().slice(startIndex, endIndex).show();
-    $('#prev-btn').toggleClass('d-none', currentPage === 1);
-    $('#next-btn').toggleClass('d-none', currentPage === totalPages);
-}
-
-updateCardsPerPage();
-updatePagination();
-
-$('#prev-btn').on('click', function(event) {
-    event.preventDefault();
-    if (currentPage > 1) {
-        currentPage--;
-        updatePagination();
-    }
-});
-
-$('#next-btn').on('click', function(event) {
-    event.preventDefault();
-    if (currentPage < totalPages) {
-        currentPage++;
-        updatePagination();
-    }
-});
-
-$(window).on('resize', function() {
-    updateCardsPerPage();
-    updatePagination();
-});
+const swiper = new Swiper(".mySwiper", {
+    slidesPerView: 1,
+    spaceBetween: 20,
+    loop: true,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    breakpoints: {
+      768: {
+        slidesPerView: 2,
+      },
+      1024: {
+        slidesPerView: 3,
+      },
+    },
+  });
 
 $(document).ready(function() {
     const toggleButton = $('#darkModeToggle');

@@ -205,65 +205,38 @@ body {
     box-shadow: var(--card-shadow);
 }
 
+.gradient-bg {
+    background: linear-gradient(135deg, black, red,blue);
+  }
 
+  .swiper-button-next:after, .swiper-button-prev:after {
+    font-size:19px;
+    color:white;
+  }
 
-.certification-home {
-    padding: 100px 0;
-    background-image: url("../images/cert_hero.webp");
-    height: 100vh;
-    color: var(--secondary-color);
-    display: flex;
-    align-items: center;
+  
+  .certificate-card {
+    background: #fff;
     justify-content: center;
-    text-align: center;
-}
-
-/* About Me Section */
-.about-my-certificates {
-    padding: 60px 0;
-}
-
-.about-my-certificates .lead {
-    font-size: 1.25rem;
-}
-
-.about-my-certificates .about-img {
-    width: 80%;
-    border: 5px solid var(--secondary-color);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-/* Certificates Section */
-.my-certificates {
-    padding: 10px 0;
-    background: linear-gradient(to right, var(--secondary-color), #e9ecef);
-}
-
-.certificate-card {
-    background-color: var(--secondary-color);
-    border-radius: 10px;
-    transition: transform 0.2s;
-}
-
-.certificate-card:hover {
-    transform: translateY(-10px);
-}
-
-.certificate-card .card-body {
     padding: 20px;
-    min-height: 280px;
-}
-
-.certificate-card .card-title {
-    font-size: 1.25rem;
-    font-weight: bold;
-    color: var(--primary-color);
-}
-
-.certificate-card .card-text {
-    font-size: 1rem;
-    color: #6c757d;
-}
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+  }
+  
+  .certificate-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .swiper {
+    padding: 30px 0;
+  }
+  
+  .swiper-slide {
+    display: flex;
+    justify-content: center;
+  }
+  
 
 /*--------------------------------------------------------------
 # Skills Section
@@ -549,6 +522,15 @@ body {
         border:none;
     }
 
+    .swiper-button-next:after, .swiper-button-prev:after {
+        font-size:19px;
+        display:none;
+      }
+      
+      .certificate-card {
+        padding: 0px;
+      }
+
     .text-xlg
         {
         font-size:4.2rem;
@@ -659,6 +641,10 @@ body {
 .dark-mode .gradient-bg {
     background-image: url("../images/skill_card_dark.png");
 }
+
+.dark-mode .gradient-bg {
+    background: linear-gradient(135deg, black,blue) !important;
+  }
 
 .dark-mode .nav-link {
     color: var(--background-color);
