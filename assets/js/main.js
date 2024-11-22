@@ -29,15 +29,35 @@ function aosInit() {
 }
 $(window).on('load', aosInit);
 
-  // Function to hide the preloader
-  function hidePreloader() {
-    $("#preloader").fadeOut(500, function() {
-        $(this).remove();
-    });
-}
+$(document).ready(function () {
+    const pcSource = document.getElementById('pc-video');
+    const mobileSource = document.getElementById('mobile-video');
 
-// Set preloader timer
-var preloaderTimer = setTimeout(hidePreloader, 3000);
+    // Function to set video source based on screen size
+    const setVideoSource = () => {
+        if (window.innerWidth <= 768) {
+            pcSource.remove(); // Remove PC video source for mobile
+            mobileSource.src = 'assets/videos/preloader_mob.mp4'; // Set mobile video source
+        } else {
+            mobileSource.remove(); // Remove mobile video source for PC
+            pcSource.src = 'assets/videos/preloader.mp4'; // Set PC video source
+        }
+    };
+
+    // Hide the preloader
+    const hidePreloader = () => {
+        $("#preloader").fadeOut(500, function () {
+            $(this).remove(); // Remove preloader from DOM
+        });
+    };
+
+    // Set video source on page load
+    setVideoSource();
+
+    // Automatically hide preloader after 3 seconds
+    setTimeout(hidePreloader, 3000);
+});
+
 
 // Go to Top Button functionality
 const goTopBtn = $('#goTopBtn');
