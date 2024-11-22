@@ -1041,7 +1041,7 @@ background:transparent;
 }
 
 .dark-mode #contact input,
-#contact textarea {
+.dark-mode #contact textarea {
     background: rgba(9, 9, 9, 0.8); border-radius: 15px; backdrop-filter: blur(10px);
     border: 1px solid #121212;
     padding: 10px 15px;
