@@ -61,7 +61,33 @@ $(document).ready(function () {
     $(window).on("resize", setVideoVisibility);
 });
 
+// Function to open the modal and play the video
+function playVideo(event) {
+    event.preventDefault(); // Prevent default link behavior
+    const modal = document.getElementById("videoModal");
+    const video = document.getElementById("modalVideo");
+    
+    modal.setAttribute("aria-hidden", "false");
+    video.play();
+}
 
+// Function to close the modal and stop the video
+function closeModal() {
+    const modal = document.getElementById("videoModal");
+    const video = document.getElementById("modalVideo");
+    
+    modal.setAttribute("aria-hidden", "true");
+    video.pause();
+    video.currentTime = 0; // Reset video playback
+}
+
+// Close modal when clicking outside the content
+window.addEventListener("click", (event) => {
+    const modal = document.getElementById("videoModal");
+    if (event.target === modal) {
+        closeModal();
+    }
+});
 
 // Go to Top Button functionality
 const goTopBtn = $('#goTopBtn');
