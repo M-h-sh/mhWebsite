@@ -524,8 +524,72 @@ body {
     background-size: cover;
   }
   
-  .my-approach .services-item .services-icon {
+  .my-approach-card {
+    background-color: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+    height: 100%;
+  }
+
+  .my-approach-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2);
+  }
+
+  .my-approach-icon {
+    background: linear-gradient(135deg, black, red);
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 20px;
+    transition: all 0.3s ease;
+  }
+
+  .my-approach-card:hover .my-approach-icon {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  }
+
+  .my-approach-icon i {
+    font-size: 2rem;
+    color: white;
+  }
+
+  .content h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 15px;
+  }
+
+  .content p {
+    color: #777;
+    font-size: 1rem;
+    line-height: 1.5;
     margin-bottom: 20px;
+  }
+
+  /* Title and Subtitle Styling */
+  .content-title {
+    font-size: 2.5rem;
+    color: #333;
+    font-weight: 700;
+    margin-bottom: 25px;
+  }
+
+  .content-subtitle {
+    font-size: 1.1rem;
+    color: #777;
+    margin-bottom: 10px;
+    font-weight: 400;
   }
 
   .project-card {
@@ -533,10 +597,6 @@ body {
     min-height: 280px;
     border:none;
 }
-  
-  .my-approach .services-item .services-icon i {
-    font-size: 48px;
-  }
 
 /* Media Queries */
 @media (max-width: 1024px) {
@@ -808,5 +868,66 @@ background:transparent;
 .dark-mode .project-card {
     background:black;
 }
+
+.my-approach {
+    background-image: url("../images/approach.png");
+    background-size: cover;
+  }
+  
+  .dark-mode .my-approach-card {
+    background-color: #040404;
+    border-radius: 16px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+    height: 100%;
+  }
+
+  .dark-mode .my-approach-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 50px rgba(235, 233, 233, 0.2);
+  }
+
+  .dark-mode .my-approach-card:hover .my-approach-icon {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(239, 238, 238, 0.1);
+  }
+
+ .dark-mode .my-approach-icon i {
+    font-size: 2rem;
+    color: rgb(243, 240, 240);
+  }
+
+  .dark-mode .content h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #fcfafa;
+    margin-bottom: 15px;
+  }
+
+  .dark-mode .content p {
+    color: #edebeb;
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+
+  /* Title and Subtitle Styling */
+ .dark-mode .content-title {
+    font-size: 2.5rem;
+    color: #f1eeee;
+    font-weight: 700;
+    margin-bottom: 25px;
+  }
+
+  .dark-mode .content-subtitle {
+    font-size: 1.1rem;
+    color: #f1eeee;
+    margin-bottom: 10px;
+    font-weight: 400;
+  }
 
 
