@@ -7,42 +7,37 @@ document.addEventListener('DOMContentLoaded', function() {
         loop: true
     });
 
-    // Initialize Chart.js
-    const ctx = $('#skillsChart');
-    new Chart(ctx, {
-        type: 'pie',
-        data: {
-            labels: ['Software Development', 'Website Design', 'Graphic Design', 'Game Development', 'Mobile App Development', 'Video Editing'],
-            datasets: [{
-                data: [25, 20, 15, 10, 15, 15],
-                backgroundColor: ['#1464c0', '#920b0d', '#c00407', '#333333', '#d8d6d6', '#8abdf7'],
-                borderColor: ['#1464c0', '#920b0d', '#c00407', '#333333', '#d8d6d6', '#8abdf7'],
-                borderWidth: 1
-            }]
-        },
-        options: {
-            responsive: true,
-            plugins: {
-                legend: {
-                    position: 'top',
-                    labels: {
-                        color: 'white' // Change legend label color here
-                    }
-                },
-                tooltip: {
-                    callbacks: {
-                        label: function(tooltipItem) {
-                            return tooltipItem.label + ': ' + tooltipItem.raw + '%';
-                        }
-                    }
-                },
-            }
-        }
+    $(window).on('load', function () {
+        const $preloader = $('#preloader');
+        $preloader.css({
+            'opacity': '0',
+            'visibility': 'hidden',
+            'transition': 'opacity 0.3s ease, visibility 0.3s ease'
+        });
     });
-
+    
     // Update year dynamically
     $('#year').text(new Date().getFullYear());
 });
+// Initialize AOS (Animate On Scroll) library
+function aosInit() {
+    AOS.init({
+        duration: 600,
+        easing: 'ease-in-out',
+        once: true,
+    });
+}
+$(window).on('load', aosInit);
+
+  // Function to hide the preloader
+  function hidePreloader() {
+    $("#preloader").fadeOut(500, function() {
+        $(this).remove();
+    });
+}
+
+// Set preloader timer
+var preloaderTimer = setTimeout(hidePreloader, 1000);
 
 // Go to Top Button functionality
 const goTopBtn = $('#goTopBtn');
