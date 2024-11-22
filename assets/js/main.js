@@ -30,17 +30,17 @@ function aosInit() {
 $(window).on('load', aosInit);
 
 $(document).ready(function () {
-    const pcSource = document.getElementById('pc-video');
-    const mobileSource = document.getElementById('mobile-video');
+    const pcVideo = $("#preloader-video-pc");
+    const mobileVideo = $("#preloader-video-mobile");
 
-    // Function to set video source based on screen size
-    const setVideoSource = () => {
+    // Function to set video visibility based on screen size
+    const setVideoVisibility = () => {
         if (window.innerWidth <= 768) {
-            pcSource.remove(); // Remove PC video source for mobile
-            mobileSource.src = 'assets/videos/preloader_mob.mp4'; // Set mobile video source
+            mobileVideo.removeClass("d-none");
+            pcVideo.addClass("d-none");
         } else {
-            mobileSource.remove(); // Remove mobile video source for PC
-            pcSource.src = 'assets/videos/preloader.mp4'; // Set PC video source
+            pcVideo.removeClass("d-none");
+            mobileVideo.addClass("d-none");
         }
     };
 
@@ -51,12 +51,16 @@ $(document).ready(function () {
         });
     };
 
-    // Set video source on page load
-    setVideoSource();
+    // Set video visibility on page load
+    setVideoVisibility();
 
     // Automatically hide preloader after 3 seconds
     setTimeout(hidePreloader, 3000);
+
+    // Update video visibility on window resize
+    $(window).on("resize", setVideoVisibility);
 });
+
 
 
 // Go to Top Button functionality

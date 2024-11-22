@@ -39,13 +39,15 @@
 </head>
 <body>
   <div id="preloader" class="d-flex">
-    <video id="preloader-video" autoplay muted loop>
-        <source src="assets/videos/preloader.mp4" type="video/mp4" id="pc-video">
-        <source src="assets/videos/preloader_mob.mp4" type="video/mp4" id="mobile-video">
+    <video id="preloader-video-pc" autoplay muted loop class="d-none">
+        <source src="assets/videos/preloader.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <video id="preloader-video-mobile" autoplay muted loop class="d-none">
+        <source src="assets/videos/preloader_mob.mp4" type="video/mp4">
         Your browser does not support the video tag.
     </video>
 </div>
-
 
     <!-- Navigation Bar -->
      <header>
