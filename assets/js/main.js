@@ -37,7 +37,7 @@ $(window).on('load', aosInit);
 }
 
 // Set preloader timer
-var preloaderTimer = setTimeout(hidePreloader, 1000);
+var preloaderTimer = setTimeout(hidePreloader, 3000);
 
 // Go to Top Button functionality
 const goTopBtn = $('#goTopBtn');
