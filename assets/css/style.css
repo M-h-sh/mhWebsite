@@ -221,7 +221,7 @@ body {
 }
 
 .gradient-bg {
-    background: linear-gradient(135deg,rgba(253, 251, 251, 0.541),rgba(231, 231, 232, 0.19));
+    background: linear-gradient(135deg,rgb(1, 1, 102),rgb(1, 1, 31));
   }
 
   .swiper-button-next:after, .swiper-button-prev:after {
@@ -234,7 +234,7 @@ body {
     background: #fff;
     justify-content: center;
     padding: 20px;
-    min-width: 310px;
+    max-width: 360px;
     min-height:280px;
     border-radius: 10px;
     transition: transform 0.3s ease;
@@ -250,7 +250,7 @@ body {
   }
 
   .swiper-pagination-bullet{
-    background:rgb(5, 5, 5);
+    background:rgb(236, 236, 255);
   }
   
   .swiper-slide {
@@ -876,7 +876,7 @@ body {
 }
 
 .dark-mode .gradient-bg {
-    background: linear-gradient(135deg, rgb(10, 6, 6),rgb(14, 14, 15)) !important;
+    background: linear-gradient(135deg, rgb(0, 0, 46),black) !important;
   }
 
 .dark-mode .nav-link {
@@ -890,7 +890,7 @@ body {
 }
 
 .dark-mode .swiper-pagination-bullet{
-    background:rgb(254, 254, 254);
+    background:white;
   }
 
 .dark-mode .my-approach {
