@@ -69,11 +69,6 @@ body {
     background-color: var(--text-color); /* Darker color on hover */
 }
 
-.gradient-bg {
-    background-image: url("../images/skill_card.png");
-    background-size: cover;
-}
-
 .text-red {
     color: var(--accent-color);
 }
@@ -226,7 +221,7 @@ body {
 }
 
 .gradient-bg {
-    background: linear-gradient(135deg, black, red,blue);
+    background: linear-gradient(135deg,rgba(253, 251, 251, 0.541),rgba(231, 231, 232, 0.19));
   }
 
   .swiper-button-next:after, .swiper-button-prev:after {
@@ -252,6 +247,10 @@ body {
   
   .swiper {
     padding: 50px 0;
+  }
+
+  .swiper-pagination-bullet{
+    background:rgb(5, 5, 5);
   }
   
   .swiper-slide {
@@ -877,11 +876,7 @@ body {
 }
 
 .dark-mode .gradient-bg {
-    background-image: url("../images/skill_card_dark.png");
-}
-
-.dark-mode .gradient-bg {
-    background: linear-gradient(135deg, black,blue) !important;
+    background: linear-gradient(135deg, rgb(10, 6, 6),rgb(14, 14, 15)) !important;
   }
 
 .dark-mode .nav-link {
@@ -893,6 +888,10 @@ body {
     background-color: #161616;
     color: #e0e0e0;
 }
+
+.dark-mode .swiper-pagination-bullet{
+    background:rgb(254, 254, 254);
+  }
 
 .dark-mode .my-approach {
     background-image: url("../images/approach_dark.png")!important;
