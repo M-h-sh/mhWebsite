@@ -787,6 +787,14 @@ body {
         border:none;
     }
 
+    .project-home {
+        background-image: url("../images/project_hero_bg_mobile.png");
+    }
+
+    .dark-mode .project-home {
+        background-image: url("../images/project_hero_bg_mobile_dark.png") !important;
+    }
+
     .swiper-button-next:after, .swiper-button-prev:after {
         font-size:19px;
         display:none;
