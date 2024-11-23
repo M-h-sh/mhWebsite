@@ -689,19 +689,19 @@ body {
   }
 
   .accordion-body {
-    color: #777;
+    color: #5e5d5d;
   }
 
   .description{
-    color: #777;
+    color: #5e5d5d;
   }
 
   .soft-skill-text{
-     color: #777;
+     color: #5e5d5d;
   }
 
   .content p {
-    color: #777;
+    color: #5e5d5d;
     font-size: 1rem;
     line-height: 1.5;
     margin-bottom: 20px;
@@ -717,7 +717,7 @@ body {
 
   .content-subtitle {
     font-size: 1.1rem;
-    color: #777;
+    color: #5e5d5d;
     margin-bottom: 10px;
     font-weight: 400;
   }
@@ -938,11 +938,11 @@ background:transparent;
 } 
 
 .card-text {
-    color: #777;
+    color: #5e5d5d;
 }
 
 .tech-text{
-    color: #777;
+    color: #5e5d5d;
 }
 
 .dark-mode .service-home {
