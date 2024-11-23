@@ -209,7 +209,8 @@ body {
 }
 
 .service-card:hover {
-    transform: scale(1.05);
+    transform: translateY(-10px) !important;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2) !important;
 }
 
 .text-xxs {
@@ -416,6 +417,11 @@ body {
     border-radius: 8px;
     cursor: pointer;
     transition: transform 0.3s ease-in-out;
+}
+
+.project-item:hover {
+    transform: translateY(-10px) !important;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2) !important;
 }
 
 .project-item img {
@@ -736,6 +742,11 @@ body {
         padding: 10px;
       }
 
+      .story:hover {
+        transform: translateY(-10px) !important;
+        box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2) !important;
+      }
+
     .text-xlg
         {
         font-size:4.2rem;
@@ -988,10 +999,25 @@ background:transparent;
     height: 100%;
   }
 
+  .dark-mode .story:hover {
+    transform: translateY(-10px) !important;
+    box-shadow: 0 20px 50px rgba(235, 233, 233, 0.2) !important;
+  }
+
   .dark-mode .my-approach-card:hover {
     transform: translateY(-10px);
     box-shadow: 0 20px 50px rgba(235, 233, 233, 0.2);
   }
+
+  .dark-mode .service-card:hover {
+    transform: translateY(-10px) !important;
+    box-shadow: 0 20px 50px rgba(235, 233, 233, 0.2) !important;
+}
+
+  .dark-mode .project-item:hover {
+    transform: translateY(-10px) !important;
+    box-shadow: 0 20px 50px rgba(235, 233, 233, 0.2) !important;
+}
 
   .dark-mode .my-approach-card:hover .my-approach-icon {
     transform: translateY(-5px);
@@ -1033,10 +1059,12 @@ background:transparent;
   }
 
   .dark-mode .modal-content {
+    background-color: #000;
     position: relative;
 }
 
 .dark-mode .close {
+    color:white;
     position: absolute;
 }
 
