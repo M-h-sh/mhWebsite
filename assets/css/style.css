@@ -688,6 +688,18 @@ body {
     margin-bottom: 15px;
   }
 
+  .accordion-body {
+    color: #777;
+  }
+
+  .description{
+    color: #777;
+  }
+
+  .soft-skill-text{
+     color: #777;
+  }
+
   .content p {
     color: #777;
     font-size: 1rem;
@@ -925,6 +937,14 @@ background:transparent;
     -webkit-text-fill-color: transparent;
 } 
 
+.card-text {
+    color: #777;
+}
+
+.tech-text{
+    color: #777;
+}
+
 .dark-mode .service-home {
     background-image: url("../images/Services_hero_dark_bg.png");
 }
@@ -941,6 +961,27 @@ background:transparent;
 
 .dark-mode .certificate-card .card-text {
     color: #bbc1c7;
+}
+
+.dark-mode .card-text {
+    color: #cfcece;
+}
+
+.dark-mode .accordion-body {
+    color: #cfcece;
+  }
+
+.dark-mode .soft-skill-text{
+    color: #cfcece;
+ }
+
+.dark-mode .description{
+    color: #cfcece;
+}
+
+
+.dark-mode .tech-text{
+    color: #cfcece;
 }
 
 .dark-mode .text-muted {
