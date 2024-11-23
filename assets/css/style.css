@@ -114,8 +114,8 @@ body {
 }
 
 .experience-card:hover {
-    transform: scale(1.05);
-    color: var(--blue-dark-color);
+    transform: translateY(-5px) !important;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2) !important;
 }
 
 .skill-card {
@@ -209,7 +209,7 @@ body {
 }
 
 .service-card:hover {
-    transform: translateY(-10px) !important;
+    transform: translateY(-5px) !important;
     box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2) !important;
 }
 
@@ -246,8 +246,8 @@ body {
   }
   
   .certificate-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
   }
   
   .swiper {
@@ -336,6 +336,11 @@ body {
     position: relative;
 }
 
+.icon-3d:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2);
+}
+
 .icon-3d i {
     font-size: 36px;
     color: #fff;
@@ -420,7 +425,7 @@ body {
 }
 
 .project-item:hover {
-    transform: translateY(-10px) !important;
+    transform: translateY(-5px) !important;
     box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2) !important;
 }
 
@@ -586,7 +591,7 @@ body {
 }
 /* Modern Contact Section Styling */
 #contact .card:hover {
-    transform: translateY(-10px);
+    transform: translateY(-5px);
     transition: all 0.3s ease-in-out;
 }
 
@@ -645,7 +650,12 @@ body {
   }
 
   .my-approach-card:hover {
-    transform: translateY(-10px);
+    transform: translateY(-5px);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2);
+  }
+
+  .icon .flex-shrink-0:hover {
+    transform: translateY(-5px);
     box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2);
   }
 
@@ -743,7 +753,7 @@ body {
       }
 
       .story:hover {
-        transform: translateY(-10px) !important;
+        transform: translateY(-5px) !important;
         box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2) !important;
       }
 
@@ -1000,26 +1010,46 @@ background:transparent;
   }
 
   .dark-mode .story:hover {
-    transform: translateY(-10px) !important;
+    transform: translateY(-5px) !important;
     box-shadow: 0 20px 50px rgba(235, 233, 233, 0.2) !important;
   }
 
   .dark-mode .my-approach-card:hover {
-    transform: translateY(-10px);
+    transform: translateY(-5px);
     box-shadow: 0 20px 50px rgba(235, 233, 233, 0.2);
   }
 
+  .dark-mode .icon .flex-shrink-0:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 50px rgba(235, 233, 233, 0.2);
+  }
+
+  .dark-mode .experience-card:hover {
+    transform: translateY(-5px) !important;
+    box-shadow: 0 20px 50px rgba(235, 233, 233, 0.2);!important;
+}
+
   .dark-mode .service-card:hover {
-    transform: translateY(-10px) !important;
+    transform: translateY(-5px) !important;
     box-shadow: 0 20px 50px rgba(235, 233, 233, 0.2) !important;
 }
 
   .dark-mode .project-item:hover {
-    transform: translateY(-10px) !important;
+    transform: translateY(-5px) !important;
     box-shadow: 0 20px 50px rgba(235, 233, 233, 0.2) !important;
 }
 
   .dark-mode .my-approach-card:hover .my-approach-icon {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(239, 238, 238, 0.1);
+  }
+
+  .dark-mode .icon-3d:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(239, 238, 238, 0.1);
+}
+
+  .dark-mode .certificate-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 10px 30px rgba(239, 238, 238, 0.1);
   }
