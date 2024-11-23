@@ -8,10 +8,11 @@
     --card-shadow: rgba(0, 0, 0, 0.2); /* A light shadow for cards */
     --navbar-bg: var(--primary-color); /* Navbar background matching the primary color */
     --footer-bg: #eeeeee; /* A light gray for the footer background */
-    --glass-color: #cdcccc58; /* A very light transparent blue */
+    --glass-color: #fcfafa90; /* A very light transparent blue */
     --transparent-bg: #f8fbfc9d; /* A slightly transparent background */
     --blue-color: #e8f2fd; /* A very light blue */
-    --blue-dark-color: #010911; /* A very dark blue */
+    --blue-dark-color: #010911;
+     /* A very dark blue */
 }
 
 body {
@@ -78,6 +79,30 @@ body {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }  
+
+/* Service Item */
+.service-item2 {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-item2:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+.service-item2 .icon {
+    font-size: 3rem;
+    background: linear-gradient(90deg, rgb(243, 242, 246),red,red);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 15px;
+}
 
 .btn-primary {
     background: linear-gradient(90deg, black,red);
@@ -222,6 +247,11 @@ body {
 
 .gradient-bg {
     background-image: url("../images/certification_bg.png");
+    background-size: cover;
+  }
+
+  .service-list{
+    background-image: url("../images/services-item.png");
     background-size: cover;
   }
 
@@ -932,13 +962,13 @@ background:transparent;
 }
 
 .dark-mode .text-light-red {
-    background: linear-gradient(90deg,rgb(254, 184, 184),red);
+    background: linear-gradient(90deg,rgb(247, 247, 251),red,red);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 } 
 
 .dark-mode .text-blue {
-    background: linear-gradient(90deg,rgb(197, 197, 251),blue);
+    background: linear-gradient(90deg,rgb(243, 243, 253),blue,blue);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 } 
