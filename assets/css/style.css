@@ -221,7 +221,8 @@ body {
 }
 
 .gradient-bg {
-    background: linear-gradient(135deg,rgb(1, 1, 102),rgb(1, 1, 31));
+    background-image: url("../images/certification_bg.png");
+    background-size: cover;
   }
 
   .swiper-button-next:after, .swiper-button-prev:after {
@@ -595,7 +596,9 @@ body {
 }
 
 .contact {
-    background: linear-gradient(to right, black,red);
+    background-image: url("../images/contact_bg.png");
+    background-size:cover;
+    background-attachment: fixed;
 }
 
 #contact a {
@@ -876,7 +879,7 @@ body {
 }
 
 .dark-mode .gradient-bg {
-    background: linear-gradient(135deg, rgb(0, 0, 46),black) !important;
+    background-image:url("../images/certification_bg_dark.png") !important;
   }
 
 .dark-mode .nav-link {
@@ -900,6 +903,10 @@ body {
 .dark-mode .btn-primary {
     background-color: var(--primary-color);
     border-color: var(--primary-color);
+}
+
+.dark-mode .contact {
+    background-image: url("../images/contact_bg_dark.png");
 }
 
 .dark-mode .text-dark {
