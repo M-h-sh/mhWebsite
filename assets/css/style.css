@@ -618,6 +618,11 @@ body {
     border-radius: 10px;
 }
 
+.features-details .features-item .content:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2);
+  }
+
 .project-item .overlay .highlight {
     background: linear-gradient(90deg,white,red);
     -webkit-background-clip: text;
@@ -1219,6 +1224,11 @@ background:transparent;
   }
 
   .dark-mode .my-approach-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 50px rgba(235, 233, 233, 0.2);
+  }
+
+  .dark-mode .features-details .features-item .content:hover {
     transform: translateY(-5px);
     box-shadow: 0 20px 50px rgba(235, 233, 233, 0.2);
   }
