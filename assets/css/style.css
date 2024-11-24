@@ -607,6 +607,17 @@ body {
     color:white;
 }
 
+.features-details .features-item+.features-item {
+    margin-top: 60px;
+}
+
+.features-details .features-item .content {
+    background-color: color-mix(in srgb,blue, transparent 96%);
+    color: color-mix(in srgb, blue, transparent 20%);
+    padding: 30px;
+    border-radius: 10px;
+}
+
 .project-item .overlay .highlight {
     background: linear-gradient(90deg,white,red);
     -webkit-background-clip: text;
