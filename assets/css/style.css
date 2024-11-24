@@ -80,6 +80,114 @@ body {
     -webkit-text-fill-color: transparent;
 }  
 
+.pulsating-play-btn {
+    width: 94px;
+    height: 94px;
+    background: linear-gradient(90deg, black,red);
+    border-radius: 50%;
+    position: absolute;
+    left: calc(50% - 47px);
+    top: calc(50% - 47px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+    cursor: pointer;
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.pulsating-play-btn:before {
+    content: "";
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    animation: pulsate-play-btn 2s infinite ease-in-out;
+    border-radius: 50%;
+    border: 5px solid rgba(255, 0, 0, 0.3);
+}
+
+.pulsating-play-btn:after {
+    content: '\f04b'; /* FontAwesome play icon */
+    font-family: "Font Awesome 5 Free";
+    font-size: 24px;
+    font-weight: 900;
+    background: linear-gradient(90deg, black,red);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    z-index: 100;
+}
+
+.pulsating-play-btn:hover {
+    transform: scale(1.1);
+    background: rgba(255, 255, 255, 1);
+}
+
+/* Image Hover Effect */
+.about img:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+/* Keyframes */
+@keyframes pulsate-play-btn {
+    0% {
+        transform: scale(0.6);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 0;
+    }
+}
+  
+.about .content ul {
+      list-style: none;
+      padding: 0;
+  }
+
+  .about .content ul li {
+      display: flex;
+      align-items: flex-start;
+      margin-top: 40px;
+  }
+
+  .about .content ul i {
+      flex-shrink: 0;
+      font-size: 48px;
+      margin-right: 20px;
+  }
+
+  .about .content p:last-child {
+      margin-bottom: 0;
+  }
+
+  .about .pulsating-play-btn {
+      position: absolute;
+      left: calc(50% - 35px);
+      top: calc(50% - 35px);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 70px;
+      height: 70px;
+      background: rgba(255, 255, 255, 0.8);
+      border-radius: 50%;
+      z-index: 2;
+      transition: transform 0.3s ease, background 0.3s ease;
+  }
+
+  .about .pulsating-play-btn:hover {
+      transform: scale(1.1);
+      background: rgba(255, 255, 255, 1);
+  }
+
+  .about .pulsating-play-btn::before {
+      content: '\f04b'; /* FontAwesome play icon */
+      font-family: "Font Awesome 5 Free";
+      font-size: 24px;
+      font-weight: 900;
+      color: var(--accent-color);
+  }
 /* Service Item */
 .service-item2 {
     background: rgba(255, 255, 255, 0.1);

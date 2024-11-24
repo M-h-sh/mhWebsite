@@ -89,6 +89,11 @@ window.addEventListener("click", (event) => {
     }
 });
 
+const glightbox = GLightbox({
+    selector: '.glightbox'
+  });
+
+
 // Go to Top Button functionality
 const goTopBtn = $('#goTopBtn');
 
