@@ -608,13 +608,13 @@ body {
 }
 
 .features-details .features-item+.features-item {
-    margin-top: 60px;
+    margin-top: 20px;
 }
 
 .features-details .features-item .content {
     background-color: color-mix(in srgb,blue, transparent 96%);
     color: color-mix(in srgb, blue, transparent 20%);
-    padding: 30px;
+    padding: 28px;
     border-radius: 10px;
 }
 
