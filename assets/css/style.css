@@ -845,9 +845,7 @@ body {
     margin-bottom: 15px;
   }
 
-  .accordion-body {
-    color: #5e5d5d;
-  }
+ 
 
   .description{
     color: #5e5d5d;
@@ -885,6 +883,101 @@ body {
     min-height: 280px;
     border:none;
 }
+
+.faq-container {
+    margin-top: 15px;
+}
+
+.faq-container .faq-item {
+    background: linear-gradient(90deg, black, red);
+    position: relative;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0px 5px 25px 0px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    color: #ffffff; /* White text for better readability */
+}
+
+.accordion-button{
+    background:white;
+    color:black;
+}
+
+/* Accordion Active State */
+.accordion-button:not(.collapsed) {
+    background: linear-gradient(90deg,gray,black, black);
+    color: white;
+}
+
+/* When the button is clicked or focused */
+.accordion-button:focus {
+    box-shadow: none; /* Remove default focus border */
+    background: linear-gradient(90deg,gray,black, black);
+    color: white;
+}
+
+.faq-container .faq-item:last-child {
+    margin-bottom: 0;
+}
+
+.faq-container .faq-item .faq-content {
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: 0.3s ease-in-out;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.faq-container .faq-item .faq-content p {
+    margin-bottom: 0;
+    overflow: hidden;
+}
+
+.faq-container .faq-item .faq-icon {
+    position: absolute;
+    top: 22px;
+    left: 20px;
+    font-size: 22px;
+    line-height: 0;
+    transition: 0.3s;
+    color: #FFD700; /* Gold for the icon to stand out */
+}
+
+.faq-container .faq-item .faq-toggle {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 16px;
+    line-height: 0;
+    transition: 0.3s;
+    cursor: pointer;
+    color: #ffffff; /* White toggle for contrast */
+}
+
+.faq-container .faq-item .faq-toggle:hover {
+    color: var(--accent-color); /* Accent color on hover */
+}
+
+.faq-container .faq-active .faq-content {
+    grid-template-rows: 1fr;
+    visibility: visible;
+    opacity: 1;
+    padding-top: 10px;
+}
+
+.faq-container .faq-active .faq-toggle {
+    transform: rotate(90deg);
+    color: var(--accent-color);
+}
+
+/* Title Styling */
+.section h2 {
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
 
 /* Media Queries */
 @media (max-width: 1024px) {
@@ -1311,4 +1404,101 @@ background:transparent;
     border: 1px solid #121212;
     padding: 10px 15px;
     font-size: 16px;
+}
+
+/* FAQ Container Dark Mode */
+.dark-mode .faq-container {
+    margin-top: 15px;
+}
+
+.dark-mode .faq-container .faq-item {
+    background: linear-gradient(90deg, #000000, #1a1a1a); /* Black gradient background */
+    position: relative;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0px 5px 25px 0px rgba(0, 0, 0, 0.3); /* Darker shadow for depth */
+    border-radius: 8px;
+    overflow: hidden;
+    color: #f0f0f0; /* Light gray text for better readability */
+}
+
+/* Accordion Buttons - Default State */
+.dark-mode .accordion-button {
+    background: #1a1a1a; /* Dark gray */
+    color: #f0f0f0; /* Light gray */
+    border: none; /* Remove borders for a cleaner design */
+    transition: all 0.3s ease-in-out;
+}
+
+/* Accordion Buttons - Active State */
+.dark-mode .accordion-button:not(.collapsed) {
+    background: linear-gradient(90deg, #333333, #000000); /* Darker gradient */
+    color: white; /* Gold text for contrast */
+    font-weight: bold;
+}
+
+/* Accordion Buttons - Focus State */
+.dark-mode .accordion-button:focus {
+    box-shadow: none; /* Remove default focus border */
+    background: linear-gradient(90deg, #333333, #000000);
+    color: white; /* Gold */
+}
+
+/* FAQ Icons */
+.dark-mode .faq-container .faq-item .faq-icon {
+    position: absolute;
+    top: 22px;
+    left: 20px;
+    font-size: 22px;
+    line-height: 0;
+    transition: 0.3s;
+    color: white; /* Gold icon for elegance */
+}
+
+.dark-mode .accordion-body{
+    background: #1c1c1c !important;
+}
+
+/* FAQ Toggle Buttons */
+.dark-mode .faq-container .faq-item .faq-toggle {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 16px;
+    line-height: 0;
+    transition: 0.3s;
+    cursor: pointer;
+    color: #f0f0f0; /* Light gray for contrast */
+}
+
+.dark-mode .faq-container .faq-item .faq-toggle:hover {
+    color: white; /* Gold hover effect for toggle */
+}
+
+/* FAQ Content Visibility */
+.dark-mode .faq-container .faq-item .faq-content {
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: 0.3s ease-in-out;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.dark-mode .faq-container .faq-item .faq-content p {
+    margin-bottom: 0;
+    overflow: hidden;
+    color: #dcdcdc; /* Slightly lighter gray for content text */
+}
+
+/* Active FAQ - Expanded */
+.dark-mode .faq-container .faq-active .faq-content {
+    grid-template-rows: 1fr;
+    visibility: visible;
+    opacity: 1;
+    padding-top: 10px;
+}
+
+.dark-mode .faq-container .faq-active .faq-toggle {
+    transform: rotate(90deg);
+    color: white; /* Gold for the active state */
 }

@@ -32,7 +32,7 @@
     <!-- Favicon -->
     <link rel="icon" href="assets/images/MH.png" type="image/x-icon">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
-
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" rel="stylesheet">
@@ -356,64 +356,90 @@
         </section>
         
         
-
-
-        <!-- FAQ Section -->
-<section id="faq" class="section faq bg-light">
+<!-- FAQs Section -->
+<section id="faq" class="faqs py-5">
     <div class="container-fluid">
-        <p class="hero-title text-center display-4 text-dark fw-bold">Frequently Asked Questions</p>
-        <div class="accordion mt-4 bg-light text-dark border-none" id="faqAccordion">
-            <div class="accordion-item bg-light text-dark">
-                <h2 class="accordion-header" id="headingOne">
-                    <button class="accordion-button bg-light text-dark border border-0 " type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                        What services do you offer?
-                    </button>
-                </h2>
-                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
-                    <div class="accordion-body bg-light content">
-                        I offer a wide range of services including web development, mobile app development, software development, graphic design, game development, and video editing.
+        <div class="row gy-4">
+            <!-- FAQ Content -->
+            <div class="col-lg-7 d-flex flex-column justify-content-center order-2 order-lg-1">
+                <div class="content px-xl-5" data-aos="fade-up" data-aos-delay="100">
+                    <h1 class="fw-bold">Frequently <span class="gradient-text">Asked </span>Questions</h1>
+                    <p>Here are some of the most common questions about my <span class="fw-bold gradient-text">services</span> and process.</p>
+                </div>
+                <!-- FAQ Accordion -->
+                <div class="accordion px-xl-5" id="faqAccordion" data-aos="fade-up" data-aos-delay="200">
+                    
+                    <!-- FAQ Item 1 -->
+                    <div class="accordion-item mb-3 border-0">
+                        <h2 class="accordion-header" id="faqHeadingOne">
+                            <button class="accordion-button collapsed fw-bold fs-5" type="button" data-bs-toggle="collapse" 
+                                    data-bs-target="#faqCollapseOne" aria-expanded="false" aria-controls="faqCollapseOne">
+                                <i class="faq-icon bi bi-question-circle me-3 text-light-red"></i> What services do you offer?
+                            </button>
+                        </h2>
+                        <div id="faqCollapseOne" class="accordion-collapse collapse" aria-labelledby="faqHeadingOne" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                I offer a wide range of services including web development, mobile app development, software development, graphic design, game development, and video editing.
+                            </div>
+                        </div>
                     </div>
+
+                    <!-- FAQ Item 2 -->
+                    <div class="accordion-item mb-3 border-0">
+                        <h2 class="accordion-header" id="faqHeadingTwo">
+                            <button class="accordion-button collapsed fw-bold fs-5" type="button" data-bs-toggle="collapse" 
+                                    data-bs-target="#faqCollapseTwo" aria-expanded="false" aria-controls="faqCollapseTwo">
+                                <i class="faq-icon bi bi-question-circle me-3 text-light-red"></i> How can I contact you for a project?
+                            </button>
+                        </h2>
+                        <div id="faqCollapseTwo" class="accordion-collapse collapse" aria-labelledby="faqHeadingTwo" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                You can contact me via email at <strong>mthova.hp@gmail.com</strong> or call me at <strong>+27 764611841</strong>. You can also connect with me on LinkedIn, GitHub, or Twitter.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- FAQ Item 3 -->
+                    <div class="accordion-item mb-3 border-0">
+                        <h2 class="accordion-header" id="faqHeadingThree">
+                            <button class="accordion-button collapsed fw-bold fs-5" type="button" data-bs-toggle="collapse" 
+                                    data-bs-target="#faqCollapseThree" aria-expanded="false" aria-controls="faqCollapseThree">
+                                <i class="faq-icon bi bi-question-circle me-3 text-light-red"></i> What is your development process?
+                            </button>
+                        </h2>
+                        <div id="faqCollapseThree" class="accordion-collapse collapse" aria-labelledby="faqHeadingThree" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                My development process typically involves requirement gathering, planning, design, development, testing, deployment, and maintenance. I involve clients at every step for feedback and adjustments.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- FAQ Item 4 -->
+                    <div class="accordion-item mb-3 border-0">
+                        <h2 class="accordion-header" id="faqHeadingFour">
+                            <button class="accordion-button collapsed fw-bold fs-5" type="button" data-bs-toggle="collapse" 
+                                    data-bs-target="#faqCollapseFour" aria-expanded="false" aria-controls="faqCollapseFour">
+                                <i class="faq-icon bi bi-question-circle me-3 text-light-red"></i> Do you offer maintenance services after project completion?
+                            </button>
+                        </h2>
+                        <div id="faqCollapseFour" class="accordion-collapse collapse" aria-labelledby="faqHeadingFour" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                Yes, I offer maintenance services to ensure your software remains up-to-date, secure, and performs optimally. This includes updates, bug fixes, and adding new features as needed.
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
-            <div class="accordion-item">
-                <h2 class="accordion-header bg-light text-dark" id="headingTwo">
-                    <button class="accordion-button bg-light text-dark border-none  collapsed bg-light text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                        How can I contact you for a project?
-                    </button>
-                </h2>
-                <div id="collapseTwo" class="accordion-collapse collapse bg-light text-dark" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
-                    <div class="accordion-body bg-light content">
-                        You can contact me via email at mthova.hp@gmail.com or call me at +27 764611841. You can also connect with me on LinkedIn, GitHub, or Twitter.
-                    </div>
-                </div>
-            </div>
-            <div class="accordion-item">
-                <h2 class="accordion-header bg-light text-dark" id="headingThree">
-                    <button class="accordion-button border-none  bg-light text-dark collapsed bg-light text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                        What is your development process?
-                    </button>
-                </h2>
-                <div id="collapseThree" class="accordion-collapse  collapse bg-light text-dark" aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
-                    <div class="accordion-body bg-light content">
-                        My development process typically involves requirement gathering, planning, design, development, testing, deployment, and maintenance. I ensure to involve my clients at every step for feedback and adjustments.
-                    </div>
-                </div>
-            </div>
-            <div class="accordion-item bg-light text-dark">
-                <h2 class="accordion-header bg-light text-dark" id="headingFour">
-                    <button class="accordion-button border-none  bg-light text-dark collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                        Do you offer maintenance services after project completion?
-                    </button>
-                </h2>
-                <div id="collapseFour" class="accordion-collapse bg-light text-dark  collapse" aria-labelledby="headingFour" data-bs-parent="#faqAccordion">
-                    <div class="accordion-body bg-light content">
-                        Yes, I offer maintenance services to ensure your software remains up-to-date, secure, and performs optimally. This includes updates, bug fixes, and adding new features as needed.
-                    </div>
-                </div>
+            <!-- FAQ Image -->
+            <div class="col-lg-5 order-1 order-lg-2">
+                <img src="assets/images/faq.png" class="img-fluid" alt="FAQ Image" data-aos="zoom-in" data-aos-delay="100">
             </div>
         </div>
     </div>
 </section>
+
+
 
         
     </main>
@@ -434,8 +460,10 @@
         <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <link href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" rel="stylesheet">
         <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
         <script src="assets/js/main.js"></script>
+        <script>$('#year').text(new Date().getFullYear());</script>
 </body>
 </html>
