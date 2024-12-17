@@ -361,6 +361,7 @@ body {
   .service-list{
     background-image: url("../images/services-item.png");
     background-size: cover;
+    background-attachment: fixed;
   }
 
   .swiper-button-next:after, .swiper-button-prev:after {
