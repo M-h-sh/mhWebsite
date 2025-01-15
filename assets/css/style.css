@@ -20,6 +20,7 @@ body {
     margin: 0;
     padding: 0;
 }
+
 #preloader {
     position: fixed;
     top: 0;
@@ -39,9 +40,7 @@ body {
     object-fit: cover;
 }
 
-
-.text-xlg
-{
+.text-xlg {
   font-size: 140px;
 }
 
@@ -1326,7 +1325,7 @@ background:transparent;
 
   .dark-mode .experience-card:hover {
     transform: translateY(-5px) !important;
-    box-shadow: 0 20px 50px rgba(235, 233, 233, 0.2);!important;
+    box-shadow: 0 20px 50px rgba(235, 233, 233, 0.2) !important;
 }
 
   .dark-mode .service-card:hover {
