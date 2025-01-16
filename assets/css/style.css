@@ -189,7 +189,7 @@ body {
   }
 /* Service Item */
 .service-item2 {
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.132);
     border-radius: 10px;
     padding: 20px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
@@ -1221,8 +1221,17 @@ background:transparent;
     color: #bbc1c7;
 }
 
+.footer-text{
+    color: #d9dadb;
+}
+
+.text-dim {
+    color: #d9e4ec;
+}
+
+
 .dark-mode .card-text {
-    color: #cfcece;
+    color: #acacac !important;
 }
 
 .dark-mode .accordion-body {
