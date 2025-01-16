@@ -15,9 +15,7 @@ document.addEventListener('DOMContentLoaded', function() {
             'transition': 'opacity 0.3s ease, visibility 0.3s ease'
         });
     });
-    
-    // Update year dynamically
-    $('#year').text(new Date().getFullYear());
+
 });
 // Initialize AOS (Animate On Scroll) library
 function aosInit() {
@@ -168,4 +166,4 @@ const swiper = new Swiper(".mySwiper", {
     });
 });
 
-
+$('#current-year').text(new Date().getFullYear());
