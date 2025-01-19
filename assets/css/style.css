@@ -1119,7 +1119,7 @@ body {
 
 /* Dark mode styles */
 .dark-mode {
-    background-color: #121212;
+    background-color: #000000;
     color: #e0e0e0;
 }
 
@@ -1145,7 +1145,7 @@ body {
 
 .dark-mode .contact-form textarea,
 .dark-mode .contact-form input {
-    background-color: #0000;
+    background-color: #000000;
     color: #e0e0e0;
 }
 
@@ -1284,15 +1284,15 @@ background:transparent;
 }
 
 .dark-mode .technologies {
-    background-color: #000 !important;
+    background-color: #000000 !important;
 }
 
 .dark-mode .bg-white {
-    background-color: #0000 !important;
+    background-color: #000000 !important;
 }
 
 .dark-mode .bg-light {
-    background-color: #0000 !important;
+    background-color: #000000 !important;
 }
 
 .dark-mode .service-card {
@@ -1312,7 +1312,7 @@ background:transparent;
   }
 
 .dark-mode .rounded-circle {
-    border-color: #0000 !important;
+    border-color: #000000 !important;
 }
 
 .dark-mode .experience-card {
@@ -1329,7 +1329,7 @@ background:transparent;
 }
 
 .dark-mode .project-card {
-    background:#0000;
+    background:#000000;
 }
 
   
@@ -1425,7 +1425,7 @@ background:transparent;
   }
 
   .dark-mode .modal-content {
-    background-color: #0000;
+    background-color: #000000;
     position: relative;
 }
 
@@ -1437,7 +1437,7 @@ background:transparent;
 .dark-mode #contact input,
 .dark-mode #contact textarea {
     background: rgba(9, 9, 9, 0.8); border-radius: 15px; backdrop-filter: blur(10px);
-    border: 1px solid #0000;
+    border: 1px solid #000000;
     padding: 10px 15px;
     font-size: 16px;
 }
