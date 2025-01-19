@@ -189,7 +189,7 @@ body {
   }
 /* Service Item */
 .service-item2 {
-    background: rgba(255, 255, 255, 0.038);
+    background: rgba(255, 255, 255, 0.955);
     border-radius: 10px;
     padding: 20px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
@@ -205,7 +205,7 @@ body {
 
 .service-item2 .icon {
     font-size: 3rem;
-    background: linear-gradient(90deg, rgb(243, 242, 246),red,red);
+    background: linear-gradient(90deg, rgb(9, 9, 9),red,red);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     margin-bottom: 15px;
@@ -358,7 +358,7 @@ body {
   }
 
   .service-list{
-    background-image: url("../images/services-item.png");
+    background-image: url("../images/services-item_light.png");
     background-size: cover;
     background-attachment: fixed;
   }
@@ -552,6 +552,10 @@ body {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
+}
+
+.text-dim {
+    color: #414446f6 !important;
 }
 
 .project-item {
@@ -1227,10 +1231,32 @@ background:transparent;
     color: #d9dadb;
 }
 
-.text-dim {
-    color: #b9bcbf;
+.dark-mode .text-dim {
+    color: #b9bcbf !important;
 }
 
+.dark-mode .service-item2 {
+    background: rgba(255, 255, 255, 0.038);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.dark-mode .service-item2:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+.dark-mode .service-item2 .icon {
+    font-size: 3rem;
+    background: linear-gradient(90deg, rgb(243, 242, 246),red,red);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 15px;
+}
 
 .dark-mode .card-text {
     color: #acacac !important;
@@ -1279,7 +1305,11 @@ background:transparent;
     -webkit-text-fill-color: transparent;
 }
 
-
+.dark-mode .service-list{
+    background-image: url("../images/services-item.png");
+    background-size: cover;
+    background-attachment: fixed;
+  }
 
 .dark-mode .rounded-circle {
     border-color: #0000 !important;
@@ -1304,7 +1334,7 @@ background:transparent;
 
   
   .dark-mode .my-approach-card {
-    background-color: #6e6d6d11;
+    background-color: #000000;
     border-radius: 16px;
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
     overflow: hidden;
