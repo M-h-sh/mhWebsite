@@ -1304,7 +1304,7 @@ background:transparent;
 
   
   .dark-mode .my-approach-card {
-    background-color: #0000;
+    background-color: #6e6d6d11;
     border-radius: 16px;
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
     overflow: hidden;
