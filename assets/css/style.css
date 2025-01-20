@@ -1119,7 +1119,7 @@ body {
 
 /* Dark mode styles */
 .dark-mode {
-    background-color: #000000;
+    background-color: #262626;
     color: #e0e0e0;
 }
 
@@ -1131,7 +1131,7 @@ body {
 .dark-mode .contact-form,
 .dark-mode .card,
 .dark-mode .footer {
-    background-color: #1e1e1e;
+    background-color: #000000;
     color: #e0e0e0;
 }
 
