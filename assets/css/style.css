@@ -1131,7 +1131,7 @@ body {
 .dark-mode .contact-form,
 .dark-mode .card,
 .dark-mode .footer {
-    background-color: #000000;
+    background-color: #111111;
     color: #e0e0e0;
 }
 
@@ -1334,7 +1334,7 @@ background:transparent;
 
   
   .dark-mode .my-approach-card {
-    background-color: #000000;
+    background-color: #111111;
     border-radius: 16px;
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
     overflow: hidden;
