@@ -487,7 +487,7 @@ padding: 60px;
     width: 80px;
     height: 80px;
     margin: 0 auto;
-    background: linear-gradient(90deg, black,red);
+    background: linear-gradient(150deg, #000000,red);
     border-radius: 50%;
     display: flex;
     align-items: center;
