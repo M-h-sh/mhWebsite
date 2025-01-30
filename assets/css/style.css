@@ -401,17 +401,39 @@ body {
 /*--------------------------------------------------------------
 # Skills Section
 --------------------------------------------------------------*/
+.skills{
+min-height: 90vh;
+padding: 60px;
+}
+.tabs-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
 
-.featured-services {
-    padding: 40px 0;
-  }
-  
-  .featured-services .service-item {
+.nav-pills .nav-link {
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    border-radius: 50px;
+    transition: 0.3s;
+}
+
+.nav-pills .nav-link:hover {
+    color: #fff;
+}
+
+
+.nav-pills .nav-link.active {
+    background: linear-gradient(135deg, black,red);
+    color: #fff;
+}
+
+.service-item {
     position: relative;
     padding-top: 20px;
   }
   
-  .featured-services .service-item .icon {
+.service-item .icon {
     background: linear-gradient(90deg, black,red);
     width: 72px;
     height: 72px;
@@ -424,20 +446,20 @@ body {
     transition: ease-in-out 0.3s;
   }
   
-  .featured-services .service-item .icon i {
+.service-item .icon i {
     color: var(--background-color);
     font-size: 32px;
     z-index: 2;
     position: relative;
   }
   
-  .featured-services .service-item .title {
+.service-item .title {
     font-weight: 700;
     margin-bottom: 5px;
     font-size: 18px;
   }
   
-  .featured-services .service-item .title a {
+  .service-item .title a {
     color: var(--heading-color);
     text-decoration: none;
   }
@@ -1205,6 +1227,11 @@ background:transparent;
     color: #5e5d5d;
 }
 
+.dark-mode .nav-pills .nav-link.active {
+    background: linear-gradient(135deg, black,red);
+    color: #fff;
+}
+
 .tech-text{
     color: #5e5d5d;
 }
@@ -1330,6 +1357,13 @@ background:transparent;
 
 .dark-mode .project-card {
     background:#000000;
+}
+
+.dark-mode .nav-pills .nav-link {
+    background: rgba(15, 15, 15, 0.2);
+    color: #111111;
+    border-radius: 50px;
+    transition: 0.3s;
 }
 
   

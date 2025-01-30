@@ -681,132 +681,149 @@
           </div>
         </div>
       </section>
-      
-    <section id="soft-skills" class="featured-services section light-background">
+      <section id="skills-section" class="section light-background skills">
         <div class="container-fluid">
-          <p class="hero-title text-center display-4 fw-bold text-dark mt-2 ">Soft Skills</p>
-          <div class="row gy-4">
-            <div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-              <div class="service-item d-flex">
-                <div class="icon flex-shrink-0"><i class="bi bi-people"></i></div>
-                <div>
-                  <h4 class="title"><a href="#" class="stretched-link">Teamwork</a></h4>
-                  <p class="description card-text card-text">Collaborative and cooperative in team settings.</p>
-                </div>
-              </div>
+            <p class="hero-title text-center display-4 fw-bold text-dark mt-2">Skills</p>
+    
+            <!-- Tabs Navigation -->
+            <div class="tabs-container ">
+                <ul class="nav nav-pills rounded-pill shadow-lg" id="skillsTabs" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="soft-skills-tab" data-bs-toggle="tab" data-bs-target="#soft-skills" type="button" role="tab" aria-controls="soft-skills" aria-selected="true">Soft Skills</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="technical-skills-tab" data-bs-toggle="tab" data-bs-target="#technical-skills" type="button" role="tab" aria-controls="technical-skills" aria-selected="false">Technical Skills</button>
+                    </li>
+                </ul>
             </div>
-            <!-- End Service Item -->
-      
-            <div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
-              <div class="service-item d-flex">
-                <div class="icon flex-shrink-0"><i class="bi bi-chat-dots"></i></div>
-                <div>
-                  <h4 class="title"><a href="#" class="stretched-link">Communication</a></h4>
-                  <p class="description card-text">Effective verbal and written communication skills.</p>
-                </div>
-              </div>
-            </div>
-            <!-- End Service Item -->
-      
-            <div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
-              <div class="service-item d-flex">
-                <div class="icon flex-shrink-0"><i class="bi bi-lightbulb"></i></div>
-                <div>
-                  <h4 class="title"><a href="#" class="stretched-link">Problem-Solving</a></h4>
-                  <p class="description card-text">Innovative solutions to complex problems.</p>
-                </div>
-              </div>
-            </div>
-            <!-- End Service Item -->
-      
-            <div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
-              <div class="service-item  d-flex">
-                <div class="icon flex-shrink-0 "><i class="bi bi-calendar-check"></i></div>
-                <div>
-                  <h4 class="title"><a href="#" class="stretched-link">Time Management</a></h4>
-                  <p class="description card-text">Efficiently managing and prioritizing tasks.</p>
-                </div>
-              </div>
-            </div>
-            <!-- End Service Item -->
-      
-            <div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
-              <div class="service-item d-flex">
-                <div class="icon flex-shrink-0"><i class="bi bi-award"></i></div>
-                <div>
-                  <h4 class="title"><a href="#" class="stretched-link">Leadership</a></h4>
-                  <p class="description card-text">Leading and guiding teams to success.</p>
-                </div>
-              </div>
-            </div>
-            <!-- End Service Item -->
-      
-            <div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
-              <div class="service-item d-flex">
-                <div class="icon flex-shrink-0"><i class="bi bi-heart"></i></div>
-                <div>
-                  <h4 class="title"><a href="#" class="stretched-link">Empathy</a></h4>
-                  <p class="description card-text">Understanding and sharing the feelings of others.</p>
-                </div>
-              </div>
-            </div>
-            <!-- End Service Item -->
-          </div>
-        </div>
-      </section>
-      
-    <section id="skills" class="section skills">
-        <div class="container-fluid">
-            <p class="hero-title fw-bold text-center text-dark display-4">Technical Skills</p>
-            <div class="row justify-content-center">
-                <div class="col-md-4 mb-4 text-center">
-                    <div class="soft-skill-card">
-                        <div class="icon-3d">
-                            <i class="bi bi-code-slash"></i>
+    
+            <div class="tab-content glassmorphic-card mt-5" id="skillsTabsContent" >
+                <!-- Soft Skills Tab -->
+                <div class="tab-pane fade show active" id="soft-skills" role="tabpanel" aria-labelledby="soft-skills-tab">
+                  <div class="row gy-4">
+                    <div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                      <div class="service-item d-flex">
+                        <div class="icon flex-shrink-0"><i class="bi bi-people"></i></div>
+                        <div>
+                          <h4 class="title"><a href="#" class="stretched-link">Teamwork</a></h4>
+                          <p class="description card-text card-text">Collaborative and cooperative in team settings.</p>
                         </div>
-                        <h5 class="soft-skill-title mt-2 fw-bold">Programming Languages</h5>
-                        <p class="soft-skill-text card-text card-text">Java, C#, JavaScript (Vue.js), React, Angular, Python, PHP, HTML, CSS, SQL.</p>
+                      </div>
+                    </div>
+                    <!-- End Service Item -->
+              
+                    <div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                      <div class="service-item d-flex">
+                        <div class="icon flex-shrink-0"><i class="bi bi-chat-dots"></i></div>
+                        <div>
+                          <h4 class="title"><a href="#" class="stretched-link">Communication</a></h4>
+                          <p class="description card-text">Effective verbal and written communication skills.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- End Service Item -->
+              
+                    <div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                      <div class="service-item d-flex">
+                        <div class="icon flex-shrink-0"><i class="bi bi-lightbulb"></i></div>
+                        <div>
+                          <h4 class="title"><a href="#" class="stretched-link">Problem-Solving</a></h4>
+                          <p class="description card-text">Innovative solutions to complex problems.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- End Service Item -->
+              
+                    <div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+                      <div class="service-item  d-flex">
+                        <div class="icon flex-shrink-0 "><i class="bi bi-calendar-check"></i></div>
+                        <div>
+                          <h4 class="title"><a href="#" class="stretched-link">Time Management</a></h4>
+                          <p class="description card-text">Efficiently managing and prioritizing tasks.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- End Service Item -->
+              
+                    <div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
+                      <div class="service-item d-flex">
+                        <div class="icon flex-shrink-0"><i class="bi bi-award"></i></div>
+                        <div>
+                          <h4 class="title"><a href="#" class="stretched-link">Leadership</a></h4>
+                          <p class="description card-text">Leading and guiding teams to success.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- End Service Item -->
+              
+                    <div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
+                      <div class="service-item d-flex">
+                        <div class="icon flex-shrink-0"><i class="bi bi-heart"></i></div>
+                        <div>
+                          <h4 class="title"><a href="#" class="stretched-link">Empathy</a></h4>
+                          <p class="description card-text">Understanding and sharing the feelings of others.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- End Service Item -->
+                  </div>
+                </div>
+                
+                <!-- Technical Skills Tab -->
+                <div class="tab-pane fade" id="technical-skills" role="tabpanel" aria-labelledby="technical-skills-tab">
+                  <div class="row justify-content-center">
+                    <div class="col-md-4 mb-4 mt-5 text-center">
+                        <div class="soft-skill-card">
+                            <div class="icon-3d">
+                                <i class="bi bi-code-slash"></i>
+                            </div>
+                            <h5 class="soft-skill-title mt-2 fw-bold">Programming Languages</h5>
+                            <p class="soft-skill-text card-text card-text">Java, C#, JavaScript (Vue.js), React, Angular, Python, PHP, HTML, CSS, SQL.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4 mt-5 text-center">
+                        <div class="soft-skill-card">
+                            <div class="icon-3d">
+                                <i class="bi bi-tools"></i>
+                            </div>
+                            <h5 class="soft-skill-title mt-2 fw-bold">Frameworks/Tools</h5>
+                            <p class="soft-skill-text card-text">.NET Core, Bootstrap, Vue.js, Flutter (Dart), RESTful APIs, Laravel, Slim Framework.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4 mt-5 text-center">
+                        <div class="soft-skill-card">
+                            <div class="icon-3d">
+                                <i class="bi bi-server"></i>
+                            </div>
+                            <h5 class="soft-skill-title mt-2 fw-bold">Database</h5>
+                            <p class="soft-skill-text card-text">Microsoft SQL, PostgreSQL, MySQL.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4 mt-5 text-center">
+                        <div class="soft-skill-card">
+                            <div class="icon-3d">
+                                <i class="bi bi-terminal"></i>
+                            </div>
+                            <h5 class="soft-skill-title mt-2 fw-bold">Development Tools</h5>
+                            <p class="soft-skill-text card-text">Figma, Visual Studio Code, Git, Azure, AWS (EC2, S3).</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4 mt-5 text-center">
+                        <div class="soft-skill-card">
+                            <div class="icon-3d">
+                                <i class="bi bi-palette"></i>
+                            </div>
+                            <h5 class="soft-skill-title mt-2 fw-bold">Graphic Design</h5>
+                            <p class="soft-skill-text card-text">Adobe Photoshop, After Effects, Illustrator, Canva, and Blender.</p>
+                        </div>
                     </div>
                 </div>
-                <div class="col-md-4 mb-4 text-center">
-                    <div class="soft-skill-card">
-                        <div class="icon-3d">
-                            <i class="bi bi-tools"></i>
-                        </div>
-                        <h5 class="soft-skill-title mt-2 fw-bold">Frameworks/Tools</h5>
-                        <p class="soft-skill-text card-text">.NET Core, Bootstrap, Vue.js, Flutter (Dart), RESTful APIs, Laravel, Slim Framework.</p>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-4 text-center">
-                    <div class="soft-skill-card">
-                        <div class="icon-3d">
-                            <i class="bi bi-server"></i>
-                        </div>
-                        <h5 class="soft-skill-title mt-2 fw-bold">Database</h5>
-                        <p class="soft-skill-text card-text">Microsoft SQL, PostgreSQL, MySQL.</p>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-4 text-center">
-                    <div class="soft-skill-card">
-                        <div class="icon-3d">
-                            <i class="bi bi-terminal"></i>
-                        </div>
-                        <h5 class="soft-skill-title mt-2 fw-bold">Development Tools</h5>
-                        <p class="soft-skill-text card-text">Figma, Visual Studio Code, Git, Azure, AWS (EC2, S3).</p>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-4 text-center">
-                    <div class="soft-skill-card">
-                        <div class="icon-3d">
-                            <i class="bi bi-palette"></i>
-                        </div>
-                        <h5 class="soft-skill-title mt-2 fw-bold">Graphic Design</h5>
-                        <p class="soft-skill-text card-text">Adobe Photoshop, After Effects, Illustrator, Canva, and Blender.</p>
-                    </div>
-                </div>
-            </div>
         </div>
     </section>
+    
+    
+       
+    
     
     
 
