@@ -1103,7 +1103,7 @@ padding: 60px;
         color: var(--secondary-color);
     }
     .dark-mode .switch {
-        background: linear-gradient(90deg, white, blue);
+        background: linear-gradient(90deg, rgb(1, 16, 116), blue);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         font-weight: 900;
@@ -1212,13 +1212,13 @@ background:transparent;
 }
 
 .dark-mode .text-light-red {
-    background: linear-gradient(90deg,rgb(247, 247, 251),red,red);
+    background: linear-gradient(90deg,rgb(119, 14, 2),red,red);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 } 
 
 .dark-mode .text-blue {
-    background: linear-gradient(90deg,rgb(243, 243, 253),blue,blue);
+    background: linear-gradient(90deg,rgb(22, 1, 93),blue,blue);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 } 
@@ -1279,7 +1279,7 @@ background:transparent;
 
 .dark-mode .service-item2 .icon {
     font-size: 3rem;
-    background: linear-gradient(90deg, rgb(243, 242, 246),red,red);
+    background: linear-gradient(90deg, rgb(14, 13, 18),red,red);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     margin-bottom: 15px;
@@ -1327,7 +1327,7 @@ background:transparent;
 }
 
 .dark-mode .switch {
-     background: linear-gradient(90deg, white,blue);
+     background: linear-gradient(90deg, rgb(1, 19, 93),blue);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
