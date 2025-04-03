@@ -211,6 +211,12 @@ body {
     margin-bottom: 15px;
 }
 
+.icons {
+    background: linear-gradient(90deg, black,red);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
 .btn-primary {
     background: linear-gradient(90deg, black,red);
     border:none;
@@ -1103,7 +1109,7 @@ padding: 60px;
         color: var(--secondary-color);
     }
     .dark-mode .switch {
-        background: linear-gradient(90deg, rgb(1, 16, 116), blue);
+        background: linear-gradient(90deg, rgb(0, 34, 255), blue);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         font-weight: 900;
@@ -1212,13 +1218,13 @@ background:transparent;
 }
 
 .dark-mode .text-light-red {
-    background: linear-gradient(90deg,rgb(119, 14, 2),red,red);
+    background: linear-gradient(90deg,rgb(255, 25, 0),red,red);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 } 
 
 .dark-mode .text-blue {
-    background: linear-gradient(90deg,rgb(22, 1, 93),blue,blue);
+    background: linear-gradient(90deg,rgb(61, 2, 255),blue,blue);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 } 
@@ -1301,6 +1307,11 @@ background:transparent;
     color: #cfcece;
 }
 
+.dark-mode .icons {
+    background: linear-gradient(180deg,red, rgb(157, 1, 1),red);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
 
 .dark-mode .tech-text{
     color: #cfcece;
@@ -1327,7 +1338,7 @@ background:transparent;
 }
 
 .dark-mode .switch {
-     background: linear-gradient(90deg, rgb(1, 19, 93),blue);
+     background: linear-gradient(90deg, rgb(2, 53, 255),blue);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
