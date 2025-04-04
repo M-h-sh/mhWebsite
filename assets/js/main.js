@@ -167,3 +167,12 @@ const swiper = new Swiper(".mySwiper", {
 });
 
 $('#current-year').text(new Date().getFullYear());
+
+$('#other').on('change', function() {
+    if ($(this).is(':checked')) {
+      $('#other-service').slideDown();
+    } else {
+      $('#other-service').slideUp();
+    }
+  });
+  

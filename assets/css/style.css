@@ -1317,6 +1317,12 @@ background:transparent;
     color: #cfcece;
 }
 
+.dark-mode .form-check-input , .dark-mode .form-control {
+background-color: #000;
+border-color:rgb(71, 70, 70);
+border-width: 2px;
+}
+
 .dark-mode .text-muted {
     color: #9c9d9e !important;
 }
