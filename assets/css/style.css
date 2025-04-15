@@ -809,7 +809,7 @@ padding: 60px;
 }
 
 .footer {
-    background: linear-gradient(90deg, black,red);
+    background: linear-gradient(90deg, black,rgb(64, 0, 255));
     color: var(--secondary-color);
     text-align: center;
     padding: 1rem 0;

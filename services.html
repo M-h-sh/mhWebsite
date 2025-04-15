@@ -177,75 +177,100 @@
             </div>
           </section>
           
-          <section id="services" class="technologies section service-list">
-            <div class="container-fluid">
-              <p class="text-center  fw-bold display-4">Our Premium <b class="text-light-red">Services</b></p>
+          <section id="services" class="technologies section service-list py-5 bg-light">
+            <div class="container">
+              <h2 class="text-center fw-bold display-5 mb-5">
+                Our Premium <span class="text-light-red">Services</span>
+              </h2>
           
-              <!-- Services Form Card -->
-              <div class="row justify-content-center my-4">
-                <div class="col-lg-6">
-                  <div class="card p-4 shadow border-0" data-aos="fade-up" data-aos-delay="200">
-                    <h5 class="text-dark mb-3">Choose a <b class="text-light-red">Service</b> to Boost Your Business</h5>
+              <div class="row justify-content-center align-items-center g-4">
+                <!-- Left Image -->
+                <div class="col-lg-3 d-none d-lg-block" data-aos="fade-right" data-aos-delay="150">
+                  <div class="text-center">
+                    <img src="assets/images/serv-item.png" class="img-fluid rounded-4 shadow-sm" alt="Creative Solutions">
+                    <p class="mt-3 text-muted fw-semibold">Creative. Scalable. Tailored for you.</p>
+                  </div>
+                </div>
+          
+                <!-- Form Card -->
+                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+                  <div class="card p-4 shadow-lg border-0 rounded-4 glass-effect">
+                    <h4 class="mb-3 fw-bold">Choose a <span class="text-gradient">Service</span> to Boost Your Business</h4>
                     <p class="text-muted mb-4">Select the service that best fits your needs, and let us create a tailored solution for your business.</p>
           
                     <form action="https://formspree.io/f/mblgzqdz" method="POST">
-                      <!-- Services Options -->
+                      <!-- Radio Options -->
                       <div class="form-check mb-2">
                         <input class="form-check-input" type="radio" name="service" value="Logo Design" id="logo" required>
-                        <label class="form-check-label" for="logo">Logo Design (<b class="fw-normal text-blue">R200</b> - <b class="fw-normal text-blue">R800</b>)</label>
+                        <label class="form-check-label" for="logo">Logo Design <span class="text-blue">(R200 – R800)</span></label>
                       </div>
-          
                       <div class="form-check mb-2">
                         <input class="form-check-input" type="radio" name="service" value="Web Design" id="web-design">
-                        <label class="form-check-label" for="web-design">Web Design (<b class="fw-normal text-blue">R1000</b> - <b class="fw-normal text-blue">R3500</b>)</label>
+                        <label class="form-check-label" for="web-design">Web Design <span class="text-blue">(R1000 – R3500)</span></label>
                       </div>
-          
                       <div class="form-check mb-2">
                         <input class="form-check-input" type="radio" name="service" value="Web Development" id="web-dev">
-                        <label class="form-check-label" for="web-dev">Web Development (<b class="fw-normal text-blue">R3500</b> - <b class="fw-normal text-blue">R9000</b>)</label>
+                        <label class="form-check-label" for="web-dev">Web Development <span class="text-blue">(R3500 – R9000)</span></label>
                       </div>
-          
                       <div class="form-check mb-2">
                         <input class="form-check-input" type="radio" name="service" value="CV Revamp" id="cv">
-                        <label class="form-check-label" for="cv">CV Revamp (<b class="fw-normal text-blue">R50</b> - <b class="fw-normal text-blue">R200</b>)</label>
+                        <label class="form-check-label" for="cv">CV Revamp <span class="text-blue">(R50 – R200)</span></label>
                       </div>
-          
-                      <div class="form-check mb-3">
+                      <div class="form-check mb-2">
                         <input class="form-check-input" type="radio" name="service" value="Video Editing" id="video">
-                        <label class="form-check-label" for="video">Video Editing (<b class="fw-normal text-blue">R350</b> - <b class="fw-normal text-blue">R1200</b>)</label>
+                        <label class="form-check-label" for="video">Video Editing <span class="text-blue">(R350 – R1200)</span></label>
                       </div>
           
-                      <!-- "Other" Option with Dynamic Input -->
+                      <!-- Other Option -->
                       <div class="form-check mb-3">
                         <input class="form-check-input" type="radio" name="service" value="Other" id="other">
                         <label class="form-check-label" for="other">Other</label>
                       </div>
           
-                      <!-- Input for Custom Service (Initially Hidden) -->
                       <div id="other-service" class="form-group" style="display:none;">
-                        <label for="other-service-details" class="text-dark">Please specify the service:</label>
-                        <input type="text" name="other_service" id="other-service-details" class="form-control text-dark mb-3" placeholder="Describe your service request" />
+                        <input type="text" name="other_service" id="other-service-details" class="form-control mb-3" placeholder="Describe your service request" />
                       </div>
           
-                      <!-- User Info Inputs -->
-                      <input type="text" name="name" class="form-control text-dark mb-3" placeholder="Your Name and Surname" required>
-                      <input type="tel" name="phone" class="form-control text-dark mb-3" placeholder="Phone / WhatsApp Number" required>
-                      <input type="email" name="_replyto" class="form-control text-dark mb-3" placeholder="Your Email" required>
+                      <!-- User Info -->
+                      <input type="text" name="name" class="form-control mb-3" placeholder="Your Name and Surname" required>
+                      <input type="tel" name="phone" class="form-control mb-3" placeholder="Phone / WhatsApp Number" required>
+                      <input type="email" name="_replyto" class="form-control mb-3" placeholder="Your Email" required>
           
-                      <!-- Hidden Fields for Spam Prevention & Meta -->
+                      <!-- Hidden -->
                       <input type="text" name="_gotcha" style="display:none">
                       <input type="hidden" name="_subject" value="New Service Request from MH Web">
-                      <input type="hidden" name="_next" value="https://mh-web.netlify.app">
+                      <input type="hidden" name="_next" value="https://mh-web.netlify.app/services">
           
-                      <!-- Submit Button -->
-                      <button type="submit" class="btn btn-primary w-100">Submit Request</button>
+                      <!-- Submit -->
+                      <div class="text-center mt-4">
+                        <button type="submit" class="btn btn-primary px-4 rounded-pill">Submit Request</button>
+                      </div>
                     </form>
+                  </div>
+                </div>
+          
+                <!-- Right List -->
+                <div class="col-lg-3 d-none d-lg-block" data-aos="fade-left" data-aos-delay="150">
+                  <div class="ps-2">
+                    <h6 class="fw-bold mb-3 fs-5">Why Choose Us?</h6>
+                    <ul class="list-unstyled text-muted">
+                      <li class="mb-2"><i class="bi bi-lightning-charge-fill icons me-2"></i>Fast Turnaround</li>
+                      <li class="mb-2"><i class="bi bi-star-fill icons me-2"></i>Professional Quality</li>
+                      <li class="mb-2"><i class="bi bi-person-check-fill icons me-2"></i>Client-Focused Approach</li>
+                      <li class="mb-2"><i class="bi bi-award-fill icons me-2"></i>Expert Team Support</li>
+                      <li><i class="bi bi-globe2 icons me-2"></i>Boost Your Brand!</li>
+
+                    </ul>
                   </div>
                 </div>
               </div>
             </div>
+          
+            
+            
           </section>
-           
+          
+          
     </main>
     <button onclick="topFunction()" id="goTopBtn" class="btn-primary" title="Go to Top"><i class="bi bi-arrow-up-short"></i></button>
     <!-- Footer -->

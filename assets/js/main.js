@@ -42,6 +42,16 @@ $(document).ready(function () {
         }
     };
 
+    $(document).ready(function () {
+        $('input[name="service"]').on('change', function () {
+          if ($('#other').is(':checked')) {
+            $('#other-service').removeClass('d-none');
+          } else {
+            $('#other-service').addClass('d-none');
+          }
+        });
+      });
+
     // Hide the preloader
     const hidePreloader = () => {
         $("#preloader").fadeOut(500, function () {
