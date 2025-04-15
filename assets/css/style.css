@@ -366,6 +366,7 @@ body {
   .service-list{
     background-image: url("../images/services-item_light.png");
     background-size: cover;
+    background-attachment: fixed;
   }
 
   .swiper-button-next:after, .swiper-button-prev:after {
@@ -1351,6 +1352,7 @@ border-width: 2px;
 .dark-mode .service-list{
     background-image: url("../images/services-item.png");
     background-size: cover;
+    background-attachment: fixed;
   }
 
 .dark-mode .rounded-circle {
