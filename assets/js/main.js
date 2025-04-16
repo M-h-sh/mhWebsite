@@ -168,57 +168,53 @@ $(document).ready(function () {
           }
       
         
-          var message = '<div style="font-family: Arial, sans-serif; font-size: 15px; color: #333; line-height: 1.6;">';
+          var message = 'Thank you for contacting MH Web & Graphic Design Services through our website mh-web.netlify.app/services. We appreciate your interest and look forward to working with you.\n\n';
 
-          message += '<p>Thank you for contacting <strong>MH Web & Graphic Design Services</strong> through our website <a href="https://mh-web.netlify.app/services" style="color: #148791; text-decoration: none;">mh-web.netlify.app/services</a>. We appreciate your interest and look forward to working with you.</p>';
-          
           selectedServices.forEach(function(service) {
             switch (service.toLowerCase()) {
               case 'logo design':
-                message += '<p><strong>Logo Design (R200 – R800):</strong><br>' +
-                           'To begin the design process, kindly share your brand name, a brief description of your business or niche, and any design preferences or inspirations. We’ll use this to craft a unique, impactful logo tailored to your brand identity.</p>';
+                message += 'Logo Design (R200 – R800):\n';
+                message += 'To begin the design process, kindly share your brand name, a brief description of your business or niche, and any design preferences or inspirations. We’ll use this to craft a unique, impactful logo tailored to your brand identity.\n\n';
                 break;
           
               case 'web design':
-                message += '<p><strong>Web Design (R1000 – R3500):</strong><br>' +
-                           'Please provide details about your preferred design style, color palette, number of pages, and any reference websites. Our team will create a modern, responsive design that aligns with your goals and brand image.</p>';
+                message += 'Web Design (R1000 – R3500):\n';
+                message += 'Please provide details about your preferred design style, color palette, number of pages, and any reference websites. Our team will create a modern, responsive design that aligns with your goals and brand image.\n\n';
                 break;
           
               case 'web development':
-                message += '<p><strong>Web Development (R3500 – R9000):</strong><br>' +
-                           'To proceed, let us know the features or functionality you\'d like implemented (e.g., contact forms, e-commerce, blog, CMS). We\'ll build a fully functional, performance-optimized website based on your needs.</p>';
+                message += 'Web Development (R3500 – R9000):\n';
+                message += 'To proceed, let us know the features or functionality you\'d like implemented (e.g., contact forms, e-commerce, blog, CMS). We\'ll build a fully functional, performance-optimized website based on your needs.\n\n';
                 break;
           
               case 'cv revamp':
-                message += '<p><strong>CV Revamp (R50 – R200):</strong><br>' +
-                           'Kindly attach your current CV in reply to this email. Our team will revamp it with a modern, professional layout and structure, tailored to your industry and career goals.</p>';
+                message += 'CV Revamp (R50 – R200):\n';
+                message += 'Kindly attach your current CV in reply to this email. Our team will revamp it with a modern, professional layout and structure, tailored to your industry and career goals.\n\n';
                 break;
           
               case 'video editing':
-                message += '<p><strong>Video Editing (R350 – R1200):</strong><br>' +
-                           'Please send us the raw video footage and a brief outlining your vision. We’ll enhance the content with smooth transitions, text overlays, background music, and visual effects as needed.</p>';
+                message += 'Video Editing (R350 – R1200):\n';
+                message += 'Please send us the raw video footage and a brief outlining your vision. We’ll enhance the content with smooth transitions, text overlays, background music, and visual effects as needed.\n\n';
                 break;
           
               case 'other':
-                message += '<p><strong>Custom Request:</strong><br>' +
-                           'Kindly provide specific details about the service you\'re looking for. Our team will review and respond with a custom quote or proposal based on your requirements.</p>';
+                message += 'Custom Request:\n';
+                message += 'Kindly provide specific details about the service you\'re looking for. Our team will review and respond with a custom quote or proposal based on your requirements.\n\n';
                 break;
           
               default:
-                message += '<p><strong>' + service + ':</strong><br>' +
-                           'Our team will follow up with additional questions or a detailed quote shortly. Feel free to share any further information to help us get started.</p>';
+                message += service + ':\n';
+                message += 'Our team will follow up with additional questions or a detailed quote shortly. Feel free to share any further information to help us get started.\n\n';
                 break;
             }
           });
           
-          message += '<p>If you have any references, examples, or ideas you’d like to share, feel free to include them in your reply. We\'re excited to collaborate and bring your ideas to life with precision and creativity.</p>';
-          message += '<p style="margin-top: 20px;">Kind regards,<br><strong>MH Web & Graphic Design Services Team</strong></p>';
-          message += '</div>';
+          message += 'If you have any references, examples, or ideas you’d like to share, feel free to include them in your reply. We\'re excited to collaborate and bring your ideas to life with precision and creativity.\n\n';
+          message += 'Kind regards,\nMH Web & Graphic Design Services Team';
           
           // Example usage
-          $('#messageContainer').html(message); // Replace with your actual target
-          
-        
+          $('#messageContainer').text(message); // Use .text() to render plain text (not HTML)
+             
       
           if (name && email && phone && selectedServices.length > 0) {
             const templateParams = {
