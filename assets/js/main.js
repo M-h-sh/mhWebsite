@@ -253,7 +253,7 @@ $(document).ready(function() {
 
             setTimeout(() => {
                 location.reload(true); // Force refresh from server (clears cache)
-            }, 3000);
+            }, 4000);
         }
     });
 
@@ -359,8 +359,8 @@ $(document).ready(function() {
         .then(function (response) {
           Swal.fire({
             icon: 'success',
-            title: 'Thank you!',
-            text: 'We will get in touch with you shortly.',
+            title: '',
+            text: '',
             confirmButtonColor: '#3085d6'
           }).then(() => {
             // Reset form after user clicks OK
