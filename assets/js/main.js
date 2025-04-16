@@ -250,6 +250,9 @@ $(document).ready(function() {
             submitBtn.html('<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span> Sending...');
             submitBtn.prop('disabled', true);
             this.submit();
+            setTimeout(() => {
+                location.reload(true); // Force refresh from server (clears cache)
+            }, 1000);
         }
     });
 
