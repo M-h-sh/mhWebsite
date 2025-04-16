@@ -253,7 +253,7 @@ $(document).ready(function() {
 
             setTimeout(() => {
                 location.reload(true); // Force refresh from server (clears cache)
-            }, 2000);
+            }, 3000);
         }
     });
 
