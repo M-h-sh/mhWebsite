@@ -374,6 +374,75 @@ body {
     color:white;
   }
 
+  .thanks {
+    background: linear-gradient(to bottom right, #1f1f4f, #911414);
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+  }
+
+  .thank-hero {
+    min-height: 92vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 2rem;
+  }
+
+  .thank-box {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(12px);
+    border-radius: 20px;
+    padding: 3rem 2rem;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+    max-width: 600px;
+    width: 100%;
+    animation: fadeInUp 1s ease-in-out;
+  }
+
+  .thank-box h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #fff;
+  }
+
+  .thank-box p {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    color: #eaeaea;
+  }
+
+  .back-btn {
+    font-size: 1rem;
+    padding: 0.7rem 1.5rem;
+    border-radius: 50px;
+    border: 2px solid #fff;
+    color: #fff;
+    background: transparent;
+    transition: all 0.3s ease;
+  }
+
+  .back-btn:hover {
+    background: #fff;
+    color: #1f1f4f;
+    box-shadow: 0 4px 14px rgba(255, 255, 255, 0.2);
+  }
+
+  
+
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(40px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
   
   .certificate-card {
     background: #fff;
