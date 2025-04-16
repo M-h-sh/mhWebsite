@@ -51,6 +51,17 @@ $(document).ready(function () {
           }
         });
       });
+      
+      $(document).ready(function () {
+        $('#service-form').on('submit', function () {
+          // Disable the submit button
+          $('#submit-btn')
+            .attr('disabled', true)
+            .html('<span class="spinner-border spinner-border-sm me-2" role="status" aria-hidden="true"></span>Sending...');
+    
+          // Let the form proceed normally to Formspree
+        });
+      });
 
     // Hide the preloader
     const hidePreloader = () => {
