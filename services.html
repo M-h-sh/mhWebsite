@@ -200,10 +200,14 @@
                     <h4 class="mb-3 fw-bold">Choose a <span class="text-gradient">Service</span> to Boost Your Business</h4>
                     <p class="text-muted mb-4">Select the service that best fits your needs, and let us create a tailored solution for your business.</p>
           
-                    <form name="mh-service-request" action="https://formsubmit.co/mthova.hp@gmail.com" method="POST" data-netlify="true" netlify>
-                      <input type="hidden" name="form-name" value="mh-service-request">
+                    <form name="mh-service-request" action="https://formsubmit.co/mthova.hp@gmail.com" method="POST">
+                      <!-- Formsubmit Hidden Fields -->
+                      <input type="hidden" name="_autoresponse" value="Thank you for your request. We'll get in touch with you shortly.">
+                      <input type="hidden" name="_subject" value="New Service Request - MH Web">
+                      <input type="hidden" name="_template" value="table">
+                      <input type="hidden" name="_next" value="https://mh-web.netlify.app/thank-you.html">
                     
-                      <!-- Checkbox Services -->
+                      <!-- Service Checkboxes -->
                       <div class="form-check mb-2">
                         <input class="form-check-input" type="checkbox" name="service[]" value="Logo Design" id="logo">
                         <label class="form-check-label" for="logo">Logo Design <span class="text-blue">(R200 – R800)</span></label>
@@ -225,12 +229,11 @@
                         <label class="form-check-label" for="video">Video Editing <span class="text-blue">(R350 – R1200)</span></label>
                       </div>
                     
-                      <!-- Other -->
+                      <!-- Other Option -->
                       <div class="form-check mb-3">
                         <input class="form-check-input" type="checkbox" name="service[]" value="Other" id="other">
                         <label class="form-check-label" for="other">Other</label>
                       </div>
-                    
                       <div id="other-service" class="form-group" style="display:none;">
                         <input type="text" name="other_service" id="other-service-details" class="form-control mb-3" placeholder="Describe your service request" />
                       </div>
@@ -240,13 +243,14 @@
                       <input type="tel" name="phone" class="form-control mb-3" placeholder="Phone / WhatsApp Number" required>
                       <input type="email" name="email" class="form-control mb-3" placeholder="Your Email" required>
                     
-                      <!-- Submit Button -->
+                      <!-- Submit -->
                       <div class="text-center mt-4">
                         <button id="submit-btn" type="submit" class="btn btn-primary px-4 rounded-pill">
                           Submit Request
                         </button>
                       </div>
                     </form>
+                    
                     
                     
                   </div>
