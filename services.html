@@ -200,8 +200,10 @@
                     <h4 class="mb-3 fw-bold">Choose a <span class="text-gradient">Service</span> to Boost Your Business</h4>
                     <p class="text-muted mb-4">Select the service that best fits your needs, and let us create a tailored solution for your business.</p>
           
-                    <form action="https://formspree.io/f/mblgzqdz" method="POST">
-                      <!-- Checkbox Options -->
+                    <form name="mh-service-request" method="POST" data-netlify="true" netlify>
+                      <input type="hidden" name="form-name" value="mh-service-request">
+                    
+                      <!-- Checkbox Services -->
                       <div class="form-check mb-2">
                         <input class="form-check-input" type="checkbox" name="service[]" value="Logo Design" id="logo">
                         <label class="form-check-label" for="logo">Logo Design <span class="text-blue">(R200 – R800)</span></label>
@@ -223,7 +225,7 @@
                         <label class="form-check-label" for="video">Video Editing <span class="text-blue">(R350 – R1200)</span></label>
                       </div>
                     
-                      <!-- Other Option -->
+                      <!-- Other -->
                       <div class="form-check mb-3">
                         <input class="form-check-input" type="checkbox" name="service[]" value="Other" id="other">
                         <label class="form-check-label" for="other">Other</label>
@@ -236,18 +238,16 @@
                       <!-- User Info -->
                       <input type="text" name="name" class="form-control mb-3" placeholder="Your Name and Surname" required>
                       <input type="tel" name="phone" class="form-control mb-3" placeholder="Phone / WhatsApp Number" required>
-                      <input type="email" name="_replyto" class="form-control mb-3" placeholder="Your Email" required>
+                      <input type="email" name="email" class="form-control mb-3" placeholder="Your Email" required>
                     
-                      <!-- Hidden -->
-                      <input type="text" name="_gotcha" style="display:none">
-                      <input type="hidden" name="_subject" value="New Service Request from MH Web">
-                      <input type="hidden" name="_next" value="https://mh-web.netlify.app/services">
-                    
-                      <!-- Submit -->
+                      <!-- Submit Button -->
                       <div class="text-center mt-4">
-                        <button type="submit" id="submit-btn" class="btn btn-primary px-4 rounded-pill">Submit Request</button>
+                        <button id="submit-btn" type="submit" class="btn btn-primary px-4 rounded-pill">
+                          Submit Request
+                        </button>
                       </div>
                     </form>
+                    
                     
                   </div>
                 </div>
