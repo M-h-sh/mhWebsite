@@ -304,27 +304,27 @@ $(document).ready(function() {
         switch (service.toLowerCase()) {
           case 'logo design':
             message += 'Logo Design (R200 – R800):\n';
-            message += 'To begin the design process, kindly share your brand name, a brief description of your business or niche, and any design preferences or inspirations. We’ll use this to craft a unique, impactful logo tailored to your brand identity.\n\n';
+            message += 'To begin the design process, kindly share your brand name, a brief description of your business or niche, and any design preferences or inspirations to mthova.hp@gmail.com. We’ll use this to craft a unique, impactful logo tailored to your brand identity.\n\n';
             break;
       
           case 'web design':
             message += 'Web Design (R1000 – R3500):\n';
-            message += 'Please provide details about your preferred design style, color palette, number of pages, and any reference websites. Our team will create a modern, responsive design that aligns with your goals and brand image.\n\n';
+            message += 'Please provide details about your preferred design style, color palette, number of pages, and any reference websites to mthova.hp@gmail.com. Our team will create a modern, responsive design that aligns with your goals and brand image.\n\n';
             break;
       
           case 'web development':
             message += 'Web Development (R3500 – R9000):\n';
-            message += 'To proceed, let us know the features or functionality you\'d like implemented (e.g., contact forms, e-commerce, blog, CMS). We\'ll build a fully functional, performance-optimized website based on your needs.\n\n';
+            message += 'To proceed, let us know the features or functionality you\'d like implemented (e.g., contact forms, e-commerce, blog, CMS) to mthova.hp@gmail.com. We\'ll build a fully functional, performance-optimized website based on your needs.\n\n';
             break;
       
           case 'cv revamp':
             message += 'CV Revamp (R50 – R200):\n';
-            message += 'Kindly attach your current CV in reply to this email. Our team will revamp it with a modern, professional layout and structure, tailored to your industry and career goals.\n\n';
+            message += 'Kindly attach your current CV in reply to mthova.hp@gmail.com. Our team will revamp it with a modern, professional layout and structure, tailored to your industry and career goals.\n\n';
             break;
       
           case 'video editing':
             message += 'Video Editing (R350 – R1200):\n';
-            message += 'Please send us the raw video footage and a brief outlining your vision. We’ll enhance the content with smooth transitions, text overlays, background music, and visual effects as needed.\n\n';
+            message += 'Please send us the raw video footage and a brief outlining your vision to mthova.hp@gmail.com. We’ll enhance the content with smooth transitions, text overlays, background music, and visual effects as needed.\n\n';
             break;
       
           case 'other':
