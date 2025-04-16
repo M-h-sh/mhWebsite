@@ -168,29 +168,30 @@ $(document).ready(function () {
           }
       
           // Generate a dynamic message
-          let message = `Thank you for reaching out to MH Web & Graphic Design Services through our website mh-web.netlify.app/services.\n\n`;
-      
+          let message = `Thank you for reaching out to MH Web & Graphic Design Services through our website (mh-web.netlify.app/services).\n\n`;
+
           selectedServices.forEach(service => {
             switch (service.toLowerCase()) {
               case 'cv revamp':
-                message += `📄 For your *CV Revamp* request: Please reply to this email with your current CV attached. We’ll take it from there and deliver a stunning upgrade!\n\n`;
+                message += `For your *CV Revamp* request: Kindly reply to this email with your current CV attached. Our team will review it and proceed with enhancing its quality and presentation.\n\n`;
                 break;
               case 'portfolio website':
-                message += `🌐 For your *Portfolio Website* request: Kindly reply with a few examples or references, and let us know what you'd like featured. We can’t wait to showcase your work beautifully!\n\n`;
+                message += `For your *Portfolio Website* request: Please share any references, preferred styles, or specific features you'd like included. This will help us tailor a professional online presence for you.\n\n`;
                 break;
               case 'logo design':
-                message += `🎨 For your *Logo Design* request: Please reply with any ideas or inspirations you have in mind. We’ll help you build a brand identity you'll love!\n\n`;
+                message += `For your *Logo Design* request: Feel free to provide any ideas, brand values, or inspirations that could help guide the creative direction of your logo.\n\n`;
                 break;
               case 'social media kit':
-                message += `📱 For your *Social Media Kit* request: Reply with your brand’s name, niche, and any current social links so we can tailor everything just right.\n\n`;
+                message += `For your *Social Media Kit* request: Kindly include your brand name, niche, and any existing social media links to help us create a cohesive and professional kit.\n\n`;
                 break;
               default:
-                message += `🛠️ For your *${service}* request: Our team will reach out shortly to gather more details and get started. Feel free to share anything specific you'd like us to know.\n\n`;
+                message += `For your *${service}* request: Our team will be in touch shortly to gather further details. Should you have any specific requirements, please feel free to share them.\n\n`;
                 break;
             }
           });
-      
-          message += `We’re excited to assist and will be in touch shortly. 😊`;
+          
+          message += `We appreciate your interest in our services and look forward to assisting you further.`;
+          
       
           if (name && email && phone && selectedServices.length > 0) {
             const templateParams = {
