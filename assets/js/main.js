@@ -169,54 +169,55 @@ $(document).ready(function () {
       
         
           var message = '<div style="font-family: Arial, sans-serif; font-size: 15px; color: #333; line-height: 1.6;">';
+
           message += '<p>Thank you for contacting <strong>MH Web & Graphic Design Services</strong> through our website <a href="https://mh-web.netlify.app/services" style="color: #148791; text-decoration: none;">mh-web.netlify.app/services</a>. We appreciate your interest and look forward to working with you.</p>';
-        
+          
           selectedServices.forEach(function(service) {
             switch (service.toLowerCase()) {
               case 'logo design':
                 message += '<p><strong>Logo Design (R200 – R800):</strong><br>' +
                            'To begin the design process, kindly share your brand name, a brief description of your business or niche, and any design preferences or inspirations. We’ll use this to craft a unique, impactful logo tailored to your brand identity.</p>';
                 break;
-        
+          
               case 'web design':
                 message += '<p><strong>Web Design (R1000 – R3500):</strong><br>' +
                            'Please provide details about your preferred design style, color palette, number of pages, and any reference websites. Our team will create a modern, responsive design that aligns with your goals and brand image.</p>';
                 break;
-        
+          
               case 'web development':
                 message += '<p><strong>Web Development (R3500 – R9000):</strong><br>' +
                            'To proceed, let us know the features or functionality you\'d like implemented (e.g., contact forms, e-commerce, blog, CMS). We\'ll build a fully functional, performance-optimized website based on your needs.</p>';
                 break;
-        
+          
               case 'cv revamp':
                 message += '<p><strong>CV Revamp (R50 – R200):</strong><br>' +
                            'Kindly attach your current CV in reply to this email. Our team will revamp it with a modern, professional layout and structure, tailored to your industry and career goals.</p>';
                 break;
-        
+          
               case 'video editing':
                 message += '<p><strong>Video Editing (R350 – R1200):</strong><br>' +
                            'Please send us the raw video footage and a brief outlining your vision. We’ll enhance the content with smooth transitions, text overlays, background music, and visual effects as needed.</p>';
                 break;
-        
+          
               case 'other':
                 message += '<p><strong>Custom Request:</strong><br>' +
                            'Kindly provide specific details about the service you\'re looking for. Our team will review and respond with a custom quote or proposal based on your requirements.</p>';
                 break;
-        
+          
               default:
                 message += '<p><strong>' + service + ':</strong><br>' +
                            'Our team will follow up with additional questions or a detailed quote shortly. Feel free to share any further information to help us get started.</p>';
                 break;
             }
           });
-        
+          
           message += '<p>If you have any references, examples, or ideas you’d like to share, feel free to include them in your reply. We\'re excited to collaborate and bring your ideas to life with precision and creativity.</p>';
           message += '<p style="margin-top: 20px;">Kind regards,<br><strong>MH Web & Graphic Design Services Team</strong></p>';
           message += '</div>';
-        
-          // Example usage in jQuery
-          $('#messageContainer').html(message); // replace `#messageContainer` with your target element ID
-    
+          
+          // Example usage
+          $('#messageContainer').html(message); // Replace with your actual target
+          
         
       
           if (name && email && phone && selectedServices.length > 0) {
