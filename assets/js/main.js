@@ -167,31 +167,70 @@ $(document).ready(function () {
             selectedServices.push(otherService);
           }
       
-          // Generate a dynamic message
-          let message = `Thank you for reaching out to MH Web & Graphic Design Services through our website (mh-web.netlify.app/services).\n\n`;
-
-          selectedServices.forEach(service => {
-            switch (service.toLowerCase()) {
-              case 'cv revamp':
-                message += `For your *CV Revamp* request: Kindly reply to this email with your current CV attached. Our team will review it and proceed with enhancing its quality and presentation.\n\n`;
-                break;
-              case 'portfolio website':
-                message += `For your *Portfolio Website* request: Please share any references, preferred styles, or specific features you'd like included. This will help us tailor a professional online presence for you.\n\n`;
-                break;
-              case 'logo design':
-                message += `For your *Logo Design* request: Feel free to provide any ideas, brand values, or inspirations that could help guide the creative direction of your logo.\n\n`;
-                break;
-              case 'social media kit':
-                message += `For your *Social Media Kit* request: Kindly include your brand name, niche, and any existing social media links to help us create a cohesive and professional kit.\n\n`;
-                break;
-              default:
-                message += `For your *${service}* request: Our team will be in touch shortly to gather further details. Should you have any specific requirements, please feel free to share them.\n\n`;
-                break;
-            }
-          });
-          
-          message += `We appreciate your interest in our services and look forward to assisting you further.`;
-          
+          let message = `
+          <div style="font-family: Arial, sans-serif; font-size: 15px; color: #333; line-height: 1.6;">
+            <p>Thank you for contacting <strong>MH Web & Graphic Design Services</strong> through our website <a href="https://mh-web.netlify.app/services" style="color: #148791; text-decoration: none;">mh-web.netlify.app/services</a>. We appreciate your interest and look forward to working with you.</p>
+        `;
+        
+        selectedServices.forEach(service => {
+          switch (service.toLowerCase()) {
+            case 'logo design':
+              message += `
+                <p><strong>Logo Design (R200 – R800):</strong><br>
+                To begin the design process, kindly share your brand name, a brief description of your business or niche, and any design preferences or inspirations. We’ll use this to craft a unique, impactful logo tailored to your brand identity.</p>
+              `;
+              break;
+        
+            case 'web design':
+              message += `
+                <p><strong>Web Design (R1000 – R3500):</strong><br>
+                Please provide details about your preferred design style, color palette, number of pages, and any reference websites. Our team will create a modern, responsive design that aligns with your goals and brand image.</p>
+              `;
+              break;
+        
+            case 'web development':
+              message += `
+                <p><strong>Web Development (R3500 – R9000):</strong><br>
+                To proceed, let us know the features or functionality you'd like implemented (e.g., contact forms, e-commerce, blog, CMS). We'll build a fully functional, performance-optimized website based on your needs.</p>
+              `;
+              break;
+        
+            case 'cv revamp':
+              message += `
+                <p><strong>CV Revamp (R50 – R200):</strong><br>
+                Kindly attach your current CV in reply to this email. Our team will revamp it with a modern, professional layout and structure, tailored to your industry and career goals.</p>
+              `;
+              break;
+        
+            case 'video editing':
+              message += `
+                <p><strong>Video Editing (R350 – R1200):</strong><br>
+                Please send us the raw video footage and a brief outlining your vision. We’ll enhance the content with smooth transitions, text overlays, background music, and visual effects as needed.</p>
+              `;
+              break;
+        
+            case 'other':
+              message += `
+                <p><strong>Custom Request:</strong><br>
+                Kindly provide specific details about the service you're looking for. Our team will review and respond with a custom quote or proposal based on your requirements.</p>
+              `;
+              break;
+        
+            default:
+              message += `
+                <p><strong>${service}:</strong><br>
+                Our team will follow up with additional questions or a detailed quote shortly. Feel free to share any further information to help us get started.</p>
+              `;
+              break;
+          }
+        });
+        
+        message += `
+            <p>If you have any references, examples, or ideas you’d like to share, feel free to include them in your reply. We're excited to collaborate and bring your ideas to life with precision and creativity.</p>
+            <p style="margin-top: 20px;">Kind regards,<br><strong>MH Web & Graphic Design Services Team</strong></p>
+          </div>
+        `;
+        
       
           if (name && email && phone && selectedServices.length > 0) {
             const templateParams = {
