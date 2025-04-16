@@ -356,14 +356,28 @@ $(document).ready(function() {
         };
   
         emailjs.send('service_ety9jyl', 'template_70xa4y9', templateParams)
-          .then(function (response) {
-            alert('Thanks! We will get in touch with you shortly.');
+        .then(function (response) {
+          Swal.fire({
+            icon: 'success',
+            title: 'Thank you!',
+            text: 'We will get in touch with you shortly.',
+            confirmButtonColor: '#3085d6'
+          }).then(() => {
+            // Reset form after user clicks OK
             $('#serviceRequestForm')[0].reset();
-            $('#other-service').hide(); // Reset "Other" field
-          }, function (error) {
-            alert('Oops! Something went wrong. Please try again.');
-            console.error(error);
+            $('#other-service').hide(); // Hide "Other" field
+            location.reload(true); // Optional: force refresh after success
           });
+        }, function (error) {
+          Swal.fire({
+            icon: 'error',
+            title: 'Oops!',
+            text: 'Something went wrong. Please try again.',
+            confirmButtonColor: '#d33'
+          });
+          console.error(error);
+        });
+      
       } else {
         if (selectedServices.length === 0) {
           $('#service-error').show();
