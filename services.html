@@ -195,66 +195,77 @@
                 </div>
           
                 <!-- Form Card -->
-                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
-                  <div class="card p-4 shadow-lg border-0 rounded-4 glass-effect">
-                    <h4 class="mb-3 fw-bold">Choose a <span class="text-gradient">Service</span> to Boost Your Business</h4>
-                    <p class="text-muted mb-4">Select the service that best fits your needs, and let us create a tailored solution for your business.</p>
+<div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+  <div class="card p-4 shadow-lg border-0 rounded-4 glass-effect">
+      <h4 class="mb-3 fw-bold">Choose a <span class="text-gradient">Service</span> to Boost Your Business</h4>
+      <p class="text-muted mb-4">Select the service that best fits your needs, and let us create a tailored solution for your business.</p>
+
+      <form id="serviceRequestForm" name="mh-service-request" action="https://formsubmit.co/mthova.hp@gmail.com" method="POST">
+          <!-- Formsubmit Hidden Fields -->
+          <input type="hidden" name="_autoresponse" value="Thank you for your request. We'll get in touch with you shortly.">
+          <input type="hidden" name="_subject" value="New Service Request - MH Web">
+          <input type="hidden" name="_template" value="table">
+          <input type="hidden" name="_next" value="https://mh-web.netlify.app/thank-you.html">
+          <input type="hidden" name="_captcha" value="false">
+        
+          <!-- Service Checkboxes -->
+          <div class="form-group mb-3">
+              <div class="form-check mb-2">
+                  <input class="form-check-input service-checkbox" type="checkbox" name="service[]" value="Logo Design" id="logo">
+                  <label class="form-check-label" for="logo">Logo Design <span class="text-blue">(R200 – R800)</span></label>
+              </div>
+              <div class="form-check mb-2">
+                  <input class="form-check-input service-checkbox" type="checkbox" name="service[]" value="Web Design" id="web-design">
+                  <label class="form-check-label" for="web-design">Web Design <span class="text-blue">(R1000 – R3500)</span></label>
+              </div>
+              <div class="form-check mb-2">
+                  <input class="form-check-input service-checkbox" type="checkbox" name="service[]" value="Web Development" id="web-dev">
+                  <label class="form-check-label" for="web-dev">Web Development <span class="text-blue">(R3500 – R9000)</span></label>
+              </div>
+              <div class="form-check mb-2">
+                  <input class="form-check-input service-checkbox" type="checkbox" name="service[]" value="CV Revamp" id="cv">
+                  <label class="form-check-label" for="cv">CV Revamp <span class="text-blue">(R50 – R200)</span></label>
+              </div>
+              <div class="form-check mb-2">
+                  <input class="form-check-input service-checkbox" type="checkbox" name="service[]" value="Video Editing" id="video">
+                  <label class="form-check-label" for="video">Video Editing <span class="text-blue">(R350 – R1200)</span></label>
+              </div>
+              <div class="form-check mb-3">
+                  <input class="form-check-input service-checkbox" type="checkbox" name="service[]" value="Other" id="other">
+                  <label class="form-check-label" for="other">Other (Specify below)</label>
+              </div>
+              <div id="other-service" class="form-group mb-3" style="display:none;">
+                  <input type="text" name="other_service" id="other-service-details" class="form-control" placeholder="Please describe your service request" />
+              </div>
+              <div id="service-error" class="text-danger small" style="display:none;">Please select at least one service</div>
+          </div>
+        
+          <!-- User Info -->
+          <div class="form-group mb-3">
+              <input type="text" name="name" id="client-name" class="form-control" placeholder="Your Name and Surname" required>
+              <div id="name-error" class="text-danger small" style="display:none;">Please enter your name</div>
+          </div>
           
-                    <form name="mh-service-request" action="https://formsubmit.co/mthova.hp@gmail.com" method="POST">
-                      <!-- Formsubmit Hidden Fields -->
-                      <input type="hidden" name="_autoresponse" value="Thank you for your request. We'll get in touch with you shortly.">
-                      <input type="hidden" name="_subject" value="New Service Request - MH Web">
-                      <input type="hidden" name="_template" value="table">
-                      <input type="hidden" name="_next" value="https://mh-web.netlify.app/thank-you.html">
-                    
-                      <!-- Service Checkboxes -->
-                      <div class="form-check mb-2">
-                        <input class="form-check-input" type="checkbox" name="service[]" value="Logo Design" id="logo">
-                        <label class="form-check-label" for="logo">Logo Design <span class="text-blue">(R200 – R800)</span></label>
-                      </div>
-                      <div class="form-check mb-2">
-                        <input class="form-check-input" type="checkbox" name="service[]" value="Web Design" id="web-design">
-                        <label class="form-check-label" for="web-design">Web Design <span class="text-blue">(R1000 – R3500)</span></label>
-                      </div>
-                      <div class="form-check mb-2">
-                        <input class="form-check-input" type="checkbox" name="service[]" value="Web Development" id="web-dev">
-                        <label class="form-check-label" for="web-dev">Web Development <span class="text-blue">(R3500 – R9000)</span></label>
-                      </div>
-                      <div class="form-check mb-2">
-                        <input class="form-check-input" type="checkbox" name="service[]" value="CV Revamp" id="cv">
-                        <label class="form-check-label" for="cv">CV Revamp <span class="text-blue">(R50 – R200)</span></label>
-                      </div>
-                      <div class="form-check mb-2">
-                        <input class="form-check-input" type="checkbox" name="service[]" value="Video Editing" id="video">
-                        <label class="form-check-label" for="video">Video Editing <span class="text-blue">(R350 – R1200)</span></label>
-                      </div>
-                    
-                      <!-- Other Option -->
-                      <div class="form-check mb-3">
-                        <input class="form-check-input" type="checkbox" name="service[]" value="Other" id="other">
-                        <label class="form-check-label" for="other">Other</label>
-                      </div>
-                      <div id="other-service" class="form-group" style="display:none;">
-                        <input type="text" name="other_service" id="other-service-details" class="form-control mb-3" placeholder="Describe your service request" />
-                      </div>
-                    
-                      <!-- User Info -->
-                      <input type="text" name="name" class="form-control mb-3" placeholder="Your Name and Surname" required>
-                      <input type="tel" name="phone" class="form-control mb-3" placeholder="Phone / WhatsApp Number" required>
-                      <input type="email" name="email" class="form-control mb-3" placeholder="Your Email" required>
-                    
-                      <!-- Submit -->
-                      <div class="text-center mt-4">
-                        <button id="submit-btn" type="submit" class="btn btn-primary px-4 rounded-pill">
-                          Submit Request
-                        </button>
-                      </div>
-                    </form>
-                    
-                    
-                    
-                  </div>
-                </div>
+          <div class="form-group mb-3">
+              <input type="tel" name="phone" id="client-phone" class="form-control" placeholder="Phone / WhatsApp Number" required>
+              <div id="phone-error" class="text-danger small" style="display:none;">Please enter a valid phone number</div>
+          </div>
+          
+          <div class="form-group mb-3">
+              <input type="email" name="email" id="client-email" class="form-control " placeholder="Your Email" required>
+              <div id="email-error" class="text-danger small" style="display:none;">Please enter a valid email address</div>
+          </div>
+        
+          <!-- Submit -->
+          <div class="text-center mt-4">
+              <button id="submit-btn" type="submit" class="btn btn-primary px-4 rounded-pill">
+                  Submit Request
+              </button>
+          </div>
+      </form>
+      
+  </div>
+</div>
           
                 <!-- Right List -->
                 <div class="col-lg-3 d-none d-lg-block" data-aos="fade-left" data-aos-delay="150">

@@ -38,12 +38,12 @@
   <link href="assets/css/style.css" rel="stylesheet" />
 
   <style>
-    .hero {
+    .thank-hero {
       min-height: 90vh;
       display: flex;
       justify-content: center;
       align-items: center;
-      background: linear-gradient(135deg, #148791, #1f1f4f);
+      background: linear-gradient(135deg, #911414, #1f1f4f);
       color: white;
       font-size: 2rem;
       font-weight: 600;
@@ -52,44 +52,15 @@
       margin-top: 2rem;
     }
 
-    #goTopBtn {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      z-index: 99;
-      border: none;
-      outline: none;
-      background-color: #148791;
-      color: white;
-      cursor: pointer;
-      padding: 10px 15px;
-      border-radius: 50%;
-      font-size: 18px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-      transition: all 0.3s ease;
-    }
-
-    #goTopBtn:hover {
-      background-color: #0f6c74;
-    }
-
-    .footer {
-      background: #1f1f4f;
-    }
-
-    .footer-text {
-      font-size: 0.9rem;
-      margin: 0;
-    }
   </style>
 </head>
 
 <body>
   <!-- Hero Section -->
   <main>
-    <section id="home" class="section" data-aos="fade-in">
+    <section id="home" class="section mb-4" data-aos="fade-in">
       <div class="container">
-        <div class="hero text-center">
+        <div class="thank-hero text-center">
           Thank you for your request.<br />We’ll get in touch with you shortly.
         </div>
       </div>
@@ -119,14 +90,5 @@
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   <script src="assets/js/main.js"></script>
-
-  <!-- Year Auto Update -->
-  <script>
-    document.getElementById("current-year").textContent = new Date().getFullYear();
-
-    function topFunction() {
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-    }
-  </script>
 </body>
 </html>
