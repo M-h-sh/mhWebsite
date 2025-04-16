@@ -308,6 +308,38 @@
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
     <script src="assets/js/main.js"></script>
+    <script>
+    (function(){
+      emailjs.init("La-Uzd96atILQr2lO"); // Replace with your actual PUBLIC KEY
+    })();
+
+    $(document).ready(function () {
+  $('#serviceRequestForm').submit(function (e) {
+    e.preventDefault();
+
+    const name = $('#client-name').val().trim();
+    const email = $('#client-email').val().trim();
+
+    if (name && email) {
+      const templateParams = {
+        user_name: name,
+        user_email: email,
+      };
+
+      emailjs.send('service_ety9jyl', 'template_70xa4y9', templateParams)
+        .then(function (response) {
+          alert('Thanks! We will get in touch with you shortly.');
+          $('#serviceRequestForm')[0].reset();
+        }, function (error) {
+          alert('Oops! Something went wrong. Please try again.');
+          console.error(error);
+        });
+    }
+  });
+});
+
+  </script>
 </body>
 </html>
