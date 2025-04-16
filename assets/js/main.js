@@ -43,6 +43,13 @@ $(document).ready(function () {
     };
 
     $(document).ready(function() {
+        // Clear form if returned after submission
+        if(localStorage.getItem('formSubmitted') === 'true') {
+            $('#serviceRequestForm')[0].reset();
+            $('#other-service').hide();
+            localStorage.removeItem('formSubmitted');
+        }
+    
         // Toggle Other Service field
         $('#other').change(function() {
             if($(this).is(':checked')) {
@@ -58,87 +65,61 @@ $(document).ready(function () {
         $('#serviceRequestForm').submit(function(e) {
             e.preventDefault();
             let isValid = true;
-            
-            // Reset all error messages
+    
             $('.text-danger').hide();
             $('.is-invalid').removeClass('is-invalid');
-            
-            // Validate name
+    
             const name = $('#client-name').val().trim();
-            if(name === '') {
-                $('#name-error').show();
-                isValid = false;
-            }
-            
-            // Validate phone (simple validation)
             const phone = $('#client-phone').val().trim();
-            if(phone === '' || phone.length < 8) {
-                $('#phone-error').show();
-                isValid = false;
-            }
-            
-            // Validate email
             const email = $('#client-email').val().trim();
             const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    
+            if(name === '') {
+                $('#name-error').show(); isValid = false;
+            }
+    
+            if(phone === '' || phone.length < 8) {
+                $('#phone-error').show(); isValid = false;
+            }
+    
             if(!emailRegex.test(email)) {
-                $('#email-error').show();
-                isValid = false;
+                $('#email-error').show(); isValid = false;
             }
-            
-            // Validate at least one service is selected
+    
             if($('.service-checkbox:checked').length === 0) {
-                $('#service-error').show();
-                isValid = false;
+                $('#service-error').show(); isValid = false;
             }
-            
-            // If Other is checked, validate the other service field
+    
             if($('#other').is(':checked')) {
                 const otherDetails = $('#other-service-details').val().trim();
                 if(otherDetails === '') {
-                    isValid = false;
                     $('#other-service-details').addClass('is-invalid');
+                    isValid = false;
                 }
             }
-            
-            // If all validations pass, submit the form
+    
             if(isValid) {
-                // Show loading state on button
+                localStorage.setItem('formSubmitted', 'true');
                 const submitBtn = $('#submit-btn');
                 submitBtn.html('<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span> Sending...');
                 submitBtn.prop('disabled', true);
-                
-                // Submit the form
                 this.submit();
             }
         });
-        
-        // Real-time validation for inputs
-        $('#client-name').on('input', function() {
-            if($(this).val().trim() !== '') {
-                $('#name-error').hide();
-            }
+    
+        // Real-time input validation
+        $('#client-name').on('input', () => $('#name-error').hide());
+        $('#client-phone').on('input', () => {
+            if($('#client-phone').val().trim().length >= 8) $('#phone-error').hide();
         });
-        
-        $('#client-phone').on('input', function() {
-            if($(this).val().trim().length >= 8) {
-                $('#phone-error').hide();
-            }
+        $('#client-email').on('input', () => {
+            if(/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test($('#client-email').val().trim())) $('#email-error').hide();
         });
-        
-        $('#client-email').on('input', function() {
-            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-            if(emailRegex.test($(this).val().trim())) {
-                $('#email-error').hide();
-            }
-        });
-        
-        // Real-time validation for checkboxes
-        $('.service-checkbox').change(function() {
-            if($('.service-checkbox:checked').length > 0) {
-                $('#service-error').hide();
-            }
+        $('.service-checkbox').change(() => {
+            if($('.service-checkbox:checked').length > 0) $('#service-error').hide();
         });
     });
+    
 
     // Hide the preloader
     const hidePreloader = () => {
