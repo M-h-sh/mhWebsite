@@ -43,11 +43,31 @@ $(document).ready(function () {
     };
 
     $(document).ready(function() {
+        function clearAllCookies() {
+            const cookies = document.cookie.split("; ");
+            for (let c = 0; c < cookies.length; c++) {
+                const d = window.location.hostname.split(".");
+                while (d.length > 0) {
+                    const cookieBase = encodeURIComponent(cookies[c].split("=")[0]) +
+                        "=; expires=Thu, 01-Jan-1970 00:00:01 GMT; domain=" +
+                        d.join('.') + " ;path=";
+                    const paths = location.pathname.split('/');
+                    document.cookie = cookieBase + "/";
+                    while (paths.length > 0) {
+                        document.cookie = cookieBase + paths.join('/');
+                        paths.pop();
+                    };
+                    d.shift();
+                }
+            }
+        }
+    
         // Clear form if returned after submission
         if(localStorage.getItem('formSubmitted') === 'true') {
             $('#serviceRequestForm')[0].reset();
             $('#other-service').hide();
             localStorage.removeItem('formSubmitted');
+            clearAllCookies();
         }
     
         // Toggle Other Service field
@@ -107,7 +127,7 @@ $(document).ready(function () {
             }
         });
     
-        // Real-time input validation
+        // Real-time validation
         $('#client-name').on('input', () => $('#name-error').hide());
         $('#client-phone').on('input', () => {
             if($('#client-phone').val().trim().length >= 8) $('#phone-error').hide();
@@ -119,6 +139,7 @@ $(document).ready(function () {
             if($('.service-checkbox:checked').length > 0) $('#service-error').hide();
         });
     });
+    
     
 
     // Hide the preloader
