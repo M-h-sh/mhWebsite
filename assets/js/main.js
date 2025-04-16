@@ -140,34 +140,112 @@ $(document).ready(function () {
         });
     });
 
-    (function(){
+    (function () {
         emailjs.init("La-Uzd96atILQr2lO"); // Replace with your actual PUBLIC KEY
       })();
-  
+      
       $(document).ready(function () {
-    $('#serviceRequestForm').submit(function (e) {
-      e.preventDefault();
-  
-      const name = $('#client-name').val().trim();
-      const email = $('#client-email').val().trim();
-  
-      if (name && email) {
-        const templateParams = {
-          user_name: name,
-          user_email: email,
-        };
-  
-        emailjs.send('service_ety9jyl', 'template_70xa4y9', templateParams)
-          .then(function (response) {
-            alert('Thanks! We will get in touch with you shortly.');
-            $('#serviceRequestForm')[0].reset();
-          }, function (error) {
-            alert('Oops! Something went wrong. Please try again.');
-            console.error(error);
+        $('#serviceRequestForm').submit(function (e) {
+          e.preventDefault();
+      
+          const name = $('#client-name').val().trim();
+          const email = $('#client-email').val().trim();
+          const phone = $('#client-phone').val().trim();
+      
+          // Collect selected services
+          let selectedServices = [];
+          $('.service-checkbox:checked').each(function () {
+            selectedServices.push($(this).val());
           });
-      }
-    });
-  });
+      
+          // Filter out "Other"
+          selectedServices = selectedServices.filter(service => service.toLowerCase() !== 'other');
+      
+          // Add custom value if "Other" is checked and has input
+          const otherService = $('#other-service-details').val().trim();
+          if ($('#other').is(':checked') && otherService) {
+            selectedServices.push(otherService);
+          }
+      
+          // Generate a dynamic message
+          let message = `Thank you for reaching out to MH Web & Graphic Design Services through our website mh-web.netlify.app/services.\n\n`;
+      
+          selectedServices.forEach(service => {
+            switch (service.toLowerCase()) {
+              case 'cv revamp':
+                message += `📄 For your *CV Revamp* request: Please reply to this email with your current CV attached. We’ll take it from there and deliver a stunning upgrade!\n\n`;
+                break;
+              case 'portfolio website':
+                message += `🌐 For your *Portfolio Website* request: Kindly reply with a few examples or references, and let us know what you'd like featured. We can’t wait to showcase your work beautifully!\n\n`;
+                break;
+              case 'logo design':
+                message += `🎨 For your *Logo Design* request: Please reply with any ideas or inspirations you have in mind. We’ll help you build a brand identity you'll love!\n\n`;
+                break;
+              case 'social media kit':
+                message += `📱 For your *Social Media Kit* request: Reply with your brand’s name, niche, and any current social links so we can tailor everything just right.\n\n`;
+                break;
+              default:
+                message += `🛠️ For your *${service}* request: Our team will reach out shortly to gather more details and get started. Feel free to share anything specific you'd like us to know.\n\n`;
+                break;
+            }
+          });
+      
+          message += `We’re excited to assist and will be in touch shortly. 😊`;
+      
+          if (name && email && phone && selectedServices.length > 0) {
+            const templateParams = {
+              user_name: name,
+              user_email: email,
+              user_phone: phone,
+              requested_services: selectedServices.join(', '),
+              user_message: message
+            };
+      
+            emailjs.send('service_ety9jyl', 'template_70xa4y9', templateParams)
+              .then(function (response) {
+                alert('Thanks! We will get in touch with you shortly.');
+                $('#serviceRequestForm')[0].reset();
+                $('#other-service').hide(); // Reset "Other" field
+              }, function (error) {
+                alert('Oops! Something went wrong. Please try again.');
+                console.error(error);
+              });
+          } else {
+            if (selectedServices.length === 0) {
+              $('#service-error').show();
+            } else {
+              $('#service-error').hide();
+            }
+            if (!name) {
+              $('#name-error').show();
+            } else {
+              $('#name-error').hide();
+            }
+            if (!email) {
+              $('#email-error').show();
+            } else {
+              $('#email-error').hide();
+            }
+            if (!phone) {
+              $('#phone-error').show();
+            } else {
+              $('#phone-error').hide();
+            }
+          }
+        });
+      
+        // Show/hide other service field
+        $('#other').change(function () {
+          if ($(this).is(':checked')) {
+            $('#other-service').slideDown();
+          } else {
+            $('#other-service').slideUp();
+            $('#other-service-details').val('');
+          }
+        });
+      });
+      
+      
     
 
     // Hide the preloader
