@@ -205,42 +205,50 @@
                       <input type="hidden" name="_autoresponse" value="Thank you for your request. We'll get in touch with you shortly.">
                       <input type="hidden" name="_subject" value="New Service Request - MH Web">
                       <input type="hidden" name="_template" value="table">
-                      <input type="hidden" name="_next" value="mh-web.netlify.app/thank-you.html">
+                      <input type="hidden" name="_next" value="https://mh-web.netlify.app/thank-you.html">
                     
                       <!-- Service Checkboxes -->
                       <div class="form-check mb-2">
                         <input class="form-check-input" type="checkbox" name="service[]" value="Logo Design" id="logo">
-                        <label class="form-check-label" for="logo">Logo Design</label>
+                        <label class="form-check-label" for="logo">Logo Design <span class="text-blue">(R200 – R800)</span></label>
                       </div>
                       <div class="form-check mb-2">
-                        <input class="form-check-input" type="checkbox" name="service[]" value="Web Development" id="web">
-                        <label class="form-check-label" for="web">Web Development</label>
+                        <input class="form-check-input" type="checkbox" name="service[]" value="Web Design" id="web-design">
+                        <label class="form-check-label" for="web-design">Web Design <span class="text-blue">(R1000 – R3500)</span></label>
                       </div>
                       <div class="form-check mb-2">
-                        <input class="form-check-input" type="checkbox" name="service[]" value="Mobile App Development" id="mobile">
-                        <label class="form-check-label" for="mobile">Mobile App Development</label>
+                        <input class="form-check-input" type="checkbox" name="service[]" value="Web Development" id="web-dev">
+                        <label class="form-check-label" for="web-dev">Web Development <span class="text-blue">(R3500 – R9000)</span></label>
                       </div>
                       <div class="form-check mb-2">
-                        <input class="form-check-input" type="checkbox" name="service[]" value="Graphic Design" id="graphic">
-                        <label class="form-check-label" for="graphic">Graphic Design</label>
+                        <input class="form-check-input" type="checkbox" name="service[]" value="CV Revamp" id="cv">
+                        <label class="form-check-label" for="cv">CV Revamp <span class="text-blue">(R50 – R200)</span></label>
                       </div>
                       <div class="form-check mb-2">
                         <input class="form-check-input" type="checkbox" name="service[]" value="Video Editing" id="video">
-                        <label class="form-check-label" for="video">Video Editing</label>
+                        <label class="form-check-label" for="video">Video Editing <span class="text-blue">(R350 – R1200)</span></label>
                       </div>
-                      <div class="form-check mb-2">
-                        <input class="form-check-input" type="checkbox" name="service[]" value="Game Development" id="game">
-                        <label class="form-check-label" for="game">Game Development</label>
+                    
+                      <!-- Other Option -->
+                      <div class="form-check mb-3">
+                        <input class="form-check-input" type="checkbox" name="service[]" value="Other" id="other">
+                        <label class="form-check-label" for="other">Other</label>
                       </div>
-
-                      <!-- User Email Field -->
-                      <div class="mb-3">
-                        <label for="userEmail" class="form-label">Your Email</label>
-                        <input type="email" class="form-control" id="userEmail" name="userEmail" placeholder="Enter your email" required>
+                      <div id="other-service" class="form-group" style="display:none;">
+                        <input type="text" name="other_service" id="other-service-details" class="form-control mb-3" placeholder="Describe your service request" />
                       </div>
-
-                      <!-- Submit Button -->
-                      <button type="submit" class="btn btn-primary">Submit Request</button>
+                    
+                      <!-- User Info -->
+                      <input type="text" name="name" class="form-control mb-3" placeholder="Your Name and Surname" required>
+                      <input type="tel" name="phone" class="form-control mb-3" placeholder="Phone / WhatsApp Number" required>
+                      <input type="email" name="email" class="form-control mb-3" placeholder="Your Email" required>
+                    
+                      <!-- Submit -->
+                      <div class="text-center mt-4">
+                        <button id="submit-btn" type="submit" class="btn btn-primary px-4 rounded-pill">
+                          Submit Request
+                        </button>
+                      </div>
                     </form>
                     
                     
