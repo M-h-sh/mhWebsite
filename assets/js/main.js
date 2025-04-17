@@ -357,7 +357,6 @@ $(document).ready(function() {
   
         emailjs.send('service_ety9jyl', 'template_70xa4y9', templateParams)
         .then(function (response) {
-          alert('Thank you! We will get in touch with you shortly.');
           $('#serviceRequestForm')[0].reset();
           $('#other-service').hide(); // Hide "Other" field
           location.reload(true); // Force refresh after success
