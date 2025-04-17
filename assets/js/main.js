@@ -340,7 +340,6 @@ selectedServices.forEach(function(service) {
 });
 
 message += 'If you have any references, samples, or ideas to share, feel free to include them in your reply. We’re excited to bring your vision to life with creativity and precision.\n\n';
-message += 'Kind regards,\n<b>The MH Web & Graphic Design Services Team</b';
 
       
       // Example usage
