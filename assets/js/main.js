@@ -361,10 +361,7 @@ message += 'Kind regards,\nThe MH Web & Graphic Design Services Team';
           $('#serviceRequestForm')[0].reset();
           $('#other-service').hide(); // Hide "Other" field
           location.reload(true); // Force refresh after success
-        }, function (error) {
-          alert('Oops! Something went wrong. Please try again.');
-          console.error(error);
-        });
+        }, 
       
       } else {
         if (selectedServices.length === 0) {
