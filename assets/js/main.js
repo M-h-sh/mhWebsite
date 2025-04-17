@@ -355,7 +355,7 @@ message += 'If you have any references, samples, or ideas to share, feel free to
           user_message: message
         };
   
-        emailjs.send('service_ctebyd7', 'template_qx06inn', templateParams)
+        emailjs.send('service_wdtdc0o', 'template_qx06inn', templateParams)
   .then(function (response) {
     $('#serviceRequestForm')[0].reset();
     $('#other-service').hide(); // Hide "Other" field
