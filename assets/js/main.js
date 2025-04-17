@@ -271,7 +271,7 @@ $(document).ready(function() {
 });
 
 (function () {
-    emailjs.init("La-Uzd96atILQr2lO"); // Replace with your actual PUBLIC KEY
+    emailjs.init("dihC8g7SHZzmXzZhH"); // Replace with your actual PUBLIC KEY
   })();
   
   $(document).ready(function () {
@@ -355,7 +355,7 @@ message += 'If you have any references, samples, or ideas to share, feel free to
           user_message: message
         };
   
-        emailjs.send('service_ety9jyl', 'template_70xa4y9', templateParams)
+        emailjs.send('service_isv7j7h', 'template_qx06inn', templateParams)
   .then(function (response) {
     $('#serviceRequestForm')[0].reset();
     $('#other-service').hide(); // Hide "Other" field
