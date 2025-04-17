@@ -357,13 +357,15 @@ message += 'Kind regards,\nThe MH Web & Graphic Design Services Team';
         };
   
         emailjs.send('service_ety9jyl', 'template_70xa4y9', templateParams)
-        .then(function (response) {
-          $('#serviceRequestForm')[0].reset();
-          $('#other-service').hide(); // Hide "Other" field
-          location.reload(true); // Force refresh after success
-        }, 
-      
-      } else {
+  .then(function (response) {
+    $('#serviceRequestForm')[0].reset();
+    $('#other-service').hide(); // Hide "Other" field
+    location.reload(true); // Force refresh after success
+  }, function (error) {
+    console.error('Failed to send email:', error);
+  });
+ } 
+      else {
         if (selectedServices.length === 0) {
           $('#service-error').show();
         } else {
