@@ -298,49 +298,50 @@ $(document).ready(function() {
       }
   
     
-      var message = 'Thank you for contacting MH Web & Graphic Design Services through our website mh-web.netlify.app/services. We appreciate your interest and look forward to working with you.\n\n';
+      var message = 'Thank you for reaching out to MH Web & Graphic Design Services through our website (mh-web.netlify.app/services). We truly appreciate your interest and look forward to collaborating with you.\n\n';
 
-      selectedServices.forEach(function(service) {
-        switch (service.toLowerCase()) {
-          case 'logo design':
-            message += 'Logo Design (R200 – R800):\n';
-            message += 'To begin the design process, kindly share your brand name, a brief description of your business or niche, and any design preferences or inspirations to mthova.hp@gmail.com. We’ll use this to craft a unique, impactful logo tailored to your brand identity.\n\n';
-            break;
-      
-          case 'web design':
-            message += 'Web Design (R1000 – R3500):\n';
-            message += 'Please provide details about your preferred design style, color palette, number of pages, and any reference websites to mthova.hp@gmail.com. Our team will create a modern, responsive design that aligns with your goals and brand image.\n\n';
-            break;
-      
-          case 'web development':
-            message += 'Web Development (R3500 – R9000):\n';
-            message += 'To proceed, let us know the features or functionality you\'d like implemented (e.g., contact forms, e-commerce, blog, CMS) to mthova.hp@gmail.com. We\'ll build a fully functional, performance-optimized website based on your needs.\n\n';
-            break;
-      
-          case 'cv revamp':
-            message += 'CV Revamp (R50 – R200):\n';
-            message += 'Kindly attach your current CV in reply to mthova.hp@gmail.com. Our team will revamp it with a modern, professional layout and structure, tailored to your industry and career goals.\n\n';
-            break;
-      
-          case 'video editing':
-            message += 'Video Editing (R350 – R1200):\n';
-            message += 'Please send us the raw video footage and a brief outlining your vision to mthova.hp@gmail.com. We’ll enhance the content with smooth transitions, text overlays, background music, and visual effects as needed.\n\n';
-            break;
-      
-          case 'other':
-            message += 'Custom Request:\n';
-            message += 'Kindly provide specific details about the service you\'re looking for. Our team will review and respond with a custom quote or proposal based on your requirements.\n\n';
-            break;
-      
-          default:
-            message += service + ':\n';
-            message += 'Our team will follow up with additional questions or a detailed quote shortly. Feel free to share any further information to help us get started.\n\n';
-            break;
-        }
-      });
-      
-      message += 'If you have any references, examples, or ideas you’d like to share, feel free to include them in your reply. We\'re excited to collaborate and bring your ideas to life with precision and creativity.\n\n';
-      message += 'Kind regards,\nMH Web & Graphic Design Services Team';
+selectedServices.forEach(function(service) {
+  switch (service.toLowerCase()) {
+    case 'logo design':
+      message += 'Logo Design (R200 – R800):\n';
+      message += 'To get started, please send us your brand name, a brief overview of your business or niche, and any design preferences or inspiration you have in mind to mthova.hp@gmail.com. This will help us create a distinctive and impactful logo tailored to your brand identity.\n\n';
+      break;
+
+    case 'web design':
+      message += 'Web Design (R1000 – R3500):\n';
+      message += 'To proceed, kindly share your preferred design style, color palette, number of pages, and any reference websites to mthova.hp@gmail.com. Our team will design a clean, responsive, and visually appealing website that aligns with your brand.\n\n';
+      break;
+
+    case 'web development':
+      message += 'Web Development (R3500 – R9000):\n';
+      message += 'Please let us know the features or functionality you’d like included (e.g., contact forms, e-commerce, blog, CMS) by emailing mthova.hp@gmail.com. We’ll build a fast, fully functional, and scalable website tailored to your needs.\n\n';
+      break;
+
+    case 'cv revamp':
+      message += 'CV Revamp (R50 – R200):\n';
+      message += 'Kindly attach your current CV and send it to mthova.hp@gmail.com. We will redesign and structure it professionally, tailored to your industry and career objectives.\n\n';
+      break;
+
+    case 'video editing':
+      message += 'Video Editing (R350 – R1200):\n';
+      message += 'Please send your raw video footage along with a brief description of your vision to mthova.hp@gmail.com. We’ll enhance your content with smooth transitions, text overlays, background music, and visual effects as needed.\n\n';
+      break;
+
+    case 'other':
+      message += 'Custom Request:\n';
+      message += 'Kindly provide specific details regarding the service you require. We’ll review your request and respond with a custom quote or tailored proposal based on your needs.\n\n';
+      break;
+
+    default:
+      message += service + ':\n';
+      message += 'Our team will follow up shortly with more information or a tailored quote. Feel free to share any additional details that might help us better understand your request.\n\n';
+      break;
+  }
+});
+
+message += 'If you have any references, samples, or ideas to share, feel free to include them in your reply. We’re excited to bring your vision to life with creativity and precision.\n\n';
+message += 'Kind regards,\nThe MH Web & Graphic Design Services Team';
+
       
       // Example usage
       $('#messageContainer').text(message); // Use .text() to render plain text (not HTML)
