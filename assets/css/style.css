@@ -684,7 +684,7 @@ background-size: cover;
 
 
 .text-dark-blue {
-    background: linear-gradient(90deg,rgb(92, 42, 255),rgb(0, 132, 255));
+    background: linear-gradient(90deg,rgb(37, 17, 255),rgb(0, 132, 255));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 } 
@@ -842,7 +842,7 @@ background-size: cover;
 
 .pricing-header {
     padding-bottom: 1rem;
-    border-bottom: 2px solid rgba(0, 0, 0, 0.05);
+    border-bottom: 2px solid rgba(174, 172, 172, 0.279);
 }
 
 .pricing-features li {
