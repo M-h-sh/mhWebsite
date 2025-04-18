@@ -412,5 +412,37 @@ $('#other').on('change', function() {
   }
 });
 
+ // Features and Stats animation
+ $(document).ready(function() {
+  // Animate stats counting
+  $('.stat-item h3').each(function() {
+      const $this = $(this);
+      const target = $this.data('count');
+      const duration = 2000;
+      const start = 0;
+      const increment = target / (duration / 16); // 60fps
+      
+      let current = start;
+      const timer = setInterval(function() {
+          current += increment;
+          if (current >= target) {
+              clearInterval(timer);
+              current = target;
+          }
+          $this.text(Math.floor(current));
+      }, 16);
+  });
+
+  // Feature card hover effects
+  $('.feature-card').hover(
+      function() {
+          $(this).find('.feature-icon').css('transform', 'scale(1.2)');
+      },
+      function() {
+          $(this).find('.feature-icon').css('transform', 'scale(1)');
+      }
+  );
+});
+
 
 $('#current-year').text(new Date().getFullYear());
