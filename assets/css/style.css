@@ -852,7 +852,7 @@ background-size: cover;
 }
 
 .text-green {
-  background: linear-gradient(90deg,rgb(255, 0, 98),red,red);
+  background: linear-gradient(90deg,red,rgb(215, 2, 2));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -860,7 +860,7 @@ background-size: cover;
 
 .price-range {
     font-size: 1.3rem;
-    font-weight: 700;
+    font-weight: 300;
     margin-top: 0.5rem;
 }
 
