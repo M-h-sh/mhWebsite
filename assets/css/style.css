@@ -851,7 +851,7 @@ padding: 60px;
 
 
 .price-range {
-    font-size: 1rem;
+    font-size: 1.3rem;
     font-weight: 700;
     margin-top: 0.5rem;
 }
@@ -860,6 +860,18 @@ padding: 60px;
     list-style: none;
     padding-left: 0;
     margin-bottom: 2rem;
+}
+
+.text-gray-dark {
+    color:rgb(52, 53, 53);
+}
+
+.text-gray {
+    color:rgb(204, 211, 212);
+}
+
+.text-light-gray {
+    color:rgb(255, 255, 255) !important;
 }
   
 
