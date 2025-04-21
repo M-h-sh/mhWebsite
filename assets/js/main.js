@@ -277,7 +277,7 @@ $(document).ready(function() {
 });
 
 (function() {
-  emailjs.init("La-Uzd96atILQr2lO"); // Replace with your actual PUBLIC KEY
+  emailjs.init("MnvyM0BVhOaacLJw1"); // Replace with your actual PUBLIC KEY
 })();
 
 $(document).ready(function() {
