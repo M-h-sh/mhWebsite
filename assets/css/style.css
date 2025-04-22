@@ -1510,7 +1510,7 @@ background:transparent;
 } 
 
 .dark-mode .text-blue {
-    background: linear-gradient(90deg,rgb(61, 2, 255),rgb(85, 85, 251),blue);
+    background: linear-gradient(90deg,rgb(80, 57, 251),rgb(78, 78, 255),rgb(62, 62, 253));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 } 
@@ -1543,7 +1543,7 @@ background:transparent;
 }
 
 .dark-mode .certificate-card .card-text {
-    color: #d8dce1;
+    color: #c5c5c6;
 }
 
 .footer-text{
@@ -1578,7 +1578,7 @@ background:transparent;
 }
 
 .dark-mode .card-text {
-    color: #d7d3d3 !important;
+    color: #bcbaba !important;
 }
 
 .dark-mode .accordion-body {
@@ -1610,7 +1610,7 @@ border-width: 2px;
 }
 
 .dark-mode .text-muted {
-    color: #d3d4d4 !important;
+    color: #bdbfbf !important;
 }
 
 .dark-mode .technologies {
