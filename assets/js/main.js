@@ -171,7 +171,7 @@ $(document).ready(function() {
 
 $(document).ready(function() {
   // Initialize EmailJS
-  emailjs.init("MnvyM0BVhOaacLJw1");
+  emailjs.init("22HaJEji68SqzNdt9");
 
   // Cookie clearing function
   function clearAllCookies() {
@@ -416,7 +416,7 @@ $(document).ready(function() {
       };
 
       // Send email with HTML template
-      emailjs.send('service_ety9jyl', 'template_70xa4y9', templateParams)
+      emailjs.send('service_wdtdc0o', 'template_fqlnxw6', templateParams)
         .then(function(response) {
           window.location.href = 'thank-you.html';
         }, function(error) {
