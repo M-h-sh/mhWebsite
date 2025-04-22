@@ -43,7 +43,6 @@ $(document).ready(function() {
   };
 
 
-
   // Hide the preloader
   const hidePreloader = () => {
       $("#preloader").fadeOut(500, function() {
