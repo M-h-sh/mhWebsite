@@ -167,7 +167,9 @@ $(document).ready(function() {
       }
       updateImageVisibility(); // Update images on mode change
   });
-});$(document).ready(function() {
+});
+
+$(document).ready(function() {
   // Initialize EmailJS
   emailjs.init("MnvyM0BVhOaacLJw1");
 
@@ -209,6 +211,64 @@ $(document).ready(function() {
       $('#other-service-details').removeAttr('required');
     }
   });
+
+  // Initialize social icons
+  function initSocialIcons() {
+    const $socialIcons = $('<div>').addClass('d-flex gap-4 mt-3');
+    
+    const socialMedia = [
+      {
+        url: 'https://youtube.com/@mhhlatshwayo?si=ZLe-hpXrE_9TYvPL',
+        icon: 'bi-youtube',
+        label: 'YouTube'
+      },
+      {
+        url: 'https://www.instagram.com/mh_hlatshwayo/',
+        icon: 'bi-instagram',
+        label: 'Instagram'
+      },
+      {
+        url: 'https://web.facebook.com/mthokozisi.hector.5/',
+        icon: 'bi-facebook',
+        label: 'Facebook'
+      },
+      {
+        url: 'https://x.com/Mthovistor',
+        icon: 'bi-twitter-x',
+        label: 'Twitter'
+      },
+      {
+        url: 'https://www.linkedin.com/in/mh-hlatshwayo/',
+        icon: 'bi-linkedin',
+        label: 'LinkedIn'
+      }
+    ];
+
+    socialMedia.forEach(social => {
+      const $link = $('<a>')
+        .attr({
+          href: social.url,
+          target: '_blank',
+          'aria-label': social.label
+        })
+        .addClass('text-decoration-none social-icon');
+      
+      const $icon = $('<i>')
+        .addClass(`bi ${social.icon}`)
+        .css({
+          'font-size': '24px',
+          'background': 'linear-gradient(90deg, rgb(255, 25, 0), rgb(253, 72, 72), red)',
+          '-webkit-background-clip': 'text',
+          '-webkit-text-fill-color': 'transparent',
+          'display': 'inline-block'
+        });
+      
+      $link.append($icon);
+      $socialIcons.append($link);
+    });
+
+    $('#social-icons-container').append($socialIcons);
+  }
 
   // Form submission handler
   $('#serviceRequestForm').on('submit', function(e) {
@@ -337,18 +397,31 @@ $(document).ready(function() {
         user_phone: phone,
         requested_services: selectedServices.join(', '),
         user_message: message,
-        current_date: currentDate
+        current_date: currentDate,
+        banner_image: 'https://raw.githubusercontent.com/M-h-sh/mhWebsite/refs/heads/main/assets/images/mh-email-banner.webp',
+        logo_image: 'https://mh-web.netlify.app/assets/images/MH.png',
+        full_name: 'Mthokozisi Hector Hlatshwayo',
+        company_name: 'MH Web',
+        service_type: 'Graphic Design',
+        map_link: 'https://www.google.com/maps?q=Soweto,+Johannesburg,+1862',
+        address: 'Soweto, Johannesburg, 1862',
+        website_url: 'https://mh-web.netlify.app/services',
+        website_display: 'mh-web.netlify.app/services',
+        youtube_url: 'https://youtube.com/@mhhlatshwayo?si=ZLe-hpXrE_9TYvPL',
+        instagram_url: 'https://www.instagram.com/mh_hlatshwayo/',
+        facebook_url: 'https://web.facebook.com/mthokozisi.hector.5/',
+        twitter_url: 'https://x.com/Mthovistor',
+        linkedin_url: 'https://www.linkedin.com/in/mh-hlatshwayo/',
+        footer_message: 'This is an automated message.'
       };
 
       // Send email with HTML template
       emailjs.send('service_ety9jyl', 'template_70xa4y9', templateParams)
         .then(function(response) {
-          // Redirect to thank you page on success
           window.location.href = 'thank-you.html';
         }, function(error) {
           submitBtn.html('Submit');
           submitBtn.prop('disabled', false);
-          // Show error message
           alert('There was an error submitting your form. Please try again or contact us directly at mthova.hp@gmail.com');
         });
     }
@@ -413,7 +486,8 @@ $(document).ready(function() {
     );
   }
 
-  // Initialize animations
+  // Initialize all components
+  initSocialIcons();
   animateStats();
   setupFeatureCards();
 });
