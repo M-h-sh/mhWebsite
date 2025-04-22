@@ -275,174 +275,170 @@ $(document).ready(function() {
       if ($('.service-checkbox:checked').length > 0) $('#service-error').hide();
   });
 });
-
-(function() {
-  emailjs.init("MnvyM0BVhOaacLJw1"); // Replace with your actual PUBLIC KEY
-})();
-
+// Initialize EmailJS when document is ready
 $(document).ready(function() {
-  $('#serviceRequestForm').submit(function(e) {
+    emailjs.init("MnvyM0BVhOaacLJw1"); // Replace with your actual PUBLIC KEY
+  
+    // Service Request Form Submission
+    $('#serviceRequestForm').on('submit', function(e) {
       e.preventDefault();
-
-      const name = $('#client-name').val().trim();
-      const email = $('#client-email').val().trim();
-      const phone = $('#client-phone').val().trim();
-
-      // Collect selected services
-      let selectedServices = [];
-      $('.service-checkbox:checked').each(function() {
-          selectedServices.push($(this).val());
-      });
-
-      // Filter out "Other"
-      selectedServices = selectedServices.filter(service => service.toLowerCase() !== 'other');
-
-      // Add custom value if "Other" is checked and has input
-      const otherService = $('#other-service-details').val().trim();
-      if ($('#other').is(':checked') && otherService) {
-          selectedServices.push(otherService);
-      }
-
-
-      var message = 'Thank you for reaching out to MH Web & Graphic Design Services through our website (mh-web.netlify.app/services). We truly appreciate your interest and look forward to collaborating with you.\n\n';
-
-      selectedServices.forEach(function(service) {
-          switch (service.toLowerCase()) {
-              case 'logo design':
-                  message += 'Logo Design (R200 – R800):\n';
-                  message += 'To get started, please send us your brand name, a brief overview of your business or niche, and any design preferences or inspiration you have in mind to mthova.hp@gmail.com. This will help us create a distinctive and impactful logo tailored to your brand identity.\n\n';
-                  break;
-
-              case 'web design':
-                  message += 'Web Design (R1000 – R3500):\n';
-                  message += 'To proceed, kindly share your preferred design style, color palette, number of pages, and any reference websites to mthova.hp@gmail.com. Our team will design a clean, responsive, and visually appealing website that aligns with your brand.\n\n';
-                  break;
-
-              case 'web development':
-                  message += 'Web Development (R3500 – R9000):\n';
-                  message += 'Please let us know the features or functionality you’d like included (e.g., contact forms, e-commerce, blog, CMS) by emailing mthova.hp@gmail.com. We’ll build a fast, fully functional, and scalable website tailored to your needs.\n\n';
-                  break;
-
-              case 'cv revamp':
-                  message += 'CV Revamp (R50 – R200):\n';
-                  message += 'Kindly attach your current CV and send it to mthova.hp@gmail.com. We will redesign and structure it professionally, tailored to your industry and career objectives.\n\n';
-                  break;
-
-              case 'video editing':
-                  message += 'Video Editing (R350 – R1200):\n';
-                  message += 'Please send your raw video footage along with a brief description of your vision to mthova.hp@gmail.com. We’ll enhance your content with smooth transitions, text overlays, background music, and visual effects as needed.\n\n';
-                  break;
-
-              case 'other':
-                  message += 'Custom Request:\n';
-                  message += 'Kindly provide specific details regarding the service you require. We’ll review your request and respond with a custom quote or tailored proposal based on your needs.\n\n';
-                  break;
-
-              default:
-                  message += service + ':\n';
-                  message += 'Our team will follow up shortly with more information or a tailored quote. Feel free to share any additional details that might help us better understand your request.\n\n';
-                  break;
-          }
-      });
-
-      message += 'If you have any references, samples, or ideas to share, feel free to include them in your reply. We’re excited to bring your vision to life with creativity and precision.\n\n';
-
-
-      // Example usage
-      $('#messageContainer').text(message); // Use .text() to render plain text (not HTML)
-
-
-      if (name && email && phone && selectedServices.length > 0) {
-          const templateParams = {
-              user_name: name,
-              user_email: email,
-              user_phone: phone,
-              requested_services: selectedServices.join(', '),
-              user_message: message
-          };
-
-          emailjs.send('service_ety9jyl', 'template_70xa4y9', templateParams)
-              .then(function(response) {
-                  $('#serviceRequestForm')[0].reset();
-                  $('#other-service').hide(); // Hide "Other" field
-                  location.reload(true); // Force refresh after success
-              }, function(error) {
-                  console.error('Failed to send email:', error);
-              });
-      } else {
-          if (selectedServices.length === 0) {
-              $('#service-error').show();
-          } else {
-              $('#service-error').hide();
-          }
-          if (!name) {
-              $('#name-error').show();
-          } else {
-              $('#name-error').hide();
-          }
-          if (!email) {
-              $('#email-error').show();
-          } else {
-              $('#email-error').hide();
-          }
-          if (!phone) {
-              $('#phone-error').show();
-          } else {
-              $('#phone-error').hide();
-          }
-      }
-  });
-
-  // Show/hide other service field
-  $('#other').change(function() {
-      if ($(this).is(':checked')) {
-          $('#other-service').slideDown();
-      } else {
-          $('#other-service').slideUp();
-          $('#other-service-details').val('');
-      }
-  });
-});
-
-$('#other').on('change', function() {
-  if ($(this).is(':checked')) {
-      $('#other-service').slideDown();
-  } else {
-      $('#other-service').slideUp();
-  }
-});
-
- // Features and Stats animation
- $(document).ready(function() {
-  // Animate stats counting
-  $('.stat-item h3').each(function() {
-      const $this = $(this);
-      const target = $this.data('count');
-      const duration = 2000;
-      const start = 0;
-      const increment = target / (duration / 16); // 60fps
       
-      let current = start;
-      const timer = setInterval(function() {
+      // Reset all error messages
+      $('.error-message').hide();
+      
+      // Get form values
+      var name = $('#client-name').val().trim();
+      var email = $('#client-email').val().trim();
+      var phone = $('#client-phone').val().trim();
+      var isValid = true;
+  
+      // Validate required fields
+      if (!name) {
+        $('#name-error').show();
+        isValid = false;
+      }
+      if (!email) {
+        $('#email-error').show();
+        isValid = false;
+      }
+      if (!phone) {
+        $('#phone-error').show();
+        isValid = false;
+      }
+  
+      // Collect selected services
+      var selectedServices = [];
+      $('.service-checkbox:checked').each(function() {
+        if ($(this).val().toLowerCase() !== 'other') {
+          selectedServices.push($(this).val());
+        }
+      });
+  
+      // Handle "Other" service
+      var otherService = $('#other-service-details').val().trim();
+      if ($('#other').is(':checked') && otherService) {
+        selectedServices.push(otherService);
+      }
+  
+      // Validate at least one service is selected
+      if (selectedServices.length === 0) {
+        $('#service-error').show();
+        isValid = false;
+      }
+  
+      if (!isValid) {
+        return false;
+      }
+  
+      // Build message content
+      var message = 'Thank you for reaching out to MH Web & Graphic Design Services through our website (mh-web.netlify.app/services). We truly appreciate your interest and look forward to collaborating with you.\n\n';
+  
+      selectedServices.forEach(function(service) {
+        switch (service.toLowerCase()) {
+          case 'logo design':
+            message += 'Logo Design (R200 – R800):\n';
+            message += 'To get started, please send us your brand name, a brief overview of your business or niche, and any design preferences or inspiration you have in mind to mthova.hp@gmail.com. This will help us create a distinctive and impactful logo tailored to your brand identity.\n\n';
+            break;
+          case 'web design':
+            message += 'Web Design (R1000 – R3500):\n';
+            message += 'To proceed, kindly share your preferred design style, color palette, number of pages, and any reference websites to mthova.hp@gmail.com. Our team will design a clean, responsive, and visually appealing website that aligns with your brand.\n\n';
+            break;
+          case 'web development':
+            message += 'Web Development (R3500 – R9000):\n';
+            message += 'Please let us know the features or functionality you\'d like included (e.g., contact forms, e-commerce, blog, CMS) by emailing mthova.hp@gmail.com. We\'ll build a fast, fully functional, and scalable website tailored to your needs.\n\n';
+            break;
+          case 'cv revamp':
+            message += 'CV Revamp (R50 – R200):\n';
+            message += 'Kindly attach your current CV and send it to mthova.hp@gmail.com. We will redesign and structure it professionally, tailored to your industry and career objectives.\n\n';
+            break;
+          case 'video editing':
+            message += 'Video Editing (R350 – R1200):\n';
+            message += 'Please send your raw video footage along with a brief description of your vision to mthova.hp@gmail.com. We\'ll enhance your content with smooth transitions, text overlays, background music, and visual effects as needed.\n\n';
+            break;
+          case 'other':
+            message += 'Custom Request:\n';
+            message += 'Kindly provide specific details regarding the service you require. We\'ll review your request and respond with a custom quote or tailored proposal based on your needs.\n\n';
+            break;
+          default:
+            message += service + ':\n';
+            message += 'Our team will follow up shortly with more information or a tailored quote. Feel free to share any additional details that might help us better understand your request.\n\n';
+            break;
+        }
+      });
+  
+      message += 'If you have any references, samples, or ideas to share, feel free to include them in your reply. We\'re excited to bring your vision to life with creativity and precision.\n\n';
+  
+      // Display message
+      $('#messageContainer').text(message);
+  
+      // Prepare email parameters
+      var templateParams = {
+        user_name: name,
+        user_email: email,
+        user_phone: phone,
+        requested_services: selectedServices.join(', '),
+        user_message: message
+      };
+  
+      // Send email with small delay for iOS compatibility
+      setTimeout(function() {
+        emailjs.send('service_ety9jyl', 'template_70xa4y9', templateParams)
+          .then(function(response) {
+            // Reset form on success
+            $('#serviceRequestForm')[0].reset();
+            $('#other-service').hide();
+
+          }, function(error) {
+            console.error('Failed to send email:', error);
+          });
+      }, 100);
+    });
+  
+    // Toggle "Other" service field
+    $('#other').on('change', function() {
+      if ($(this).is(':checked')) {
+        $('#other-service').slideDown();
+      } else {
+        $('#other-service').slideUp();
+        $('#other-service-details').val('');
+      }
+    });
+  
+    // Animate stats counting
+    function animateStats() {
+      $('.stat-item h3').each(function() {
+        var $this = $(this);
+        var target = parseInt($this.data('count'));
+        var duration = 2000;
+        var start = 0;
+        var increment = target / (duration / 16); // 60fps
+        
+        var current = start;
+        var timer = setInterval(function() {
           current += increment;
           if (current >= target) {
-              clearInterval(timer);
-              current = target;
+            clearInterval(timer);
+            current = target;
           }
           $this.text(Math.floor(current));
-      }, 16);
-  });
-
-  // Feature card hover effects
-  $('.feature-card').hover(
-      function() {
+        }, 16);
+      });
+    }
+  
+    // Feature card hover effects
+    function setupFeatureCards() {
+      $('.feature-card').hover(
+        function() {
           $(this).find('.feature-icon').css('transform', 'scale(1.2)');
-      },
-      function() {
+        },
+        function() {
           $(this).find('.feature-icon').css('transform', 'scale(1)');
-      }
-  );
-});
-
-
+        }
+      );
+    }
+  
+    // Initialize animations
+    animateStats();
+    setupFeatureCards();
+  });
 $('#current-year').text(new Date().getFullYear());
