@@ -211,65 +211,7 @@ $(document).ready(function() {
       $('#other-service-details').removeAttr('required');
     }
   });
-
-  // Initialize social icons
-  function initSocialIcons() {
-    const $socialIcons = $('<div>').addClass('d-flex gap-4 mt-3');
-    
-    const socialMedia = [
-      {
-        url: 'https://youtube.com/@mhhlatshwayo?si=ZLe-hpXrE_9TYvPL',
-        icon: 'bi-youtube',
-        label: 'YouTube'
-      },
-      {
-        url: 'https://www.instagram.com/mh_hlatshwayo/',
-        icon: 'bi-instagram',
-        label: 'Instagram'
-      },
-      {
-        url: 'https://web.facebook.com/mthokozisi.hector.5/',
-        icon: 'bi-facebook',
-        label: 'Facebook'
-      },
-      {
-        url: 'https://x.com/Mthovistor',
-        icon: 'bi-twitter-x',
-        label: 'Twitter'
-      },
-      {
-        url: 'https://www.linkedin.com/in/mh-hlatshwayo/',
-        icon: 'bi-linkedin',
-        label: 'LinkedIn'
-      }
-    ];
-
-    socialMedia.forEach(social => {
-      const $link = $('<a>')
-        .attr({
-          href: social.url,
-          target: '_blank',
-          'aria-label': social.label
-        })
-        .addClass('text-decoration-none social-icon');
-      
-      const $icon = $('<i>')
-        .addClass(`bi ${social.icon}`)
-        .css({
-          'font-size': '24px',
-          'background': 'linear-gradient(90deg, rgb(255, 25, 0), rgb(253, 72, 72), red)',
-          '-webkit-background-clip': 'text',
-          '-webkit-text-fill-color': 'transparent',
-          'display': 'inline-block'
-        });
-      
-      $link.append($icon);
-      $socialIcons.append($link);
-    });
-
-    $('#social-icons-container').append($socialIcons);
-  }
-
+  
   // Form submission handler
   $('#serviceRequestForm').on('submit', function(e) {
     e.preventDefault();
