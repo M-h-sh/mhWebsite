@@ -358,7 +358,7 @@ $(document).ready(function() {
             break;
           case 'cv revamp':
             message += 'CV Revamp (R50 – R200):\n';
-            message += 'Kindly attach your current CV and send it to mthova.hp@gmail.com.\n\n';
+            message += 'Kindly attach your current CV and send it to mthokozisih.hlatshwayo@gmail.com.\n\n';
             break;
           case 'video editing':
             message += 'Video Editing (R350 – R1200):\n';
