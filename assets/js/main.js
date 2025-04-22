@@ -346,15 +346,15 @@ $(document).ready(function() {
         switch (service.toLowerCase()) {
           case 'logo design':
             message += 'Logo Design (R200 – R800):\n';
-            message += 'To get started, please send us your brand name, a brief overview of your business or niche, and any design preferences or inspiration you have in mind to mthova.hp@gmail.com.\n\n';
+            message += 'To get started, please send us your brand name, a brief overview of your business or niche, and any design preferences or inspiration you have in mind to mthokozisih.hlatshwayo@gmail.com.\n\n';
             break;
           case 'web design':
             message += 'Web Design (R1000 – R3500):\n';
-            message += 'To proceed, kindly share your preferred design style, color palette, number of pages, and any reference websites to mthova.hp@gmail.com.\n\n';
+            message += 'To proceed, kindly share your preferred design style, color palette, number of pages, and any reference websites to mthokozisih.hlatshwayo@gmail.com.\n\n';
             break;
           case 'web development':
             message += 'Web Development (R3500 – R9000):\n';
-            message += 'Please let us know the features or functionality you\'d like included by emailing mthova.hp@gmail.com.\n\n';
+            message += 'Please let us know the features or functionality you\'d like included by emailing mthokozisih.hlatshwayo@gmail.com.\n\n';
             break;
           case 'cv revamp':
             message += 'CV Revamp (R50 – R200):\n';
@@ -362,7 +362,7 @@ $(document).ready(function() {
             break;
           case 'video editing':
             message += 'Video Editing (R350 – R1200):\n';
-            message += 'Please send your raw video footage along with a brief description of your vision to mthova.hp@gmail.com.\n\n';
+            message += 'Please send your raw video footage along with a brief description of your vision to mthokozisih.hlatshwayo@gmail.com.\n\n';
             break;
           case 'other':
             message += 'Custom Request:\n';
@@ -403,6 +403,8 @@ $(document).ready(function() {
         full_name: 'Mthokozisi Hector Hlatshwayo',
         company_name: 'MH Web',
         service_type: 'Graphic Design',
+        phone_number:'+27 76 461 1841',
+        email_address:'mthokozisih.hlatshwayo@gmail.com',
         map_link: 'https://www.google.com/maps?q=Soweto,+Johannesburg,+1862',
         address: 'Soweto, Johannesburg, 1862',
         website_url: 'https://mh-web.netlify.app/services',
