@@ -346,8 +346,6 @@ $(document).ready(function() {
           // Redirect to thank you page on success
           window.location.href = 'thank-you.html';
         }, function(error) {
-          console.error('Failed to send email:', error);
-          // Reset button state
           submitBtn.html('Submit');
           submitBtn.prop('disabled', false);
           // Show error message
