@@ -366,7 +366,7 @@ $(document).ready(function() {
         .then(function(response) {
           // Set flag that form was submitted
           localStorage.setItem('formSubmitted', 'true');
-          
+          window.location.href = 'thank-you.html';
           // Force page refresh after submission
           window.location.reload(true);
         }, function(error) {
