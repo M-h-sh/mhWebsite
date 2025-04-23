@@ -199,6 +199,11 @@ $(document).ready(function() {
     $('#other-service').hide();
     localStorage.removeItem('formSubmitted');
     clearAllCookies();
+    
+    // Auto-refresh after form was previously submitted
+    setTimeout(function() {
+      window.location.reload(true); // Force refresh from server
+    }, 100);
   }
 
   // Toggle Other Service field
@@ -359,7 +364,11 @@ $(document).ready(function() {
       // Send email with HTML template
       emailjs.send('service_wdtdc0o', 'template_fqlnxw6', templateParams)
         .then(function(response) {
-          window.location.href = 'thank-you.html';
+          // Set flag that form was submitted
+          localStorage.setItem('formSubmitted', 'true');
+          
+          // Force page refresh after submission
+          window.location.reload(true);
         }, function(error) {
           submitBtn.html('Submit');
           submitBtn.prop('disabled', false);
