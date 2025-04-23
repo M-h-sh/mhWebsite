@@ -193,11 +193,16 @@ $(document).ready(function() {
   }
 
   // Check if coming back from thank-you page
-  if (performance.navigation.type === 2 && localStorage.getItem('formSubmitted') === 'true') {
-    localStorage.removeItem('formSubmitted');
-    window.location.reload(true);
-    return;
-  }
+  $(document).ready(function () {
+    const navigationEntries = performance.getEntriesByType("navigation");
+    const isBackOrReload = navigationEntries.length && navigationEntries[0].type === "back_forward";
+  
+    if (isBackOrReload && localStorage.getItem("formSubmitted") === "true") {
+      localStorage.removeItem("formSubmitted");
+      location.reload();
+    }
+  });
+  
 
   // Clear form if returned after submission
   if (localStorage.getItem('formSubmitted') === 'true') {
