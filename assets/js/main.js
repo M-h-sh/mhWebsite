@@ -168,7 +168,6 @@ $(document).ready(function() {
       updateImageVisibility(); // Update images on mode change
   });
 });
-
 $(document).ready(function() {
   // Initialize EmailJS
   emailjs.init("22HaJEji68SqzNdt9");
@@ -193,17 +192,19 @@ $(document).ready(function() {
     }
   }
 
+  // Check if coming back from thank-you page
+  if (performance.navigation.type === 2 && localStorage.getItem('formSubmitted') === 'true') {
+    localStorage.removeItem('formSubmitted');
+    window.location.reload(true);
+    return;
+  }
+
   // Clear form if returned after submission
   if (localStorage.getItem('formSubmitted') === 'true') {
     $('#serviceRequestForm')[0].reset();
     $('#other-service').hide();
     localStorage.removeItem('formSubmitted');
     clearAllCookies();
-    
-    // Auto-refresh after form was previously submitted
-    setTimeout(function() {
-      window.location.reload(true); // Force refresh from server
-    }, 100);
   }
 
   // Toggle Other Service field
@@ -366,9 +367,9 @@ $(document).ready(function() {
         .then(function(response) {
           // Set flag that form was submitted
           localStorage.setItem('formSubmitted', 'true');
+          
+          // Redirect to thank-you page
           window.location.href = 'thank-you.html';
-          // Force page refresh after submission
-          window.location.reload(true);
         }, function(error) {
           submitBtn.html('Submit');
           submitBtn.prop('disabled', false);
@@ -436,8 +437,7 @@ $(document).ready(function() {
     );
   }
 
-  // Initialize all components
-  initSocialIcons();
+  // Initialize animations
   animateStats();
   setupFeatureCards();
 });
