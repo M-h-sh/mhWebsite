@@ -211,7 +211,7 @@ $(document).ready(function() {
       $('#other-service-details').removeAttr('required');
     }
   });
-  
+
   // Form submission handler
   $('#serviceRequestForm').on('submit', function(e) {
     e.preventDefault();
@@ -340,16 +340,13 @@ $(document).ready(function() {
         requested_services: selectedServices.join(', '),
         user_message: message,
         current_date: currentDate,
-        banner_image: 'https://raw.githubusercontent.com/M-h-sh/mhWebsite/refs/heads/main/assets/images/mh-email-banner.webp',
         logo_image: 'https://mh-web.netlify.app/assets/images/MH.png',
         full_name: 'Mthokozisi Hector Hlatshwayo',
         company_name: 'MH Web',
         service_type: 'Graphic Design',
         phone_number:'+27 76 461 1841',
         email_address:'mthokozisih.hlatshwayo@gmail.com',
-        map_link: 'https://www.google.com/maps?q=Soweto,+Johannesburg,+1862',
         address: 'Soweto, Johannesburg, 1862',
-        website_url: 'https://mh-web.netlify.app/services',
         website_display: 'mh-web.netlify.app/services',
         youtube_url: 'https://youtube.com/@mhhlatshwayo?si=ZLe-hpXrE_9TYvPL',
         instagram_url: 'https://www.instagram.com/mh_hlatshwayo/',
