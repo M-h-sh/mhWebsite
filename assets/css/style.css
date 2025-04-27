@@ -1311,6 +1311,7 @@ background-size: cover;
         background-image: url("../images/project_hero_bg_mobile.png");
     }
 
+
     .dark-mode .project-home {
         background-image: url("../images/project_hero_bg_mobile_dark.png") !important;
     }
@@ -1570,6 +1571,12 @@ background:transparent;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     margin-bottom: 15px;
+}
+
+.dark-mode .content-section {
+    background-image: url("../images/content-section-dark.png");
+    background-attachment: fixed;
+    background-size: cover;
 }
 
 .dark-mode .card-text {
