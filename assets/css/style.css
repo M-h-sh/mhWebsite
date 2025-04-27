@@ -1429,7 +1429,6 @@ background-size: cover;
 
 .dark-mode .home {
     background-image: url("../images/hero_bg_dark.png");
-    background-attachment: fixed;
 }
 
 
@@ -1500,7 +1499,6 @@ background-image: url('../images/new-dark.png');
 
 .dark-mode .project-home {
     background-image: url("../images/project_hero_dark_bg.png");
-    background-attachment: fixed;
 }
 
 .dark-mode .mytext {
@@ -1583,7 +1581,6 @@ background:transparent;
 
 .dark-mode .content-section {
     background-image: url("../images/content-section-dark.png");
-    background-attachment: fixed;
     background-size: cover;
 }
 
