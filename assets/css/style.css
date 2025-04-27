@@ -1371,7 +1371,7 @@ background-size: cover;
     }
 
     .dark-mode .navbar-collapse {
-        background-color: black;
+        background-color: #19191c;
     }
 
     .dark-mode .nav-link {
@@ -1446,7 +1446,7 @@ background-image: url('../images/new-dark.png');
 
 .dark-mode .contact-form textarea,
 .dark-mode .contact-form input {
-    background-color: #000000;
+    background-color:#19191c;
     color: #e0e0e0;
 }
 
@@ -1536,11 +1536,6 @@ background:transparent;
     background-image: url("../images/about_dark_bg.png");
 }
 
-.dark-mode .my-certificates {
-    padding: 10px 0;
-    background: linear-gradient(to right, #0b0b16, #141414);
-    color: var(--secondary-color);
-}
 
 .dark-mode .certificate-card .card-text {
     color: #c5c5c6;
@@ -1604,7 +1599,7 @@ background:transparent;
 }
 
 .dark-mode .form-check-input , .dark-mode .form-control {
-background-color: #1111;
+background-color: #19191c;
 border-color:rgb(186, 184, 184);
 border-width: 2px;
 }
@@ -1614,15 +1609,15 @@ border-width: 2px;
 }
 
 .dark-mode .technologies {
-    background-color: #000000 !important;
+    background-color: #19191c !important;
 }
 
 .dark-mode .bg-white {
-    background-color: #000000 !important;
+    background-color: #19191c !important;
 }
 
 .dark-mode .bg-light {
-    background-color: #000000 !important;
+    background-color: #19191c !important;
 }
 
 .dark-mode .service-card {
@@ -1642,7 +1637,7 @@ border-width: 2px;
   }
 
 .dark-mode .rounded-circle {
-    border-color: #000000 !important;
+    border-color: #19191c !important;
 }
 
 .dark-mode .experience-card {
@@ -1659,7 +1654,7 @@ border-width: 2px;
 }
 
 .dark-mode .project-card {
-    background:#000000;
+    background:#19191c;
 }
 
 .dark-mode .nav-pills .nav-link {
@@ -1671,7 +1666,7 @@ border-width: 2px;
 
   
   .dark-mode .my-approach-card {
-    background-color: #111111;
+    background-color: #19191c;
     border-radius: 16px;
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
     overflow: hidden;
