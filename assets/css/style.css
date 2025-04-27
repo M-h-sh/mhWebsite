@@ -1511,13 +1511,13 @@ background:transparent;
 }
 
 .dark-mode .text-light-red {
-    background: linear-gradient(90deg,red);
+    background: linear-gradient(90deg,rgb(252, 59, 59),rgb(250, 63, 63),red);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 } 
 
 .dark-mode .text-blue {
-    background: linear-gradient(90deg,blue);
+    background: linear-gradient(90deg,rgb(77, 77, 248),rgb(61, 61, 254),blue);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 } 
