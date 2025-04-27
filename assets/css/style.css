@@ -1517,7 +1517,7 @@ background:transparent;
 } 
 
 .dark-mode .text-blue {
-    background: linear-gradient(90deg,rgb(80, 57, 251),rgb(78, 78, 255),rgb(62, 62, 253));
+    background: linear-gradient(90deg,rgb(80, 57, 251),rgb(78, 90, 255),rgb(62, 113, 253));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 } 
