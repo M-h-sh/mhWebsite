@@ -1582,6 +1582,7 @@ background:transparent;
 .dark-mode .content-section {
     background-image: url("../images/content-section-dark.png");
     background-size: cover;
+    background-attachment: fixed;
 }
 
 .dark-mode .card-text {
