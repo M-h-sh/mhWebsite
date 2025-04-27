@@ -1316,6 +1316,12 @@ background-size: cover;
         background-image: url("../images/project_hero_bg_mobile_dark.png") !important;
     }
 
+    .dark-mode .content-section {
+        background-image: url("../images/content-section-dark.png");
+        background-size: cover;
+    }
+    
+
     .swiper-button-next:after, .swiper-button-prev:after {
         font-size:19px;
         display:none;
